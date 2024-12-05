@@ -1,0 +1,685 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FreshShop.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FreshShop.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\all.css",
+      "PackagePath": "staticwebassets\\css\\all.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\baguetteBox.min.css",
+      "PackagePath": "staticwebassets\\css\\baguetteBox.min.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\bootsnav.css",
+      "PackagePath": "staticwebassets\\css\\bootsnav.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\bootstrap-select.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-select.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\carousel-ticker.css",
+      "PackagePath": "staticwebassets\\css\\carousel-ticker.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\code_animate.css",
+      "PackagePath": "staticwebassets\\css\\code_animate.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\superslides.css",
+      "PackagePath": "staticwebassets\\css\\superslides.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\about-img.jpg",
+      "PackagePath": "staticwebassets\\images\\about-img.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\add-img-01.jpg",
+      "PackagePath": "staticwebassets\\images\\add-img-01.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\add-img-02.jpg",
+      "PackagePath": "staticwebassets\\images\\add-img-02.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\all-bg-title.jpg",
+      "PackagePath": "staticwebassets\\images\\all-bg-title.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\images\\apple-touch-icon.png"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\banner-01.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-01.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\banner-02.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-02.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\banner-03.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-03.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\big-img-01.jpg",
+      "PackagePath": "staticwebassets\\images\\big-img-01.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\big-img-02.jpg",
+      "PackagePath": "staticwebassets\\images\\big-img-02.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\big-img-03.jpg",
+      "PackagePath": "staticwebassets\\images\\big-img-03.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\blog-img-01.jpg",
+      "PackagePath": "staticwebassets\\images\\blog-img-01.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\blog-img-02.jpg",
+      "PackagePath": "staticwebassets\\images\\blog-img-02.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\blog-img.jpg",
+      "PackagePath": "staticwebassets\\images\\blog-img.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\categories_img_01.jpg",
+      "PackagePath": "staticwebassets\\images\\categories_img_01.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\categories_img_02.jpg",
+      "PackagePath": "staticwebassets\\images\\categories_img_02.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\categories_img_03.jpg",
+      "PackagePath": "staticwebassets\\images\\categories_img_03.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\contact-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\contact-bg.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-01.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-img-01.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-02.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-img-02.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-03.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-img-03.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-04.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-img-04.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-05.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-img-05.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-06.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-img-06.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-07.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-img-07.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-08.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-img-08.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-09.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-img-09.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-10.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-img-10.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-11.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-img-11.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-12.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-img-12.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-1.jpg",
+      "PackagePath": "staticwebassets\\images\\img-1.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-2.jpg",
+      "PackagePath": "staticwebassets\\images\\img-2.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-3.jpg",
+      "PackagePath": "staticwebassets\\images\\img-3.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-01.jpg",
+      "PackagePath": "staticwebassets\\images\\img-pro-01.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-02.jpg",
+      "PackagePath": "staticwebassets\\images\\img-pro-02.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-03.jpg",
+      "PackagePath": "staticwebassets\\images\\img-pro-03.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-04.jpg",
+      "PackagePath": "staticwebassets\\images\\img-pro-04.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-05.jpg",
+      "PackagePath": "staticwebassets\\images\\img-pro-05.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-06.jpg",
+      "PackagePath": "staticwebassets\\images\\img-pro-06.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-07.jpg",
+      "PackagePath": "staticwebassets\\images\\img-pro-07.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\ins-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\ins-bg.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-01.jpg",
+      "PackagePath": "staticwebassets\\images\\instagram-img-01.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-02.jpg",
+      "PackagePath": "staticwebassets\\images\\instagram-img-02.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-03.jpg",
+      "PackagePath": "staticwebassets\\images\\instagram-img-03.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-04.jpg",
+      "PackagePath": "staticwebassets\\images\\instagram-img-04.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-05.jpg",
+      "PackagePath": "staticwebassets\\images\\instagram-img-05.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-06.jpg",
+      "PackagePath": "staticwebassets\\images\\instagram-img-06.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-07.jpg",
+      "PackagePath": "staticwebassets\\images\\instagram-img-07.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-08.jpg",
+      "PackagePath": "staticwebassets\\images\\instagram-img-08.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-09.jpg",
+      "PackagePath": "staticwebassets\\images\\instagram-img-09.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\1.png",
+      "PackagePath": "staticwebassets\\images\\payment-icon\\1.png"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\2.png",
+      "PackagePath": "staticwebassets\\images\\payment-icon\\2.png"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\3.png",
+      "PackagePath": "staticwebassets\\images\\payment-icon\\3.png"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\4.png",
+      "PackagePath": "staticwebassets\\images\\payment-icon\\4.png"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\5.png",
+      "PackagePath": "staticwebassets\\images\\payment-icon\\5.png"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\6.png",
+      "PackagePath": "staticwebassets\\images\\payment-icon\\6.png"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\7.png",
+      "PackagePath": "staticwebassets\\images\\payment-icon\\7.png"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\smp-img-01.jpg",
+      "PackagePath": "staticwebassets\\images\\smp-img-01.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\smp-img-02.jpg",
+      "PackagePath": "staticwebassets\\images\\smp-img-02.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\smp-img-03.jpg",
+      "PackagePath": "staticwebassets\\images\\smp-img-03.jpg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\baguetteBox.min.js",
+      "PackagePath": "staticwebassets\\js\\baguetteBox.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\bootsnav.js",
+      "PackagePath": "staticwebassets\\js\\bootsnav.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\bootstrap-select.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-select.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\contact-form-script.js",
+      "PackagePath": "staticwebassets\\js\\contact-form-script.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\form-validator.min.js",
+      "PackagePath": "staticwebassets\\js\\form-validator.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\images-loded.min.js",
+      "PackagePath": "staticwebassets\\js\\images-loded.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\inewsticker.js",
+      "PackagePath": "staticwebassets\\js\\inewsticker.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\isotope.min.js",
+      "PackagePath": "staticwebassets\\js\\isotope.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\jquery.nicescroll.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.nicescroll.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\jquery.superslides.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.superslides.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.FreshShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.FreshShop.props",
+      "PackagePath": "build\\FreshShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.FreshShop.props",
+      "PackagePath": "buildMultiTargeting\\FreshShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.FreshShop.props",
+      "PackagePath": "buildTransitive\\FreshShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
