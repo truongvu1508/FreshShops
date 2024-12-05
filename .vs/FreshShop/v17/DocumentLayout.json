@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -43,25 +43,11 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-05T16:38:55.327Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "E:\\FreshShops\\FreshShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "FreshShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ToolTip": "E:\\FreshShops\\FreshShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "FreshShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T12:52:49.663Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -73,8 +59,7 @@
               "RelativeToolTip": "FreshShop\\Areas\\Admin\\Controllers\\ProductController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T12:47:27.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T12:47:27.863Z"
             },
             {
               "$type": "Document",
@@ -84,10 +69,22 @@
               "RelativeDocumentMoniker": "FreshShop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
               "ToolTip": "E:\\FreshShops\\FreshShop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
               "RelativeToolTip": "FreshShop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-05T16:33:27.814Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\FreshShops\\FreshShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "FreshShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ToolTip": "E:\\FreshShops\\FreshShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "FreshShop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T12:52:49.663Z"
             },
             {
               "$type": "Document",
@@ -99,8 +96,7 @@
               "RelativeToolTip": "FreshShop\\Models\\ProductModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T17:04:18.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T17:04:18.142Z"
             }
           ]
         }

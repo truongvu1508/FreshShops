@@ -781,3 +781,4 @@ E:\FreshShops\FreshShop\obj\Debug\net6.0\FreshShop.pdb
 E:\FreshShops\FreshShop\obj\Debug\net6.0\FreshShop.genruntimeconfig.cache
 E:\FreshShops\FreshShop\obj\Debug\net6.0\ref\FreshShop.dll
 E:\FreshShops\FreshShop\obj\Debug\net6.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\FreshShops\FreshShop\obj\Debug\net6.0\FreshShop.sourcelink.json
