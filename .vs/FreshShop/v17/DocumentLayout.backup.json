@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|e:\\1hk\\1hk124\\124_lwnc03\\project_cuoiky\\freshshop\\freshshop\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|solutionrelative:freshshop\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|e:\\1hk\\1hk124\\124_lwnc03\\project_cuoiky\\freshshop\\freshshop\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|solutionrelative:freshshop\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|e:\\1hk\\1hk124\\124_lwnc03\\project_cuoiky\\freshshop\\freshshop\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|solutionrelative:freshshop\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|e:\\1hk\\1hk124\\124_lwnc03\\project_cuoiky\\freshshop\\freshshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|solutionrelative:freshshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|e:\\1hk\\1hk124\\124_lwnc03\\project_cuoiky\\freshshop\\freshshop\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|solutionrelative:freshshop\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|e:\\1hk\\1hk124\\124_lwnc03\\project_cuoiky\\freshshop\\freshshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|solutionrelative:freshshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|e:\\1hk\\1hk124\\124_lwnc03\\project_cuoiky\\freshshop\\freshshop\\views\\shared\\_notificationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|solutionrelative:freshshop\\views\\shared\\_notificationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|e:\\1hk\\1hk124\\124_lwnc03\\project_cuoiky\\freshshop\\freshshop\\wwwroot\\js\\cart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|solutionrelative:freshshop\\wwwroot\\js\\cart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|e:\\1hk\\1hk124\\124_lwnc03\\project_cuoiky\\freshshop\\freshshop\\models\\updatequantityrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|solutionrelative:freshshop\\models\\updatequantityrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|e:\\1hk\\1hk124\\124_lwnc03\\project_cuoiky\\freshshop\\freshshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|solutionrelative:freshshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|e:\\1hk\\1hk124\\124_lwnc03\\project_cuoiky\\freshshop\\freshshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|solutionrelative:freshshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|e:\\1hk\\1hk124\\124_lwnc03\\project_cuoiky\\freshshop\\freshshop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8CDF643-A0DE-40BC-AAC7-4134B5C4C21E}|FreshShop\\FreshShop.csproj|solutionrelative:freshshop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,65 +48,104 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "FreshShop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Areas\\Admin\\Views\\Product\\Index.cshtml*",
-              "RelativeToolTip": "FreshShop\\Areas\\Admin\\Views\\Product\\Index.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "FreshShop\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Views\\Cart\\Index.cshtml*",
+              "RelativeToolTip": "FreshShop\\Views\\Cart\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T07:16:08.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Program.cs",
-              "RelativeDocumentMoniker": "FreshShop\\Program.cs",
-              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Program.cs",
-              "RelativeToolTip": "FreshShop\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:14:11.784Z",
+              "WhenOpened": "2024-12-05T15:21:41.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\appsettings.json",
-              "RelativeDocumentMoniker": "FreshShop\\appsettings.json",
-              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\appsettings.json",
-              "RelativeToolTip": "FreshShop\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-05T07:14:06.569Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FreshShop\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FreshShop\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T15:12:04.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "FreshShop\\Controllers\\ProductController.cs",
-              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "FreshShop\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "_NotificationPartial.cshtml",
+              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Views\\Shared\\_NotificationPartial.cshtml",
+              "RelativeDocumentMoniker": "FreshShop\\Views\\Shared\\_NotificationPartial.cshtml",
+              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Views\\Shared\\_NotificationPartial.cshtml",
+              "RelativeToolTip": "FreshShop\\Views\\Shared\\_NotificationPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T15:09:57.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "cart.js",
+              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\cart.js",
+              "RelativeDocumentMoniker": "FreshShop\\wwwroot\\js\\cart.js",
+              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\cart.js",
+              "RelativeToolTip": "FreshShop\\wwwroot\\js\\cart.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-05T15:01:54.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateQuantityRequest.cs",
+              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Models\\UpdateQuantityRequest.cs",
+              "RelativeDocumentMoniker": "FreshShop\\Models\\UpdateQuantityRequest.cs",
+              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Models\\UpdateQuantityRequest.cs",
+              "RelativeToolTip": "FreshShop\\Models\\UpdateQuantityRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:12:53.795Z",
+              "WhenOpened": "2024-12-05T15:00:29.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Program.cs",
+              "RelativeDocumentMoniker": "FreshShop\\Program.cs",
+              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Program.cs",
+              "RelativeToolTip": "FreshShop\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T14:20:55.484Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "FreshShop\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "FreshShop\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FreshShop\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FreshShop\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T14:00:00.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "FreshShop\\Controllers\\CartController.cs",
+              "ToolTip": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\Controllers\\CartController.cs",
+              "RelativeToolTip": "FreshShop\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAuwHkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:12:49.184Z",
+              "WhenOpened": "2024-12-05T13:55:54.06Z",
               "EditorCaption": ""
             }
           ]

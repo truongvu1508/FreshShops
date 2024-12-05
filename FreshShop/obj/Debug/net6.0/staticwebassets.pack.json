@@ -329,6 +329,10 @@
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
+      "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\cart.js",
+      "PackagePath": "staticwebassets\\js\\cart.js"
+    },
+    {
       "Id": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\contact-form-script.js",
       "PackagePath": "staticwebassets\\js\\contact-form-script.js"
     },
