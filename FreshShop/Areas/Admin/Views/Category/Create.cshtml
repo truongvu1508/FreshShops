@@ -1,0 +1,48 @@
+﻿@model CategoryModel
+@{
+	ViewData["title"] = "Tạo mới danh mục";
+}
+
+<!-- Hiển thị thông báo lỗi -->
+@if (TempData["error"] != null)
+{
+	<div class="alert alert-danger">
+		@TempData["Error"]
+	</div>
+}
+<h4>Tạo danh mục mới</h4>
+<div class="col-md-9">
+	<form asp-action="Create" enctype="multipart/form-data">
+		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+		<div class="form-group">
+			<label>Tên danh mục</label>
+			<input asp-for="Name" class="form-control" />
+			<span asp-validation-for="Name" class="text-danger" />
+		</div>
+
+		<div class="form-group">
+			<label>Mô tả</label>
+			<textarea asp-for="Description" class="form-control"></textarea>
+			<span asp-validation-for="Description" class="text-danger" />
+		</div>
+		<div class="form-group">
+			<label>Trạng thái</label>
+			<select asp-for="Status" class="form-control">
+				<option value="1">Hiển thị</option>
+				<option value="0">Ẩn</option>
+			</select>
+			<span asp-validation-for="Status" class="text-danger" />
+		</div>
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary">Tạo mới</button>
+		</div>
+	</form>
+	<a asp-action="Index" class="btn btn-warning btn-sm">Về trang trước</a>
+</div>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

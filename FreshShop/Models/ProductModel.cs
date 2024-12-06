@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using FreshShop.Repository.Validation;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FreshShop.Models
 {
@@ -12,10 +14,13 @@ namespace FreshShop.Models
         //Slug chuyen doi tu Name
         [Required, MinLength(4, ErrorMessage = "Yêu cầu nhập mô tả sản phẩm")]
         public string Description { get; set; }
-        [Required, MinLength(4, ErrorMessage = "Yêu cầu nhập giá sản phẩm")]
         public decimal Price { get; set; }
         public int CategoryId { get; set; }
         public CategoryModel Category { get; set; }
         public string Image { get; set; }
+
+        [NotMapped]
+        [FileExtension]
+        public IFormFile? ImageUpload { get; set; }
     }
 }

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<CategoryModel>
+@{
+	ViewData["title"] = "Danh mục";
+}
+@if (TempData["Success"] != null)
+{
+	<div class="alert alert-success">
+		@TempData["success"]
+	</div>
+}
+<h4>Danh sách các danh mục</h4>
+<a class="btn btn-primary mb-3" asp-action="Create" asp-controller="Category">Thêm danh mục</a>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">ID</th>
+			<th scope="col">Tên danh mục</th>
+			<th scope="col">Mô tả</th>
+			<th scope="col">Slug danh mục</th>
+			<th scope="col">Trạng thai</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<th scope="row">@item.Id</th>
+				<td>@item.Name</td>
+				<td>@item.Description</td>
+				<td>@item.Slug</td>
+				<td>
+					@if (item.Status == 1)
+					{
+						<span class="text text-success">
+							Hiển Thị
+						</span>
+					}
+					else
+					{
+						<span class="text text-danger">
+							Ẩn
+						</span>
+					}
+				</td>
+				<td>
+					<a class="btn btn-warning btn-sm" asp-action="Edit" asp-controller="Category" asp-route-Id="@item.Id">Cập nhật</a>
+					<a class="btn btn-danger btn-sm" asp-action="Delete" asp-controller="Category" asp-route-Id="@item.Id" onclick="return confirm('Are you sure you want to delete this product?');">Xóa</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
