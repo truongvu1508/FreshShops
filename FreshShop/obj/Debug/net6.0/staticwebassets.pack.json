@@ -1,667 +1,671 @@
 {
   "Files": [
     {
-      "Id": "D:\\FreshShops\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FreshShop.bundle.scp.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FreshShop.bundle.scp.css",
       "PackagePath": "staticwebassets\\FreshShop.bundle.scp.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\all.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\all.css",
       "PackagePath": "staticwebassets\\css\\all.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\animate.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\animate.css",
       "PackagePath": "staticwebassets\\css\\animate.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\baguetteBox.min.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\baguetteBox.min.css",
       "PackagePath": "staticwebassets\\css\\baguetteBox.min.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\bootsnav.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\bootsnav.css",
       "PackagePath": "staticwebassets\\css\\bootsnav.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\bootstrap-select.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\bootstrap-select.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-select.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\carousel-ticker.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\carousel-ticker.css",
       "PackagePath": "staticwebassets\\css\\carousel-ticker.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\code_animate.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\code_animate.css",
       "PackagePath": "staticwebassets\\css\\code_animate.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\custom.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\custom.css",
       "PackagePath": "staticwebassets\\css\\custom.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\jquery-ui.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\jquery-ui.css",
       "PackagePath": "staticwebassets\\css\\jquery-ui.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\owl.carousel.min.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\responsive.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\responsive.css",
       "PackagePath": "staticwebassets\\css\\responsive.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\style.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\superslides.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\css\\superslides.css",
       "PackagePath": "staticwebassets\\css\\superslides.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\favicon.ico",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\about-img.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\about-img.jpg",
       "PackagePath": "staticwebassets\\images\\about-img.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\add-img-01.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\add-img-01.jpg",
       "PackagePath": "staticwebassets\\images\\add-img-01.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\add-img-02.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\add-img-02.jpg",
       "PackagePath": "staticwebassets\\images\\add-img-02.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\all-bg-title.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\all-bg-title.jpg",
       "PackagePath": "staticwebassets\\images\\all-bg-title.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\apple-touch-icon.png",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\apple-touch-icon.png",
       "PackagePath": "staticwebassets\\images\\apple-touch-icon.png"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\banner-01.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\banner-01.jpg",
       "PackagePath": "staticwebassets\\images\\banner-01.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\banner-02.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\banner-02.jpg",
       "PackagePath": "staticwebassets\\images\\banner-02.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\banner-03.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\banner-03.jpg",
       "PackagePath": "staticwebassets\\images\\banner-03.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\big-img-01.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\big-img-01.jpg",
       "PackagePath": "staticwebassets\\images\\big-img-01.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\big-img-02.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\big-img-02.jpg",
       "PackagePath": "staticwebassets\\images\\big-img-02.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\big-img-03.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\big-img-03.jpg",
       "PackagePath": "staticwebassets\\images\\big-img-03.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\blog-img-01.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\blog-img-01.jpg",
       "PackagePath": "staticwebassets\\images\\blog-img-01.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\blog-img-02.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\blog-img-02.jpg",
       "PackagePath": "staticwebassets\\images\\blog-img-02.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\blog-img.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\blog-img.jpg",
       "PackagePath": "staticwebassets\\images\\blog-img.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\categories_img_01.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\categories_img_01.jpg",
       "PackagePath": "staticwebassets\\images\\categories_img_01.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\categories_img_02.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\categories_img_02.jpg",
       "PackagePath": "staticwebassets\\images\\categories_img_02.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\categories_img_03.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\categories_img_03.jpg",
       "PackagePath": "staticwebassets\\images\\categories_img_03.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\contact-bg.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\contact-bg.jpg",
       "PackagePath": "staticwebassets\\images\\contact-bg.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\favicon.ico",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\e7750655-0e9a-4b54-826b-8ad769d4809b_dhspkt.jpg",
+      "PackagePath": "staticwebassets\\images\\e7750655-0e9a-4b54-826b-8ad769d4809b_dhspkt.jpg"
+    },
+    {
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\favicon.ico",
       "PackagePath": "staticwebassets\\images\\favicon.ico"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-01.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-01.jpg",
       "PackagePath": "staticwebassets\\images\\gallery-img-01.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-02.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-02.jpg",
       "PackagePath": "staticwebassets\\images\\gallery-img-02.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-03.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-03.jpg",
       "PackagePath": "staticwebassets\\images\\gallery-img-03.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-04.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-04.jpg",
       "PackagePath": "staticwebassets\\images\\gallery-img-04.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-05.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-05.jpg",
       "PackagePath": "staticwebassets\\images\\gallery-img-05.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-06.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-06.jpg",
       "PackagePath": "staticwebassets\\images\\gallery-img-06.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-07.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-07.jpg",
       "PackagePath": "staticwebassets\\images\\gallery-img-07.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-08.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-08.jpg",
       "PackagePath": "staticwebassets\\images\\gallery-img-08.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-09.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-09.jpg",
       "PackagePath": "staticwebassets\\images\\gallery-img-09.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-10.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-10.jpg",
       "PackagePath": "staticwebassets\\images\\gallery-img-10.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-11.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-11.jpg",
       "PackagePath": "staticwebassets\\images\\gallery-img-11.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-12.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-12.jpg",
       "PackagePath": "staticwebassets\\images\\gallery-img-12.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-1.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\img-1.jpg",
       "PackagePath": "staticwebassets\\images\\img-1.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-2.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\img-2.jpg",
       "PackagePath": "staticwebassets\\images\\img-2.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-3.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\img-3.jpg",
       "PackagePath": "staticwebassets\\images\\img-3.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-01.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-01.jpg",
       "PackagePath": "staticwebassets\\images\\img-pro-01.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-02.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-02.jpg",
       "PackagePath": "staticwebassets\\images\\img-pro-02.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-03.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-03.jpg",
       "PackagePath": "staticwebassets\\images\\img-pro-03.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-04.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-04.jpg",
       "PackagePath": "staticwebassets\\images\\img-pro-04.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-05.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-05.jpg",
       "PackagePath": "staticwebassets\\images\\img-pro-05.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-06.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-06.jpg",
       "PackagePath": "staticwebassets\\images\\img-pro-06.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-07.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-07.jpg",
       "PackagePath": "staticwebassets\\images\\img-pro-07.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\ins-bg.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\ins-bg.jpg",
       "PackagePath": "staticwebassets\\images\\ins-bg.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-01.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-01.jpg",
       "PackagePath": "staticwebassets\\images\\instagram-img-01.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-02.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-02.jpg",
       "PackagePath": "staticwebassets\\images\\instagram-img-02.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-03.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-03.jpg",
       "PackagePath": "staticwebassets\\images\\instagram-img-03.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-04.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-04.jpg",
       "PackagePath": "staticwebassets\\images\\instagram-img-04.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-05.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-05.jpg",
       "PackagePath": "staticwebassets\\images\\instagram-img-05.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-06.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-06.jpg",
       "PackagePath": "staticwebassets\\images\\instagram-img-06.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-07.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-07.jpg",
       "PackagePath": "staticwebassets\\images\\instagram-img-07.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-08.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-08.jpg",
       "PackagePath": "staticwebassets\\images\\instagram-img-08.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-09.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-09.jpg",
       "PackagePath": "staticwebassets\\images\\instagram-img-09.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\logo.png",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\1.png",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\1.png",
       "PackagePath": "staticwebassets\\images\\payment-icon\\1.png"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\2.png",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\2.png",
       "PackagePath": "staticwebassets\\images\\payment-icon\\2.png"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\3.png",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\3.png",
       "PackagePath": "staticwebassets\\images\\payment-icon\\3.png"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\4.png",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\4.png",
       "PackagePath": "staticwebassets\\images\\payment-icon\\4.png"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\5.png",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\5.png",
       "PackagePath": "staticwebassets\\images\\payment-icon\\5.png"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\6.png",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\6.png",
       "PackagePath": "staticwebassets\\images\\payment-icon\\6.png"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\7.png",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\7.png",
       "PackagePath": "staticwebassets\\images\\payment-icon\\7.png"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\smp-img-01.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\smp-img-01.jpg",
       "PackagePath": "staticwebassets\\images\\smp-img-01.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\smp-img-02.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\smp-img-02.jpg",
       "PackagePath": "staticwebassets\\images\\smp-img-02.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\smp-img-03.jpg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\images\\smp-img-03.jpg",
       "PackagePath": "staticwebassets\\images\\smp-img-03.jpg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\baguetteBox.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\baguetteBox.min.js",
       "PackagePath": "staticwebassets\\js\\baguetteBox.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\bootsnav.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\bootsnav.js",
       "PackagePath": "staticwebassets\\js\\bootsnav.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\bootstrap-select.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\bootstrap-select.js",
       "PackagePath": "staticwebassets\\js\\bootstrap-select.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\contact-form-script.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\contact-form-script.js",
       "PackagePath": "staticwebassets\\js\\contact-form-script.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\custom.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\custom.js",
       "PackagePath": "staticwebassets\\js\\custom.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\form-validator.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\form-validator.min.js",
       "PackagePath": "staticwebassets\\js\\form-validator.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\images-loded.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\images-loded.min.js",
       "PackagePath": "staticwebassets\\js\\images-loded.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\inewsticker.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\inewsticker.js",
       "PackagePath": "staticwebassets\\js\\inewsticker.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\isotope.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\isotope.min.js",
       "PackagePath": "staticwebassets\\js\\isotope.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\jquery-3.2.1.min.js",
       "PackagePath": "staticwebassets\\js\\jquery-3.2.1.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\jquery-ui.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\jquery-ui.js",
       "PackagePath": "staticwebassets\\js\\jquery-ui.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\jquery.nicescroll.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\jquery.nicescroll.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.nicescroll.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\jquery.superslides.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\jquery.superslides.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.superslides.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\owl.carousel.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\popper.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\js\\popper.min.js",
       "PackagePath": "staticwebassets\\js\\popper.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.eot",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.eot",
       "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.eot"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.svg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.svg",
       "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.svg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.woff",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.woff",
       "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.eot",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.eot",
       "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.eot"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.svg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.svg",
       "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.svg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.woff",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.woff",
       "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.eot",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.eot",
       "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.eot"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.svg",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.svg",
       "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.svg"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.woff",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.woff",
       "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff"
     },
     {
-      "Id": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "Id": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff2"
     },
     {

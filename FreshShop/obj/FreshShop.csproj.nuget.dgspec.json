@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FreshShops\\FreshShop\\FreshShop.csproj": {}
+    "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\FreshShop.csproj": {}
   },
   "projects": {
-    "D:\\FreshShops\\FreshShop\\FreshShop.csproj": {
+    "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\FreshShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FreshShops\\FreshShop\\FreshShop.csproj",
+        "projectUniqueName": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\FreshShop.csproj",
         "projectName": "FreshShop",
-        "projectPath": "D:\\FreshShops\\FreshShop\\FreshShop.csproj",
-        "packagesPath": "C:\\Users\\t\\.nuget\\packages\\",
-        "outputPath": "D:\\FreshShops\\FreshShop\\obj\\",
+        "projectPath": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\FreshShop.csproj",
+        "packagesPath": "C:\\Users\\Hoang Tran\\.nuget\\packages\\",
+        "outputPath": "D:\\work\\Workspace\\VisualStudio\\FreshShop\\FreshShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\t\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hoang Tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
