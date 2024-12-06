@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PeSz1aCR8a+Uo9Yikj4luWlIrsEl+3wViljFQa/NCBM=",
+  "Hash": "rAdtOgiUCPanHEAZm+m6WHtmIDApA28kwsOaV3smJZk=",
   "Source": "FreshShop",
   "BasePath": "_content/FreshShop",
   "Mode": "Default",
@@ -1592,6 +1592,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\bootstrap-select.js"
+    },
+    {
+      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\cart.js",
+      "SourceId": "FreshShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "BasePath": "_content/FreshShop",
+      "RelativePath": "js/cart.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\cart.js"
     },
     {
       "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\contact-form-script.js",

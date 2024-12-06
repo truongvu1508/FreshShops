@@ -389,3 +389,4 @@ E:\1HK\1HK124\124_LWNC03\project_cuoiky\FreshShop\FreshShop\bin\Debug\net6.0\run
 E:\1HK\1HK124\124_LWNC03\project_cuoiky\FreshShop\FreshShop\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\1HK\1HK124\124_LWNC03\project_cuoiky\FreshShop\FreshShop\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 E:\1HK\1HK124\124_LWNC03\project_cuoiky\FreshShop\FreshShop\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\1HK\1HK124\124_LWNC03\project_cuoiky\FreshShop\FreshShop\obj\Debug\net6.0\FreshShop.sourcelink.json
