@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FreshShop.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20241204032626_FirstMigration")]
+    [Migration("20241205115050_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

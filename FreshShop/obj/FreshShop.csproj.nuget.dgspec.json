@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\FreshShop.csproj": {}
+    "D:\\FreshShops\\FreshShop\\FreshShop.csproj": {}
   },
   "projects": {
-    "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\FreshShop.csproj": {
+    "D:\\FreshShops\\FreshShop\\FreshShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\FreshShop.csproj",
+        "projectUniqueName": "D:\\FreshShops\\FreshShop\\FreshShop.csproj",
         "projectName": "FreshShop",
-        "projectPath": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\FreshShop.csproj",
-        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\obj\\",
+        "projectPath": "D:\\FreshShops\\FreshShop\\FreshShop.csproj",
+        "packagesPath": "C:\\Users\\t\\.nuget\\packages\\",
+        "outputPath": "D:\\FreshShops\\FreshShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\t\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

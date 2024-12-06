@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PeSz1aCR8a+Uo9Yikj4luWlIrsEl+3wViljFQa/NCBM=",
+  "Hash": "WLJXsi/T70+dSZL/BHmu0uJr2/h1e7GMf0wGIAo6J5s=",
   "Source": "FreshShop",
   "BasePath": "_content/FreshShop",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "FreshShop\\wwwroot",
       "Source": "FreshShop",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\bundle\\FreshShop.styles.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\bundle\\FreshShop.styles.css",
       "SourceId": "FreshShop",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "FreshShop.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\bundle\\FreshShop.styles.css"
+      "OriginalItemSpec": "D:\\FreshShops\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\bundle\\FreshShop.styles.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FreshShop.bundle.scp.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FreshShop.bundle.scp.css",
       "SourceId": "FreshShop",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "FreshShop.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FreshShop.bundle.scp.css"
+      "OriginalItemSpec": "D:\\FreshShops\\FreshShop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FreshShop.bundle.scp.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\all.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\all.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/all.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\all.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\animate.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\animate.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/animate.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\animate.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\baguetteBox.min.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\baguetteBox.min.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/baguetteBox.min.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\baguetteBox.min.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\bootsnav.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\bootsnav.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/bootsnav.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootsnav.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\bootstrap.min.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\bootstrap-select.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\bootstrap-select.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/bootstrap-select.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-select.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\carousel-ticker.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\carousel-ticker.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/carousel-ticker.css",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\carousel-ticker.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\code_animate.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\code_animate.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/code_animate.css",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\code_animate.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\custom.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\custom.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/custom.css",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\custom.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\jquery-ui.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\jquery-ui.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/jquery-ui.css",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\css\\jquery-ui.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\owl.carousel.min.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\owl.carousel.min.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/owl.carousel.min.css",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\css\\owl.carousel.min.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\responsive.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\responsive.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/responsive.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\css\\responsive.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\style.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\style.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\superslides.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\css\\superslides.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "css/superslides.css",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\css\\superslides.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\favicon.ico",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\favicon.ico",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\about-img.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\about-img.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/about-img.jpg",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\about-img.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\add-img-01.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\add-img-01.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/add-img-01.jpg",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\add-img-01.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\add-img-02.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\add-img-02.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/add-img-02.jpg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\add-img-02.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\all-bg-title.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\all-bg-title.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/all-bg-title.jpg",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\all-bg-title.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\apple-touch-icon.png",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\apple-touch-icon.png",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/apple-touch-icon.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\apple-touch-icon.png"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\banner-01.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\banner-01.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/banner-01.jpg",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner-01.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\banner-02.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\banner-02.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/banner-02.jpg",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner-02.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\banner-03.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\banner-03.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/banner-03.jpg",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner-03.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\big-img-01.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\big-img-01.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/big-img-01.jpg",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\images\\big-img-01.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\big-img-02.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\big-img-02.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/big-img-02.jpg",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\big-img-02.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\big-img-03.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\big-img-03.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/big-img-03.jpg",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\images\\big-img-03.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\blog-img.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\blog-img.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/blog-img.jpg",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\images\\blog-img.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\blog-img-01.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\blog-img-01.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/blog-img-01.jpg",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\images\\blog-img-01.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\blog-img-02.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\blog-img-02.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/blog-img-02.jpg",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\images\\blog-img-02.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\categories_img_01.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\categories_img_01.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/categories_img_01.jpg",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories_img_01.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\categories_img_02.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\categories_img_02.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/categories_img_02.jpg",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories_img_02.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\categories_img_03.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\categories_img_03.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/categories_img_03.jpg",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories_img_03.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\contact-bg.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\contact-bg.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/contact-bg.jpg",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\images\\contact-bg.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\favicon.ico",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\favicon.ico",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/favicon.ico",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\images\\favicon.ico"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-01.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-01.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/gallery-img-01.jpg",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-img-01.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-02.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-02.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/gallery-img-02.jpg",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-img-02.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-03.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-03.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/gallery-img-03.jpg",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-img-03.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-04.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-04.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/gallery-img-04.jpg",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-img-04.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-05.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-05.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/gallery-img-05.jpg",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-img-05.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-06.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-06.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/gallery-img-06.jpg",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-img-06.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-07.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-07.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/gallery-img-07.jpg",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-img-07.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-08.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-08.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/gallery-img-08.jpg",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-img-08.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-09.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-09.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/gallery-img-09.jpg",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-img-09.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-10.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-10.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/gallery-img-10.jpg",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-img-10.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-11.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-11.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/gallery-img-11.jpg",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-img-11.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\gallery-img-12.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\gallery-img-12.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/gallery-img-12.jpg",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-img-12.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-1.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-1.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/img-1.jpg",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\images\\img-1.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-2.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-2.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/img-2.jpg",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\images\\img-2.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-3.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-3.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/img-3.jpg",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\images\\img-3.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-01.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-01.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/img-pro-01.jpg",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\images\\img-pro-01.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-02.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-02.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/img-pro-02.jpg",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\images\\img-pro-02.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-03.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-03.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/img-pro-03.jpg",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\images\\img-pro-03.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-04.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-04.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/img-pro-04.jpg",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\images\\img-pro-04.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-05.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-05.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/img-pro-05.jpg",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\images\\img-pro-05.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-06.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-06.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/img-pro-06.jpg",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\images\\img-pro-06.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\img-pro-07.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\img-pro-07.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/img-pro-07.jpg",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\img-pro-07.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\ins-bg.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\ins-bg.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/ins-bg.jpg",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ins-bg.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-01.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-01.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/instagram-img-01.jpg",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram-img-01.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-02.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-02.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/instagram-img-02.jpg",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram-img-02.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-03.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-03.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/instagram-img-03.jpg",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram-img-03.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-04.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-04.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/instagram-img-04.jpg",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram-img-04.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-05.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-05.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/instagram-img-05.jpg",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram-img-05.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-06.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-06.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/instagram-img-06.jpg",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram-img-06.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-07.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-07.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/instagram-img-07.jpg",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram-img-07.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-08.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-08.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/instagram-img-08.jpg",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram-img-08.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\instagram-img-09.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\instagram-img-09.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/instagram-img-09.jpg",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram-img-09.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\logo.png",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\logo.png",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/logo.png",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\1.png",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\1.png",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/payment-icon/1.png",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\images\\payment-icon\\1.png"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\2.png",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\2.png",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/payment-icon/2.png",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\images\\payment-icon\\2.png"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\3.png",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\3.png",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/payment-icon/3.png",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\images\\payment-icon\\3.png"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\4.png",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\4.png",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/payment-icon/4.png",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\images\\payment-icon\\4.png"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\5.png",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\5.png",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/payment-icon/5.png",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\images\\payment-icon\\5.png"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\6.png",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\6.png",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/payment-icon/6.png",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\payment-icon\\6.png"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\payment-icon\\7.png",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\payment-icon\\7.png",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/payment-icon/7.png",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\images\\payment-icon\\7.png"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\smp-img-01.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\smp-img-01.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/smp-img-01.jpg",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\images\\smp-img-01.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\smp-img-02.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\smp-img-02.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/smp-img-02.jpg",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\images\\smp-img-02.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\images\\smp-img-03.jpg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\images\\smp-img-03.jpg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "images/smp-img-03.jpg",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\images\\smp-img-03.jpg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\baguetteBox.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\baguetteBox.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/baguetteBox.min.js",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\js\\baguetteBox.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\bootsnav.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\bootsnav.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/bootsnav.js",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootsnav.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\bootstrap-select.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\bootstrap-select.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/bootstrap-select.js",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap-select.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\contact-form-script.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\contact-form-script.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/contact-form-script.js",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\js\\contact-form-script.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\custom.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\custom.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/custom.js",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\js\\custom.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\form-validator.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\form-validator.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/form-validator.min.js",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\js\\form-validator.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\images-loded.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\images-loded.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/images-loded.min.js",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\js\\images-loded.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\inewsticker.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\inewsticker.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/inewsticker.js",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\js\\inewsticker.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\isotope.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\isotope.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/isotope.min.js",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\js\\isotope.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\jquery.nicescroll.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\jquery.nicescroll.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/jquery.nicescroll.min.js",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.nicescroll.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\jquery.superslides.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\jquery.superslides.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/jquery.superslides.min.js",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.superslides.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\jquery-3.2.1.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/jquery-3.2.1.min.js",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-3.2.1.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\jquery-ui.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\jquery-ui.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/jquery-ui.js",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-ui.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\owl.carousel.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\owl.carousel.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/owl.carousel.min.js",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\js\\owl.carousel.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\popper.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\js\\popper.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "js/popper.min.js",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\js\\popper.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2240,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2259,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2297,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2316,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2335,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2354,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2373,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2392,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2411,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2430,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2449,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2468,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2487,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2506,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2525,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2544,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2563,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2582,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2620,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2639,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2658,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2677,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2696,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2715,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2734,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2753,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2772,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2791,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2810,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2829,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2848,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2867,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2886,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2905,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.eot",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.eot",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-brands-400.eot",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-brands-400.eot"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.svg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.svg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-brands-400.svg",
       "AssetKind": "All",
@@ -2943,10 +2943,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-brands-400.svg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.ttf",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -2962,10 +2962,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.woff",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.woff",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-brands-400.woff",
       "AssetKind": "All",
@@ -2981,10 +2981,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-brands-400.woff"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-brands-400.woff2",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -3000,10 +3000,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.eot",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.eot",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-regular-400.eot",
       "AssetKind": "All",
@@ -3019,10 +3019,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-regular-400.eot"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.svg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.svg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-regular-400.svg",
       "AssetKind": "All",
@@ -3038,10 +3038,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-regular-400.svg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.ttf",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -3057,10 +3057,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.woff",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.woff",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-regular-400.woff",
       "AssetKind": "All",
@@ -3076,10 +3076,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-regular-400.woff"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-regular-400.woff2",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -3095,10 +3095,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.eot",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.eot",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-solid-900.eot",
       "AssetKind": "All",
@@ -3114,10 +3114,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-solid-900.eot"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.svg",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.svg",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-solid-900.svg",
       "AssetKind": "All",
@@ -3133,10 +3133,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-solid-900.svg"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.ttf",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -3152,10 +3152,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.woff",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.woff",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-solid-900.woff",
       "AssetKind": "All",
@@ -3171,10 +3171,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-solid-900.woff"
     },
     {
-      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "Identity": "D:\\FreshShops\\FreshShop\\wwwroot\\webfonts\\fa-solid-900.woff2",
       "SourceId": "FreshShop",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "ContentRoot": "D:\\FreshShops\\FreshShop\\wwwroot\\",
       "BasePath": "_content/FreshShop",
       "RelativePath": "webfonts/fa-solid-900.woff2",
       "AssetKind": "All",
