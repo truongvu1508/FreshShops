@@ -1,0 +1,59 @@
+﻿@model IEnumerable<OrderModel>
+@{
+	ViewData["title"] = "Order";
+}
+@if (TempData["Success"] != null)
+{
+	<div class="alert alert-success">
+		@TempData["success"]
+	</div>
+}
+<h4>Danh sách các Order</h4>
+<table class="table table-striped" id="myTable">
+	<thead>
+		<tr>
+			<th scope="col">Mã đặt hàng</th>
+			<th scope="col">Người đặt hàng</th>
+			<th scope="col">Ngày đặt hàng</th>
+			<th scope="col">Trạng thái</th>
+			<th scope="col">Hành động</th>
+			<th></th>
+			
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<th scope="row">@item.OrderCode</th>
+				<td>@item.UserName</td>
+				<td>@item.CreatedDate</td>
+				
+				<td>
+					@if (item.Status == 1)
+					{
+						<span class="text text-danger">
+							Đơn hàng mới 
+						</span>
+					}
+					else
+					{
+						<span class="text text-success">
+							Đơn hàng thành công
+						</span>
+					}
+				</td>
+				<td>
+					<a class="btn btn-warning btn-sm"
+					   asp-action="ViewOrder"
+					   asp-controller="Order"
+					   asp-route-ordercode="@item.OrderCode"
+					   asp-route-orderStatus="@item.Status">Xem đơn hàng</a>
+
+
+					<a class="btn btn-danger btn-sm" asp-action="Delete" asp-controller="Order" asp-route-Id="@item.Id" onclick="return confirm('Bạn có chắc chắn rằng xóa đơn hàng này không?');">Xóa</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
