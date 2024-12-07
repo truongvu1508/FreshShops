@@ -1,0 +1,51 @@
+﻿@model OrderDetails
+@{
+    ViewData["title"] = "Cập nhật đơn hàng";
+}
+
+@if (TempData["error"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["error"]
+    </div>
+}
+
+<h4>Cập nhật đơn hàng - Mã: @Model.OrderCode</h4>
+
+<div class="col-md-9">
+    <form asp-action="ViewOrderEdit" asp-route-id="@Model.Id" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label>Tên sản phẩm</label>
+            <input asp-for="Product.Name" class="form-control" disabled />
+            <input type="hidden" asp-for="ProductId" />
+            <span asp-validation-for="Product.Name" class="text-danger" />
+        </div>
+
+
+        <div class="form-group">
+            <label>Số lượng</label>
+            <input asp-for="Quantity" class="form-control" type="number" min="1" />
+            <span asp-validation-for="Quantity" class="text-danger" />
+        </div>
+
+        <div class="form-group">
+            <label>Đơn giá</label>
+            <input asp-for="Product.Price" class="form-control" disabled />
+            <span asp-validation-for="Product.Price" class="text-danger" />
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Cập nhật</button>
+        </div>
+    </form>
+
+    <a asp-action="ViewOrder" asp-route-orderCode="@Model.OrderCode" class="btn btn-warning btn-sm">Về trang trước</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
