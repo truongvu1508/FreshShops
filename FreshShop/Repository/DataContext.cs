@@ -15,9 +15,11 @@ namespace FreshShop.Repository
         public DbSet<OrderModel> Orders { get; set; }
         public DbSet<OrderDetails> OrderDetails { get; set; }
 		public DbSet<CouponModel> Coupons { get; set; }
+        public DbSet<ProductQuantityModel> ProductQuantities { get; set; }
+        public DbSet<SliderModel> Sliders { get; set; }
 
 
-		protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 

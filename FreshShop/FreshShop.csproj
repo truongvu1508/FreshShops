@@ -37,8 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
-    <Folder Include="Migrations\" />
+    <Folder Include="wwwroot\media\products\" />
   </ItemGroup>
 
 </Project>
