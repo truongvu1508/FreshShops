@@ -1,0 +1,228 @@
+﻿@model ShippingModel
+@{
+    ViewData["title"] = "Quản lý chi phí vận chuyển";
+}
+
+<style type="text/css">
+    .css_select_div {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .css_select {
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+        margin: 0 10px 20px 10px;
+        border: solid 1px #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .form-container {
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+
+    .alert {
+        margin-bottom: 20px;
+    }
+</style>
+
+<!-- Hiển thị thông báo nếu có -->
+@if (TempData["success"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["success"]
+    </div>
+}
+@if (TempData["error"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["error"]
+    </div>
+}
+
+<h2 class="text-center">Quản lý chi phí vận chuyển</h2>
+
+<div class="form-container">
+    <h4 class="mb-4">Tạo mới chi phí vận chuyển</h4>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="css_select_div">
+        <select class="css_select" id="tinh" name="tinh" title="Chọn Tỉnh Thành">
+            <option value="0">Chọn Tỉnh/Thành phố</option>
+        </select>
+        <select class="css_select" id="quan" name="quan" title="Chọn Quận Huyện">
+            <option value="0">Chọn Quận/Huyện</option>
+        </select>
+        <select class="css_select" id="phuong" name="phuong" title="Chọn Phường Xã">
+            <option value="0">Chọn Phường/Xã</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="price-shipping">Nhập giá (VNĐ):</label>
+        <input asp-for="Price" id="price-shipping" class="form-control" placeholder="Nhập giá vận chuyển" />
+    </div>
+
+    <div class="form-group text-center">
+        <button type="button" class="btn btn-primary btn-add-shipping">Tạo mới</button>
+    </div>
+</div>
+
+<h4 class="mt-5">Danh sách chi phí vận chuyển</h4>
+
+<table class="table table-bordered table-hover" id="myTable">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Tỉnh/Thành phố</th>
+            <th scope="col">Quận/Huyện</th>
+            <th scope="col">Phường/Xã</th>
+            <th scope="col">Giá (VNĐ)</th>
+            <th scope="col">Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var shipping in ViewBag.Shipping)
+        {
+            <tr>
+                <td>@shipping.City</td>
+                <td>@shipping.District</td>
+                <td>@shipping.Ward</td>
+                <td>@shipping.Price.ToString("#,##0 VNĐ")</td>
+                <td>
+                    <button type="button" class="btn btn-danger btn-sm btn-delete" data-url="@Url.Action("Delete", "Shipping", new { id = shipping.Id })">Xóa</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        // Xử lý xác nhận xóa
+        $(".btn-delete").click(function () {
+            var deleteUrl = $(this).data("url");
+
+            Swal.fire({
+                title: 'Bạn có chắc chắn muốn xóa?',
+                text: "Hành động này không thể hoàn tác!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Có, xóa nó!',
+                cancelButtonText: 'Hủy'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Chuyển hướng để thực hiện xóa
+                    window.location.href = deleteUrl;
+                }
+            });
+        });
+
+
+        // Thêm shipping mới
+        $(document).ready(function () {
+            // Lấy tỉnh thành từ API
+            $.getJSON('https://esgoo.net/api-tinhthanh/1/0.htm', function (data_tinh) {
+                if (data_tinh.error == 0) {
+                    $.each(data_tinh.data, function (key_tinh, val_tinh) {
+                        $("#tinh").append('<option value="' + val_tinh.id + '">' + val_tinh.full_name + '</option>');
+                    });
+
+                    // Khi chọn tỉnh thành
+                    $("#tinh").change(function () {
+                        var idtinh = $(this).val();
+                        $("#quan").html('<option value="0">Chọn Quận/Huyện</option>');
+                        $("#phuong").html('<option value="0">Chọn Phường/Xã</option>');
+
+                        $.getJSON('https://esgoo.net/api-tinhthanh/2/' + idtinh + '.htm', function (data_quan) {
+                            if (data_quan.error == 0) {
+                                $.each(data_quan.data, function (key_quan, val_quan) {
+                                    $("#quan").append('<option value="' + val_quan.id + '">' + val_quan.full_name + '</option>');
+                                });
+                            }
+                        });
+                    });
+
+                    // Khi chọn quận huyện
+                    $("#quan").change(function () {
+                        var idquan = $(this).val();
+                        $("#phuong").html('<option value="0">Chọn Phường/Xã</option>');
+
+                        $.getJSON('https://esgoo.net/api-tinhthanh/3/' + idquan + '.htm', function (data_phuong) {
+                            if (data_phuong.error == 0) {
+                                $.each(data_phuong.data, function (key_phuong, val_phuong) {
+                                    $("#phuong").append('<option value="' + val_phuong.id + '">' + val_phuong.full_name + '</option>');
+                                });
+                            }
+                        });
+                    });
+                }
+            });
+
+            // Xử lý thêm mới shipping
+            $(".btn-add-shipping").click(function () {
+                var tinh = $("#tinh").find('option:selected').text();
+                var quan = $("#quan").find('option:selected').text();
+                var phuong = $("#phuong").find('option:selected').text();
+                var price = $("#price-shipping").val();
+
+                if (tinh === "Chọn Tỉnh/Thành phố" || quan === "Chọn Quận/Huyện" || phuong === "Chọn Phường/Xã" || price.trim() === "") {
+                    Swal.fire("Làm ơn không bỏ trống dữ liệu!");
+                    return;
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("StoreShipping", "Shipping")",
+                    data: {
+                        tinh: tinh,
+                        quan: quan,
+                        phuong: phuong,
+                        price: parseFloat(price)
+                    },
+                    success: function (result) {
+                        if (result.success) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Thành công',
+                                text: result.message
+                            }).then(() => {
+                                location.reload();
+                            });
+                        } else if (result.duplicate) {
+                            Swal.fire({
+                                icon: 'warning',
+                                title: 'Cảnh báo',
+                                text: result.message
+                            });
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Lỗi',
+                                text: result.message || 'Có lỗi xảy ra.'
+                            });
+                        }
+                    },
+                    error: function (xhr) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Lỗi',
+                            text: 'Không thể thêm shipping. Mã lỗi: ' + xhr.status
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+}
