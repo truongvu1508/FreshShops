@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using FreshShop.Models;
 using Microsoft.AspNetCore.Authorization;
 using FreshShop.Data;
-namespace FreshShop.Controllers
-{
+namespace FreshShop.Areas.Admin.Controllers{
+
     [Authorize(Roles = RoleName.Administrator)]
+    [Area("Admin")]
+    [Route("/Admin/[action]")]
     public class AdminHomeController : Controller
     {
         private readonly ILogger<AdminHomeController> _logger;

@@ -26,7 +26,7 @@
         <!-- partial:~/partials/_navbar.html -->
         <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <a asp-controller="AdminHome" asp-action="Index" class="navbar-brand brand-logo"><img
+                <a asp-area="Admin" asp-controller="AdminHome" asp-action="Index" class="navbar-brand brand-logo"><img
                         src="~/assets/images/logo.svg" alt="logo" /></a>
                 <a asp-controller="AdminHome" asp-action="Index" class="navbar-brand brand-logo-mini"><img
                         src="~/assets/images/logo-mini.svg" alt="logo" /></a>
@@ -243,19 +243,19 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index">
-                            <span class="icon-bg"><i class="fa-brands fa-product-hunt menu-icon" style="color: #65c649;"></i></i></span>
+                            <span class="icon-bg"><i class="fa-brands fa-product-hunt menu-icon" style="color: #65c649;"></i></span>
                             <span class="menu-title">Products</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">
-                            <span class="icon-bg"><i class="fa-solid fa-list menu-icon" style="color: #65c649;"></i></i></span>
+                            <span class="icon-bg"><i class="fa-solid fa-list menu-icon" style="color: #65c649;"></i></span>
                             <span class="menu-title">Categories</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-area="Admin" asp-controller="Order" asp-action="Index">
-                            <span class="icon-bg"><i class="fa-solid fa-cart-shopping" style="color: #65c649;"></i></i></span>
+                            <span class="icon-bg"><i class="fa-solid fa-cart-shopping menu-icon" style="color: #65c649;"></i></span>
                             <span class="menu-title">Orders</span>
                         </a>
                     </li>

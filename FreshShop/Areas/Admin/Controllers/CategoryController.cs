@@ -1,5 +1,7 @@
-﻿using FreshShop.Models;
+﻿using FreshShop.Data;
+using FreshShop.Models;
 using FreshShop.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -7,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FreshShop.Areas.Admin.Controllers
 {
+    [Authorize(Roles = RoleName.Administrator)]
     [Area("Admin")]
     public class CategoryController : Controller
     {

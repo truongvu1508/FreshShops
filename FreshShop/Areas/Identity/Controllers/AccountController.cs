@@ -85,11 +85,12 @@ namespace FreshShop.Areas.Identity.Controllers
                         // Kiểm tra vai trò của người dùng
                         if (await _userManager.IsInRoleAsync(user, "Administrator"))
                         {
-                            return RedirectToAction("Index", "AdminHome"); 
+                             return RedirectToAction("Index", "AdminHome", new { area = "Admin" });
+
                         }
                         else
                         {
-                            return RedirectToAction("Index", "Home"); 
+                            return RedirectToAction("Index", "Home",  new { area = "" }); 
                         }
                     }
 
