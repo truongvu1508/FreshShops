@@ -5,9 +5,7 @@
 @inject UserManager<AppUserModel> UserManager
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Fresh Shop - Admin</title>
@@ -242,15 +240,21 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="~/pages/icons/mdi.html">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index">
                             <span class="icon-bg"><i class="fa-brands fa-product-hunt menu-icon" style="color: #65c649;"></i></i></span>
                             <span class="menu-title">Products</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="~/pages/forms/basic_elements.html">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">
                             <span class="icon-bg"><i class="fa-solid fa-list menu-icon" style="color: #65c649;"></i></i></span>
                             <span class="menu-title">Categories</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Order" asp-action="Index">
+                            <span class="icon-bg"><i class="fa-solid fa-cart-shopping" style="color: #65c649;"></i></i></span>
+                            <span class="menu-title">Orders</span>
                         </a>
                     </li>
                     <li class="nav-item">

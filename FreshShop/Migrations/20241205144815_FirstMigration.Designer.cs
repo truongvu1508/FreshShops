@@ -11,11 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FreshShop.Migrations
 {
     [DbContext(typeof(DataContext))]
-<<<<<<<< HEAD:FreshShop/Migrations/20241205144815_FirstMigration.Designer.cs
     [Migration("20241205144815_FirstMigration")]
-========
-    [Migration("20241206051753_FirstMigration")]
->>>>>>>> master:FreshShop/Migrations/20241206051753_FirstMigration.Designer.cs
+
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
