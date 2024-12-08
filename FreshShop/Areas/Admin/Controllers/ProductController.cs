@@ -1,5 +1,7 @@
-﻿using FreshShop.Models;
+﻿using FreshShop.Data;
+using FreshShop.Models;
 using FreshShop.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +9,7 @@ using Microsoft.EntityFrameworkCore.Internal;
 
 namespace FreshShop.Areas.Admin.Controllers
 {
+    [Authorize(Roles = RoleName.Administrator)]
     [Area("Admin")]
     public class ProductController : Controller
     {
