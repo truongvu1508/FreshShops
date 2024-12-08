@@ -14,6 +14,7 @@ namespace FreshShop.Repository
         public DbSet<OrderModel> Orders { get; set; }
         public DbSet<OrderDetails> OrderDetails { get; set; }
 
+        public DbSet<ShippingModel> Shippings { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -30,6 +31,8 @@ namespace FreshShop.Repository
                 .HasMany(o => o.OrderDetails)
                 .WithOne(od => od.Order) // Liên kết Order với OrderDetails
                 .HasForeignKey(od => od.OrderId);
+
+
         }
     }
 }
