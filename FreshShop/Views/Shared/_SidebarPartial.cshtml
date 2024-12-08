@@ -1,4 +1,8 @@
-﻿<div class="product-categori">
+﻿@{
+    var currentUrl = Url.ActionContext.HttpContext.Request.Path;
+}
+
+<div class="product-categori">
     <div class="search-product">
         <form action="#">
             <input class="form-control" placeholder="Search here..." type="text">
@@ -17,13 +21,16 @@
     </div>
     <div class="filter-price-left">
         <div class="title-left">
-            <h3>Price</h3>
+            <h3>Lọc theo giá</h3>
         </div>
         <div class="price-box-slider">
-            <div id="slider-range"></div>
             <p>
-                <input type="text" id="amount" readonly style="border:0; color:#fbb714; font-weight:bold;">
-                <button class="btn hvr-hover" type="submit">Filter</button>
+                <label for="amount">Price range:</label>
+                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+            </p>
+            <div id="slider-range"></div>
+            <p class="mt-3">
+                <button name="locgia" data-current_url ="@currentUrl" class="btn btn-danger btn-locgia" type="submit">Lọc</button>
             </p>
         </div>
     </div>

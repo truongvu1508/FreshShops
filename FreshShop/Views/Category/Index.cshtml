@@ -312,3 +312,51 @@
     </div>
 </div>
 <!-- End Instagram Feed  -->
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            const formatter = new Intl.NumberFormat('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+            });
+
+            $(function () {
+                $("#slider-range").slider({
+                    range: true,
+                    min: 5000,
+                    max: 100000,
+                    step: 5000,
+                    values: [5000, 30000],
+                    slide: function (event, ui) {
+                        const minPrice = formatter.format(ui.values[0]);
+                        const maxPrice = formatter.format(ui.values[1]);
+                        $("#amount").val(minPrice + " - " + maxPrice);
+                    }
+                });
+
+                const initialMin = formatter.format($("#slider-range").slider("values", 0));
+                const initialMax = formatter.format($("#slider-range").slider("values", 1));
+                $("#amount").val(initialMin + " - " + initialMax);
+            });
+
+            // Sửa lại code xử lý nút lọc giá
+            $('.btn-locgia').on('click', function () {
+                const startPrice = $("#slider-range").slider("values", 0);
+                const endPrice = $("#slider-range").slider("values", 1);
+                const currentUrl = window.location.href;
+                const baseUrl = currentUrl.split('?')[0]; // Lấy URL cơ bản không có parameters
+
+                // Kiểm tra xem URL hiện tại có chứa Slug không
+                if (baseUrl.includes('/Category')) {
+                    const slug = '@ViewBag.CurrentSlug'; // Lấy slug từ ViewBag
+                    window.location = `/Category?Slug=${slug}&startprice=${startPrice}&endprice=${endPrice}`;
+                } else {
+                    window.location = `/?startprice=${startPrice}&endprice=${endPrice}`;
+                }
+                return false;
+            });
+        });
+    </script>
+}
