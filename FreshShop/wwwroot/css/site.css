@@ -8,11 +8,121 @@ html {
   }
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+body {
+    background: #fff;
+    color: #1d1d1f;
+    margin-bottom: 60px
 }
 
-body {
-  margin-bottom: 60px;
+html {
+    position: relative;
+    min-height: 100%
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px
+}
+
+.app-navbar {
+    background: #122153
+}
+
+    .app-navbar .text-dark {
+        color: #b9c3ce !important
+    }
+
+        .app-navbar .text-dark:hover {
+            color: #fff !important
+        }
+
+    .app-navbar .navbar-brand {
+        color: #fff
+    }
+
+        .app-navbar .navbar-brand:hover {
+            color: #888188 !important
+        }
+
+    .app-navbar .dropdown-toggle {
+        border-color: transparent !important;
+        color: #fff
+    }
+
+.categorysidebar li, .categorysidebar ul {
+    list-style: none;
+    padding-left: 10px
+}
+
+.categorysidebar a {
+    text-decoration: none
+}
+
+    .categorysidebar a:hover {
+        color: #a04747
+    }
+
+    .categorysidebar a.active {
+        color: red
+    }
+
+.categorysidebar > ul > li > a {
+    font-weight: 700
+}
+
+.categorysidebar h3 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    border-bottom: 1px solid #00f;
+    padding-bottom: 10px
+}
+
+.contact-firstcol {
+    background-color: #8b64d0;
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px
+}
+
+    .contact-firstcol h4 {
+        line-height: 40px;
+        font-weight: 400;
+        margin-top: 20px
+    }
+
+    .contact-firstcol img {
+        max-width: 100px
+    }
+
+.formcontact label {
+    font-weight: 700
+}
+
+.formcontact .btn-primary {
+    margin-top: 20px;
+    background-color: #8b64d0 !important;
+    border-color: #8b64d0
+}
+
+.app-footer {
+    background: #141414;
+    color: #fff;
+    text-align: center
+}
+
+.detailpost h1 {
+    font-weight: 300
+}
+
+.detailpost .sapo {
+    font-weight: 500;
+    font-style: italic
+}
+
+.detailpost img {
+    max-width: 100%
 }

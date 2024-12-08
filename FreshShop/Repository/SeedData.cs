@@ -1,6 +1,6 @@
 ﻿using FreshShop.Models;
 using Microsoft.EntityFrameworkCore;
-
+using FreshShop.Data; 
 namespace FreshShop.Repository
 {
     public class SeedData
@@ -31,6 +31,12 @@ namespace FreshShop.Repository
             //    );
             //    _context.SaveChanges();
             //}
+            //        new ProductModel { Name = "Banana", Slug = "banana", Description = "Trai chuoi", Image = "img-pro-01.jpg", Category = fruit , Price=50000},
+            //        new ProductModel { Name = "Ca rot", Slug = "carot", Description = "Cu ca rot", Image = "img-pro-02.jpg", Category = vegetable, Price = 50000 }
+            //    );
+            //    _context.SaveChanges();
+            //}
+            
         }
     }
 }
