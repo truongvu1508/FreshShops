@@ -46,9 +46,11 @@
     </div>
 </div>
 <!-- End Slider -->
+
 <!-- Start Shop Page  -->
 <div class="shop-box-inner">
     <div class="container">
+        @Html.Partial("_NotificationPartial")
         <div class="row">
             <div class="col-xl-9 col-lg-9 col-sm-12 col-xs-12 shop-content-right">
                 <div class="right-product-box">
@@ -98,7 +100,7 @@
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                        <a class="cart" asp-action="Add" asp-controller="Cart" asp-route-id="@item.Id">Add to Cart</a>
                                                     </div>
                                                 </div>
                                                 <a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id">
