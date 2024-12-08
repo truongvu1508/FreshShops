@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rAdtOgiUCPanHEAZm+m6WHtmIDApA28kwsOaV3smJZk=",
+  "Hash": "E3+gVNepFeP+yqjfOdCRE7fG8TAAx4rdQ7mxG9UMMt8=",
   "Source": "FreshShop",
   "BasePath": "_content/FreshShop",
   "Mode": "Default",
@@ -281,6 +281,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\responsive.css"
+    },
+    {
+      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\site.css",
+      "SourceId": "FreshShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "BasePath": "_content/FreshShop",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
       "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\css\\style.css",
@@ -1839,6 +1858,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\popper.min.js"
+    },
+    {
+      "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\js\\site.js",
+      "SourceId": "FreshShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\",
+      "BasePath": "_content/FreshShop",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "E:\\1HK\\1HK124\\124_LWNC03\\project_cuoiky\\FreshShop\\FreshShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

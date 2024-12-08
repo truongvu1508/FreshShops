@@ -125,7 +125,7 @@ namespace FreshShop.Controllers
             TempData["success"] = "Xóa sản phẩm thành công!";
             return RedirectToAction("Index");
         }
-        public async Task<IActionResult> Clear(int Id)
+        public async Task<IActionResult> Clear()
         {
             HttpContext.Session.Remove("Cart");
             return RedirectToAction("Index");
