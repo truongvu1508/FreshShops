@@ -2,7 +2,7 @@
 @{
     ViewData["title"] = "Product List";
 }
-@if (TempData["Success"] != null)
+@if (TempData["success"] != null)
 {
     <div class="alert alert-success">
         @TempData["success"]
@@ -15,6 +15,9 @@
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Product Name</th>
+            <th scope="col">Product Quantity</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Sold</th>
             <th scope="col">Product Description</th>
             <th scope="col">Product Price</th>
             <th scope="col">Product Image</th>
@@ -29,9 +32,12 @@
             <tr>
                 <th scope="row">@item.Id</th>
                 <td>@item.Name</td>
+                <td><a asp-controller="Product" asp-action="AddQuantity" asp-route-Id="@item.Id">Add Quantity</a></td>
+                <td>@item.Quantity</td>
+                <td>@item.Sold</td>
                 <td>@item.Description</td>
                 <td>@item.Price</td>
-                <td><img src="~/images/@item.Image" width="120" /></td>
+                <td><img src="~/media/products/@item.Image" width="120" /></td>
                 <td>@item.Slug</td>
                 <td>@item.Category.Name</td>
                 <td>

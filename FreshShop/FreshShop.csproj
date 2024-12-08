@@ -7,13 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Areas\Admin\Models\**" />
-    <Content Remove="Areas\Admin\Models\**" />
-    <EmbeddedResource Remove="Areas\Admin\Models\**" />
-    <None Remove="Areas\Admin\Models\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.36" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.36" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.36">
@@ -26,6 +19,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\media\slider\" />
+    <Folder Include="wwwroot\media\products\" />
   </ItemGroup>
 
 </Project>
