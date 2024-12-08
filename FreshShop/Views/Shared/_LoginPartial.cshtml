@@ -1,0 +1,24 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using FreshShop.Models
+
+@inject SignInManager<AppUserModel> SignInManager
+@inject UserManager<AppUserModel> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="login-box">
+        <form asp-area="Identity" asp-controller="Account" asp-action="LogOff" method="post" id="logoutForm">
+            <button type="submit" class="btn btn-danger btn-block">Đăng xuất</button>
+        </form>
+    </div>
+}
+else
+{
+    <div class="login-box">
+        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In" onchange="navigateToPage(this)">
+            <option value="" disabled selected>Chọn hành động</option>
+            <option value="/Account/Register">Đăng ký</option>
+            <option value="/login">Đăng nhập</option>
+        </select>
+    </div>
+}

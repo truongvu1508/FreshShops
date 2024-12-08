@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Admin Home Page";
+    Layout = "_LayoutAdmin.cshtml";
+}
+ @{
+    var thongbao = TempData["thongbao"];
+ }
+<div class="text-center">
+    <h1 class="display-4">Xin chào Admin</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p style="color: red;">@thongbao</p>
+</div>

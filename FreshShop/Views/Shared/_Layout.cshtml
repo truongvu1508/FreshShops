@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using FreshShop.Models
+
+@inject SignInManager<AppUserModel> SignInManager
+@inject UserManager<AppUserModel> UserManager
+
+<!DOCTYPE html>
 <html lang="en">
 <!-- Basic -->
 
@@ -54,19 +60,17 @@
                     </div>
                     <div class="our-link">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
+                             @if (SignInManager.IsSignedIn(User))
+                            {
+                                <li><a asp-controller="UserInfor" asp-action="Index"><i class="fa fa-user s_color"></i> My Account</a></li>
+                            }
                             <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
                             <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="login-box">
-                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
-                            <option>Register Here</option>
-                            <option>Sign In</option>
-                        </select>
-                    </div>
+                    <partial name="_LoginPartial" />
                     <div class="text-slid-box">
                         <div id="offer-box" class="carouselTicker">
                             <ul class="offer-box">
@@ -123,11 +127,22 @@
                         <li class="dropdown">
                             <a asp-controller="Product" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                             <ul class="dropdown-menu">
-                                <li><a asp-action="Index" asp-controller="Category">Category</a></li>
-                                <li><a asp-action="Details" asp-controller="Product">Shop Detail</a></li>
-                                <li><a asp-action="Index" asp-controller="Cart">Cart</a></li>
-                                <li><a asp-action="Checkout" asp-controller="Cart">Checkout</a></li>
-                                <li><a href="my-account.html">My Account</a></li>
+                                
+                                @if (SignInManager.IsSignedIn(User))
+                                {
+                                    <li><a asp-controller="UserInfor" asp-action="Index">My Account</a></li>
+                                    <li><a asp-action="Index" asp-controller="Category">Category</a></li>
+                                    <li><a asp-action="Details" asp-controller="Product">Shop Detail</a></li>
+                                    <li><a asp-action="Index" asp-controller="Cart">Cart</a></li>
+                                    <li><a asp-action="Checkout" asp-controller="Cart">Checkout</a></li> 
+                                }
+                                else{
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Category</a></li>
+                                    <li><a href="#">Shop Detail</a></li>
+                                    <li><a href="#">Cart</a></li>
+                                    <li><a href="#">Checkout</a></li>
+                                }
                                 <li><a href="wishlist.html">Wishlist</a></li>
                             </ul>
                         </li>
@@ -307,6 +322,15 @@
     <script src="~/js/form-validator.min.js"></script>
     <script src="~/js/contact-form-script.js"></script>
     <script src="~/js/custom.js"></script>
+    <script>
+        function navigateToPage(select) {
+            const url = select.value;
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 
 </html>
