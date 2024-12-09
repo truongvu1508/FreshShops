@@ -4,7 +4,7 @@ using FreshShop.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
-using FreshShop.Data;  // Thêm namespace chứa class RoleSeeder
+using FreshShop.Data;  
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +15,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 });
 var mailsetting = builder.Configuration.GetSection("MailSettings");
 builder.Services.Configure<MailSettings>(mailsetting);
-builder.Services.AddSingleton<IEmailSender, SendMailService>();
+builder.Services.AddTransient<IEmailSender, SendMailService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
