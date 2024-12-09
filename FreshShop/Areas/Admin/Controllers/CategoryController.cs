@@ -159,5 +159,21 @@ namespace FreshShop.Areas.Admin.Controllers
 
             return View(data);
         }
+
+        public async Task<IActionResult> Search(string search)
+        {
+       
+            var categories = from c in _dataContext.Categories
+                           select c;
+
+      
+            if (!string.IsNullOrEmpty(search))
+            {
+                categories = categories.Where(c => c.Name.ToLower().Contains(search.ToLower()));
+                ViewData["SearchTerm"] = search; 
+            }
+
+            return View("Index", await categories.ToListAsync());
+        }
     }
 }

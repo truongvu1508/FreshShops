@@ -1,53 +1,14 @@
-﻿@model IEnumerable<ProductModel>
+﻿@{
+	var currentUrl = Url.ActionContext.HttpContext.Request.Path;
+}
+@model IEnumerable<ProductModel>
 
 <!-- Start Slider -->
-<div id="slides-shop" class="cover-slides">
-	<ul class="slides-container">
-		<li class="text-center">
-			<img src="~/images/banner-01.jpg" alt="">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1 class="m-b-20"><strong>Welcome To <br> Freshshop</strong></h1>
-						<p class="m-b-40">See how your users experience your website in realtime or view <br> trends to
-							see any changes in performance over time.</p>
-						<p><a class="btn hvr-hover" href="#">Shop New</a></p>
-					</div>
-				</div>
-			</div>
-		</li>
-		<li class="text-center">
-			<img src="~/images/banner-02.jpg" alt="">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1 class="m-b-20"><strong>Welcome To <br> Freshshop</strong></h1>
-						<p class="m-b-40">See how your users experience your website in realtime or view <br> trends to
-							see any changes in performance over time.</p>
-						<p><a class="btn hvr-hover" href="#">Shop New</a></p>
-					</div>
-				</div>
-			</div>
-		</li>
-		<li class="text-center">
-			<img src="~/images/banner-03.jpg" alt="">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1 class="m-b-20"><strong>Welcome To <br> Freshshop</strong></h1>
-						<p class="m-b-40">See how your users experience your website in realtime or view <br> trends to
-							see any changes in performance over time.</p>
-						<p><a class="btn hvr-hover" href="#">Shop New</a></p>
-					</div>
-				</div>
-			</div>
-		</li>
-	</ul>
-	<div class="slides-navigation">
-		<a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-		<a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-	</div>
-</div>
+
+@{
+	var sliders = ViewBag.Sliders as IEnumerable<SliderModel>;
+	Html.RenderPartial("Slider", sliders);
+}
 <!-- End Slider -->
 <!-- Start Shop Page  -->
 <div class="shop-box-inner">
@@ -60,12 +21,15 @@
 						<div class="col-12 col-sm-8 text-center text-sm-left">
 							<div class="toolbar-sorter-right">
 								<span>Sort by </span>
-								<select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-									<option data-display="Select">Nothing</option>
-									<option value="1">Popularity</option>
-									<option value="2">High Price → High Price</option>
-									<option value="3">Low Price → High Price</option>
-									<option value="4">Best Selling</option>
+								@{
+									var currentSort = Context.Request.Query["sort_by"].ToString();
+								}
+								<select id="sort_by" class="selectpicker show-tick form-control" data-placeholder="$ USD">
+								<option value="" selected=@(currentSort == "")>Nothing</option>
+									<!-- <option value="1">Popularity</option> -->
+								<option value="price_desc" selected=@(currentSort == "price_desc")>High Price → Low Price</option>
+								<option value="price_inc" selected=@(currentSort == "price_inc")>Low Price → High Price</option>
+									<!-- <option value="4">Best Selling</option> -->
 								</select>
 							</div>
 							<p>Showing all @Model.Count() results</p>
@@ -73,12 +37,14 @@
 						<div class="col-12 col-sm-4 text-center text-sm-right">
 							<ul class="nav nav-tabs ml-auto">
 								<li>
-									<a class="nav-link active" href="#grid-view" data-toggle="tab"> <i
-											class="fa fa-th"></i> </a>
+									<a class="nav-link active" href="#grid-view" data-toggle="tab">
+										<i class="fa fa-th"></i>
+									</a>
 								</li>
 								<li>
-									<a class="nav-link" href="#list-view" data-toggle="tab"> <i
-											class="fa fa-list-ul"></i> </a>
+									<a class="nav-link" href="#list-view" data-toggle="tab">
+										<i class="fa fa-list-ul"></i>
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -100,14 +66,20 @@
 													<img src="~/media/products/@item.Image" class="img-fluid" alt="@item.Name">
 													<div class="mask-icon">
 														<ul>
-															<li><a href="#" data-toggle="tooltip" data-placement="right"
-																	title="View"><i class="fas fa-eye"></i></a></li>
-															<li><a href="#" data-toggle="tooltip" data-placement="right"
-																	title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-															<li><a href="#" data-toggle="tooltip" data-placement="right"
-																	title="Add to Wishlist"><i class="far fa-heart"></i></a>
+															<li>
+																<a href="#" data-toggle="tooltip" data-placement="right"
+																   title="View"><i class="fas fa-eye"></i></a>
+															</li>
+															<li>
+																<a href="#" data-toggle="tooltip" data-placement="right"
+																   title="Compare"><i class="fas fa-sync-alt"></i></a>
+															</li>
+															<li>
+																<a href="#" data-toggle="tooltip" data-placement="right"
+																   title="Add to Wishlist"><i class="far fa-heart"></i></a>
 															</li>
 														</ul>
+                            
 														@if(item.Quantity>0){
 														<a class="cart" asp-action="Add" asp-controller="Cart"
 															asp-route-id="@item.Id">Add to Cart</a>
@@ -116,6 +88,7 @@
 														{
 															<a class="cart" style="background:#990000">Hết hàng</a>
 														}
+
 													</div>
 												</div>
 												<a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id">
@@ -144,14 +117,20 @@
 														<img src="~/media/products/@item.Image" class="img-fluid" alt="@item.Name">
 														<div class="mask-icon">
 															<ul>
-																<li><a href="#" data-toggle="tooltip" data-placement="right"
-																		title="View"><i class="fas fa-eye"></i></a></li>
-																<li><a href="#" data-toggle="tooltip" data-placement="right"
-																		title="Compare"><i class="fas fa-sync-alt"></i></a>
+																<li>
+																	<a href="#" data-toggle="tooltip" data-placement="right"
+																	   title="View"><i class="fas fa-eye"></i></a>
 																</li>
-																<li><a href="#" data-toggle="tooltip" data-placement="right"
-																		title="Add to Wishlist"><i
-																			class="far fa-heart"></i></a></li>
+																<li>
+																	<a href="#" data-toggle="tooltip" data-placement="right"
+																	   title="Compare"><i class="fas fa-sync-alt"></i></a>
+																</li>
+																<li>
+																	<a href="#" data-toggle="tooltip" data-placement="right"
+																	   title="Add to Wishlist">
+																		<i class="far fa-heart"></i>
+																	</a>
+																</li>
 															</ul>
 														</div>
 													</div>
@@ -165,7 +144,7 @@
 														<h5>@item.Price <span>VND</span></h5>
 														<p>@Html.Raw(item.Description)</p>
 														<a class="btn hvr-hover" asp-action="Add" asp-controller="Cart"
-															asp-route-id="@item.Id">Add to Cart</a>
+														   asp-route-id="@item.Id">Add to Cart</a>
 													</div>
 
 												</div>
@@ -276,57 +255,90 @@
 	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 	<script>
-		$(document).ready(function () {
-			// Tạo format tiền VND
-			const formatter = new Intl.NumberFormat('vi-VN', {
-				style: 'currency',
-				currency: 'VND'
-			});
+		$(document).ready(function() {
+		    // Tạo format tiền VND
+		    const formatter = new Intl.NumberFormat('vi-VN', {
+		        style: 'currency',
+		        currency: 'VND'
+		    });
 
-			// Lấy giá trị từ URL parameters
-			function getUrlParameter(name) {
-				name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-				var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-				var results = regex.exec(location.search);
-				return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-			}
+		    // Lấy giá trị từ URL parameters
+		    function getUrlParameter(name) {
+		        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+		        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+		        var results = regex.exec(location.search);
+		        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+		    }
 
-			// Lấy giá trị startprice và endprice từ URL
-			const startPrice = parseInt(getUrlParameter('startprice')) || 5000;
-			const endPrice = parseInt(getUrlParameter('endprice')) || 30000;
+		    // Lấy giá trị startprice và endprice từ URL
+		    const startPrice = parseInt(getUrlParameter('startprice')) || 5000;
+		    const endPrice = parseInt(getUrlParameter('endprice')) || 30000;
+		    // Lấy giá trị sort_by từ URL
+		    const sortBy = getUrlParameter('sort_by');
+		    $(function() {
+		        $("#slider-range").slider({
+		            range: true,
+		            min: 5000,
+		            max: 100000,
+		            step: 5000,
+		            values: [startPrice, endPrice], // Sử dụng giá trị từ URL
+		            slide: function(event, ui) {
+		                const minPrice = formatter.format(ui.values[0]);
+		                const maxPrice = formatter.format(ui.values[1]);
+		                $("#amount").val(minPrice + " - " + maxPrice);
+		            }
+		        });
 
-			$(function () {
-				$("#slider-range").slider({
-					range: true,
-					min: 5000,
-					max: 100000,
-					step: 5000,
-					values: [startPrice, endPrice], // Sử dụng giá trị từ URL
-					slide: function (event, ui) {
-						const minPrice = formatter.format(ui.values[0]);
-						const maxPrice = formatter.format(ui.values[1]);
-						$("#amount").val(minPrice + " - " + maxPrice);
-					}
-				});
+		        // Format giá trị ban đầu sử dụng giá trị từ URL
+		        const initialMin = formatter.format($("#slider-range").slider("values", 0));
+		        const initialMax = formatter.format($("#slider-range").slider("values", 1));
+		        $("#amount").val(initialMin + " - " + initialMax);
+		    });
+		    // Set selected sort option
+		    if (sortBy) {
+		        $('#sort_by').val(sortBy);
+		    }
+		    // code btn lọc giá sản phẩm
+		    $('.btn-locgia').on('click', function() {
+		        var url = $(this).data("current_url");
+		        if (url) {
+		            var params = new URLSearchParams();
 
-				// Format giá trị ban đầu sử dụng giá trị từ URL
-				const initialMin = formatter.format($("#slider-range").slider("values", 0));
-				const initialMax = formatter.format($("#slider-range").slider("values", 1));
-				$("#amount").val(initialMin + " - " + initialMax);
-			});
+		            // Add price filter parameters
+		            params.set('startprice', $("#slider-range").slider("values", 0));
+		            params.set('endprice', $("#slider-range").slider("values", 1));
 
-			// code btn lọc giá sản phẩm
-			$('.btn-locgia').on('click', function () {
-				var url = $(this).data("current_url");
-				if (url) {
-					window.location = url + "?startprice=" + $("#slider-range").slider("values", 0) +
-						"&endprice=" + $("#slider-range").slider("values", 1);
-				}
-				return false;
-			});
-		}); 
+		            // Maintain sort parameter if exists
+		            if (sortBy) {
+		                params.set('sort_by', sortBy);
+		            }
+
+		            window.location = url + "?" + params.toString();
+		        }
+		        return false;
+		    });
+		});
 	</script>
+	<script>
+		$(document).ready(function() {
+			$('#sort_by').on('change', function() {
+				var sortValue = $(this).val();
+				if (sortValue && sortValue !== '') {
+				    // Get current URL parameters
+				    var params = new URLSearchParams(window.location.search);
 
+				    // Update or add sort_by parameter
+				    params.set('sort_by', sortValue);
+
+				    // Construct new URL
+				    var newUrl = window.location.pathname + '?' + params.toString();
+
+				    // Navigate to new URL
+				    window.location.href = newUrl;
+				}
+			});
+		});
+	</script>
 	<script>
 		$(document).ready(function () {
 			$('.add-btn-wishlist').click(function () {

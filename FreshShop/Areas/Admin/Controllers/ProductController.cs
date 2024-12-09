@@ -228,5 +228,23 @@ namespace FreshShop.Areas.Admin.Controllers
 
         }
 
+        public async Task<IActionResult> Search(string search)
+        {
+            // Lấy danh sách sản phẩm từ database
+            var products = from p in _dataContext.Products.Include(p => p.Category)
+                           select p;
+
+            // Nếu có từ khóa tìm kiếm, áp dụng bộ lọc tìm theo tên sản phẩm
+            if (!string.IsNullOrEmpty(search))
+            {
+                products = products.Where(p => p.Name.ToLower().Contains(search.ToLower()));
+                ViewData["SearchTerm"] = search; // Lưu từ khóa tìm kiếm để hiển thị lại
+            }
+
+            // Trả về View Index và danh sách sản phẩm
+            return View("Index", await products.ToListAsync());
+        }
+
+
     }
 }
