@@ -248,6 +248,12 @@
                             <span class="menu-title">Orders</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Slider" asp-action="Index">
+                            <span class="icon-bg"><i class="fa-solid fa-ticket menu-icon" style="color: #65c649;"></i></span>
+                            <span class="menu-title">Slide</span>
+                        </a>
+                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link" asp-area="Admin" asp-controller="Coupon" asp-action="Index">
@@ -353,6 +359,7 @@
     <script src="~/assets/js/off-canvas.js"></script>
     <script src="~/assets/js/hoverable-collapse.js"></script>
     <script src="~/assets/js/misc.js"></script>
+    <script src="~/backend/js/site.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 

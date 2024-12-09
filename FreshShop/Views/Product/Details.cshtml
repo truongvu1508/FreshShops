@@ -1,14 +1,10 @@
-<<<<<<< Updated upstream
-﻿<!-- Start Shop Detail  -->
-=======
 <!-- Start Shop Detail  -->
->>>>>>> Stashed changes
 <div class="shop-detail-box-main">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-5 col-lg-5 col-md-6">
 				<div id="carousel-example-1" class="single-product-slider carousel slide" data-ride="carousel">
-					<img class="d-block w-100" src="~/images/@Model.Image" alt="Third slide">
+					<img class="d-block w-100" src="~/media/products/@Model.Image" alt="Third slide">
 				</div>
 			</div>
 			<div class="col-xl-7 col-lg-7 col-md-6">
@@ -18,7 +14,7 @@
 					<p class="available-stock"><span> More than 20 available / <a href="#">8 sold </a></span><p>
 						<h4>Description:</h4>
 					<p>
-								@Model.Description
+								@Html.Raw(Model.Description)
 					</p>
 					<ul>
 						<li>
