@@ -11,7 +11,6 @@
             <th scope="col">Mã đơn hàng</th>
             <th scope="col">UserName</th>
             <th scope="col">Tên sản phẩm</th>
-            <th scope="col">Số lượng</th>
             <th scope="col">Đơn giá</th>
             <th scope="col">Số lượng</th>
             <th scope="col">Thành tiền</th>
@@ -29,12 +28,12 @@
                 <td>@item.Product.Name</td>
                 <td>@item.Price</td>
                 <td>@item.Quantity</td>
-                <td>@subtotal.ToString("N0")</td>
+                <td>@subtotal.ToString("C")</td>
             </tr>
         }
             <tr>
                 <td colspan="5" class="text-right"><strong>Tổng tiền:</strong></td>
-                <td><strong>@total.ToString("N0") VNĐ</strong></td>
+                <td><strong>@total.ToString("C") VNĐ</strong></td>
                 <td>
                     <select class="form-control select-update-order">
                         <option value="1">Đơn hàng mới</option>

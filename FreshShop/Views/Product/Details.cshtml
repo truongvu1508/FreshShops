@@ -1,54 +1,96 @@
-﻿
-    <!-- Start Shop Detail  -->
+﻿﻿<!-- Start Shop Detail  -->
 <div class="shop-detail-box-main">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-5 col-lg-5 col-md-6">
-                <div id="carousel-example-1" class="single-product-slider carousel slide" data-ride="carousel">
-                    <img class="d-block w-100" src="~/images/@Model.Image" alt="Third slide">
-                </div>
-            </div>
-            <div class="col-xl-7 col-lg-7 col-md-6">
-                <div class="single-product-details">
-                    <h2>@Model.Name</h2>
-                    <h5> @Model.Price VND</h5>
-                    <p class="available-stock"><span> More than 20 available / <a href="#">8 sold </a></span><p>
-                        <h4>Description:</h4>
-                    <p>
-                       @Model.Description
-                    </p>
-                    <ul>
-                        <li>
-                            <div class="form-group quantity-box">
-                                <label class="control-label">Quantity</label>
-                                <input class="form-control" value="0" min="0" max="20" type="number">
-                            </div>
-                        </li>
-                    </ul>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-5 col-lg-5 col-md-6">
+				<div id="carousel-example-1" class="single-product-slider carousel slide" data-ride="carousel">
+					<img class="d-block w-100" src="~/images/@Model.Image" alt="Third slide">
+				</div>
+			</div>
+			<div class="col-xl-7 col-lg-7 col-md-6">
+				<div class="single-product-details">
+					<h2>@Model.Name</h2>
+					<h5> @Model.Price VND</h5>
+					<p class="available-stock"><span> More than 20 available / <a href="#">8 sold </a></span><p>
+						<h4>Description:</h4>
+					<p>
+								@Model.Description
+					</p>
+					<ul>
+						<li>
+							<div class="form-group quantity-box">
+								<label class="control-label">Quantity</label>
+								<input class="form-control" value="0" min="0" max="20" type="number">
+							</div>
+						</li>
+					</ul>
 
-                    <div class="price-box-bar">
-                        <div class="cart-and-bay-btn">
-                            <a class="btn hvr-hover" data-fancybox-close="" asp-action="Add" asp-controller="Cart" asp-route-id="@Model.Id">Add to cart</a>
-                        </div>
-                    </div>
+					<div class="price-box-bar">
+						<div class="cart-and-bay-btn">
+							<a class="btn hvr-hover" data-fancybox-close="" href="#">Buy New</a>
+							<a class="btn hvr-hover" data-fancybox-close="" href="#">Add to cart</a>
+						</div>
+					</div>
 
-                    <div class="add-to-btn">
-                        <div class="add-comp">
-                            <a class="btn hvr-hover" href="#"><i class="fas fa-heart"></i> Add to wishlist</a>
-                            <a class="btn hvr-hover" href="#"><i class="fas fa-sync-alt"></i> Add to Compare</a>
-                        </div>
-                        <div class="share-bar">
-                            <a class="btn hvr-hover" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                            <a class="btn hvr-hover" href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
-                            <a class="btn hvr-hover" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                            <a class="btn hvr-hover" href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
-                            <a class="btn hvr-hover" href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+					<div class="add-to-btn">
+						<div class="add-comp">
+							<a class="btn hvr-hover" href="#"><i class="fas fa-heart"></i> Add to wishlist</a>
+							<a class="btn hvr-hover" href="#"><i class="fas fa-sync-alt"></i> Add to Compare</a>
+						</div>
+						<div class="share-bar">
+							<a class="btn hvr-hover" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+							<a class="btn hvr-hover" href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
+							<a class="btn hvr-hover" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+							<a class="btn hvr-hover" href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
+							<a class="btn hvr-hover" href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    </div>
+	</div>
 </div>
 <!-- End Cart -->
+<!-- Start Related Products -->
+<div class="row my-5">
+	<div class="col-lg-12">
+		<div class="title-all text-center">
+			<h1>Sản phẩm liên quan</h1>
+			<p>Các sản phẩm cùng danh mục có thể bạn quan tâm</p>
+		</div>
+		<div class="row">
+			@if (ViewBag.RelatedProducts != null)
+			{
+				foreach (var item in ViewBag.RelatedProducts)
+				{
+					<div class="col-lg-3 col-md-6 special-grid">
+						<div class="products-single fix">
+							<div class="box-img-hover">
+								<div class="type-lb">
+									<p class="new">New</p>
+								</div>
+								<img src="~/images/@item.Image" class="img-fluid" alt="@item.Name">
+								<div class="mask-icon">
+									<ul>
+										<li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+									</ul>
+									<a class="cart" asp-action="Add" asp-controller="Cart" asp-route-id="@item.Id">Add to Cart</a>
+								</div>
+							</div>
+							<div class="why-text">
+								<a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id">
+									<h4>@item.Name</h4>
+									<h5>@item.Price VND</h5>
+								</a>
+							</div>
+						</div>
+					</div>
+				}
+			}
+		</div>
+	</div>
+</div>
+<!-- End Related Products -->
