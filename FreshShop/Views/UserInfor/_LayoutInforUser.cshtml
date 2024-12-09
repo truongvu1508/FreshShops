@@ -10,10 +10,11 @@
     <link rel="shortcut icon" href="~/images/favicon.ico" type="image/x-icon">
 
     <!-- page css -->
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- Core css -->
     <link href="~/assets/css/app.min.css" rel="stylesheet">
-    <link href="~/assets/fonts/antcon" rel="stylesheet">
+    <link href="~/fonts/antcon" rel="stylesheet">
+    <link href="~/fonts/antcon.woff" rel="stylesheet">
 
 </head>
 
@@ -24,13 +25,13 @@
             <div class="header">
                 <div class="logo logo-dark">
                     <a asp-controller="Home" asp-action="Index">
-                        <img src="~/assets/images/logo/logo.png" alt="Logo">
+                        <img src="~/images/logo1.png" alt="Logo">
                         <img class="logo-fold" src="~/assets/images/logo/logo-fold.png" alt="Logo">
                     </a>
                 </div>
                 <div class="logo logo-white">
                     <a asp-controller="Home" asp-action="Index">
-                        <img src="~/assets/images/logo/logo-white.png" alt="Logo">
+                        <img src="~/images/logo1.png" alt="Logo">
                         <img class="logo-fold" src="~/assets/images/logo/logo-fold-white.png" alt="Logo">
                     </a>
                 </div>
@@ -38,12 +39,12 @@
                     <ul class="nav-left">
                         <li class="desktop-toggle">
                             <a href="javascript:void(0);">
-                                <i class="anticon"></i>
+                                <i class="fa-solid fa-sliders anticon" style="color: #63E6BE;"></i>
                             </a>
                         </li>
                         <li class="mobile-toggle">
                             <a href="javascript:void(0);">
-                                <i class="anticon"></i>
+                               <i class="fa-solid fa-sliders anticon" style="color: #63E6BE;"></i>
                             </a>
                         </li>
                     </ul>
@@ -119,23 +120,20 @@
                                 <span class="icon-holder">
                                     <i class="anticon anticon-dashboard"></i>
                                 </span>
-                                <span class="title">Dashboard</span>
+                                <span class="title">Quản lý Thông tin cá nhân</span>
                                 <span class="arrow">
                                     <i class="arrow-icon"></i>
                                 </span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="index.html">Default</a>
+                                    <a asp-area="" asp-controller="UserInfor" asp-action="EditProfile">Sửa thông tin</a>
                                 </li>
                                 <li>
-                                    <a href="index-crm.html">CRM</a>
+                                    <a asp-area="" asp-controller="UserInfor" asp-action="ChangePassword">Đổi mật khẩu</a>
                                 </li>
                                 <li>
-                                    <a href="index-e-commerce.html">E-commerce</a>
-                                </li>
-                                <li>
-                                    <a href="index-projects.html">Projects</a>
+                                    <a asp-area="" asp-controller="UserInfor" asp-action="ManageLogins">Quản lý liên kết ngoài</a>
                                 </li>
                             </ul>
                         </li>
