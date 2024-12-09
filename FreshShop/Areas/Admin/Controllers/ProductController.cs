@@ -56,7 +56,7 @@ namespace FreshShop.Areas.Admin.Controllers
                 if (product.ImageUpload != null)
                 {
                     // Đường dẫn đến thư mục lưu trữ ảnh
-                    string uploaddir = Path.Combine(_webHostEnvironment.WebRootPath, "images");
+                    string uploaddir = Path.Combine(_webHostEnvironment.WebRootPath, "media/products");
                     string imgname = Guid.NewGuid().ToString() + "_" + product.ImageUpload.FileName;
                     string filepath = Path.Combine(uploaddir, imgname);
 
@@ -131,7 +131,7 @@ namespace FreshShop.Areas.Admin.Controllers
                 // Kiểm tra và xử lý ảnh
                 if (product.ImageUpload != null)
                 {
-                    string uploaddir = Path.Combine(_webHostEnvironment.WebRootPath, "images");
+                    string uploaddir = Path.Combine(_webHostEnvironment.WebRootPath, "media/products");
                     string imgname = Guid.NewGuid().ToString() + "_" + product.ImageUpload.FileName;
                     string filepath = Path.Combine(uploaddir, imgname);
 
@@ -183,7 +183,7 @@ namespace FreshShop.Areas.Admin.Controllers
             ProductModel product = await _dataContext.Products.FirstAsync(p => p.Id == Id);
             if (string.Equals(product.Image, "noname.jpg"))
             {
-                string uploaddir = Path.Combine(_webHostEnvironment.WebRootPath, "images");
+                string uploaddir = Path.Combine(_webHostEnvironment.WebRootPath, "media/products");
                 string oldfile = Path.Combine(uploaddir, product.Image);
                 if (System.IO.File.Exists(oldfile))
                 {
@@ -193,6 +193,38 @@ namespace FreshShop.Areas.Admin.Controllers
             _dataContext.Products.Remove(product);
             await _dataContext.SaveChangesAsync();
             return RedirectToAction("Index");
+
+        }
+
+        [Route("AddQuantity")]
+        [HttpGet]
+        public async Task<IActionResult> AddQuantity(int Id)
+        {
+            var productQuantity = await _dataContext.ProductQuantities.Where(p => p.ProductId == Id).ToListAsync();
+            ViewBag.Id = Id;
+            ViewBag.ProductByQuantity = productQuantity;
+            return View();
+        }
+
+
+        [Route("StoreProductQuantity")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult StoreProductQuantity(ProductQuantityModel model)
+        {
+            var product = _dataContext.Products.Find(model.ProductId);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            product.Quantity += model.Quantity;
+
+            model.DateCreated = DateTime.Now;
+
+            _dataContext.Add(model);
+            _dataContext.SaveChangesAsync();
+            TempData["success"] = "Thêm sl thành công";
+            return RedirectToAction("AddQuantity", "Product", new { Id = model.ProductId });
 
         }
 
