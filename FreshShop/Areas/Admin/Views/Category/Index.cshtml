@@ -1,6 +1,13 @@
 ﻿@model IEnumerable<CategoryModel>
 @{
 	ViewData["title"] = "Danh mục";
+	Paginate pager = new Paginate();
+	int pageNo = 0;
+	if(ViewBag.Pager!=null)
+	{
+		pager = ViewBag.Pager;
+		pageNo = pager.CurrentPage;
+	}
 }
 @if (TempData["Success"] != null)
 {
@@ -50,3 +57,4 @@
 		}
 	</tbody>
 </table>
+ <partial name="_paging" model="@pager" /> 
