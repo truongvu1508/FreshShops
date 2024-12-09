@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<ProductModel>
 
-    <!-- Start Slider -->
+<!-- Start Slider -->
 <div id="slides-shop" class="cover-slides">
     <ul class="slides-container">
         <li class="text-center">
@@ -46,7 +46,6 @@
     </div>
 </div>
 <!-- End Slider -->
-
 <!-- Start Shop Page  -->
 <div class="shop-box-inner">
     <div class="container">
@@ -86,32 +85,32 @@
                                 <div class="row">
                                     @foreach (var item in Model)
                                     {
-                                        <!-- Product item -->
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                            <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <div class="type-lb">
-                                                        <p class="sale">Sale</p>
-                                                    </div>
-                                                    <img src="~/images/@item.Image" class="img-fluid" alt="@item.Name">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" asp-action="Add" asp-controller="Cart" asp-route-id="@item.Id">Add to Cart</a>
-                                                    </div>
+                                    <!-- Product item -->
+                                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                        <div class="products-single fix">
+                                            <div class="box-img-hover">
+                                                <div class="type-lb">
+                                                    <p class="sale">Sale</p>
                                                 </div>
-                                                <a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id">
-                                                    <div class="why-text">
-                                                        <h4>@item.Name</h4>
-                                                        <h6>@item.Category.Name</h6>
-                                                        <h5> @item.Price <span>VND</span></h5>
-                                                    </div>
-                                                </a>
+                                                <img src="~/images/@item.Image" class="img-fluid" alt="@item.Name">
+                                                <div class="mask-icon">
+                                                    <ul>
+                                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                    </ul>
+                                                    <a class="cart" asp-action="Add" asp-controller="Cart" asp-route-id="@item.Id">Add to Cart</a>
+                                                </div>
                                             </div>
+                                            <a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id">
+                                                <div class="why-text">
+                                                    <h4>@item.Name</h4>
+                                                    <h6>@item.Category.Name</h6>
+                                                    <h5> @item.Price <span>VND</span></h5>
+                                                </div>
+                                            </a>
                                         </div>
+                                    </div>
                                     }
                                 </div>
                             </div>
@@ -224,6 +223,7 @@
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-sm-12 col-xs-12 sidebar-shop-left">
+                <!-- loc tim kiem o day -->
                 @Html.Partial("_SidebarPartial")
             </div>
         </div>
@@ -316,3 +316,46 @@
     </div>
 </div>
 <!-- End Instagram Feed  -->
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Tạo format tiền VND
+            const formatter = new Intl.NumberFormat('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+            });
+
+            $(function() {
+                $("#slider-range").slider({
+                    range: true,
+                    min: 5000,
+                    max: 100000,
+                    step: 50000,
+                    values: [5000, 30000],
+                    slide: function(event, ui) {
+                        // Format giá trị với định dạng tiền VND
+                        const minPrice = formatter.format(ui.values[0]);
+                        const maxPrice = formatter.format(ui.values[1]);
+                        $("#amount").val(minPrice + " - " + maxPrice);
+                    }
+                });
+
+                // Format giá trị ban đầu
+                const initialMin = formatter.format($("#slider-range").slider("values", 0));
+                const initialMax = formatter.format($("#slider-range").slider("values", 1));
+                $("#amount").val(initialMin + " - " + initialMax);
+            });
+            // code btn lọc giá sản phẩm
+            $('.btn-locgia').on('click', function() {
+                var url = $(this).data("current_url");
+                if (url) {
+                    window.location = url + "?startprice=" + $("#slider-range").slider("values", 0) +
+                        "&endprice=" + $("#slider-range").slider("values", 1);
+                }
+                return false;
+            });
+        }); 
+        </script>
+}

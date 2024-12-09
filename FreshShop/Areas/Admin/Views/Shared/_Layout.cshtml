@@ -218,7 +218,7 @@
                 <ul class="nav">
                     <li class="nav-item nav-category">Main</li>
                     <li class="nav-item">
-                        <a class="nav-link" href="~/index.html">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
                             <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
                             <span class="menu-title">Dashboard</span>
                         </a>
@@ -228,6 +228,12 @@
                         <a class="nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index">
                             <span class="icon-bg"><i class="fa-brands fa-product-hunt menu-icon" style="color: #65c649;"></i></span>
                             <span class="menu-title">Products</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Shipping" asp-action="Index">
+                            <span class="icon-bg"><i class="fa-solid fa-list menu-icon" style="color: #65c649;"></i></span>
+                            <span class="menu-title">Shipping</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -243,6 +249,12 @@
                         </a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Coupon" asp-action="Index">
+                            <span class="icon-bg"><i class="fa-solid fa-ticket menu-icon" style="color: #65c649;"></i></span>
+                            <span class="menu-title">Coupon</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-area="Identity" asp-controller="Role" asp-action="Index">
                             <span class="icon-bg"><i class="mdi mdi-chart-bar menu-icon" style="color: #65c649;"></i></span>
