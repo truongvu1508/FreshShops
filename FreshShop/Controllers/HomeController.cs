@@ -17,13 +17,19 @@ namespace FreshShop.Controllers
             _dataContext = context;
         }
 
-        public IActionResult Index()
-        {
-            var products = _dataContext.Products.Include("Category").ToList();
-            return View(products);
-        }
+		public IActionResult Index(decimal? startprice, decimal? endprice)
+		{
+			var products = _dataContext.Products.Include("Category").AsQueryable();
 
-        public IActionResult Privacy()
+			if (startprice.HasValue && endprice.HasValue)
+			{
+				products = products.Where(p => p.Price >= startprice && p.Price <= endprice);
+			}
+
+			return View(products.ToList());
+		}
+
+		public IActionResult Privacy()
         {
             return View();
         }
