@@ -18,7 +18,7 @@ namespace FreshShop.Controllers
             CartItemViewModel cartVM = new CartItemViewModel()
             {
                 CartItems = cartItems,
-                GrandTotal = cartItems.Sum(x=>x.Quality*x.Price)
+                GrandTotal = cartItems.Sum(x => x.Quality * x.Price)
             };
             return View(cartVM);
         }
@@ -30,7 +30,7 @@ namespace FreshShop.Controllers
         {
             ProductModel product = await _dataContext.Products.FindAsync(Id);
             List<CartItemModel> cart = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
-            CartItemModel cartItems = cart.Where(c=>c.ProductId==Id).FirstOrDefault();
+            CartItemModel cartItems = cart.Where(c => c.ProductId == Id).FirstOrDefault();
             if (cartItems == null)
             {
                 cart.Add(new CartItemModel(product));
@@ -48,14 +48,14 @@ namespace FreshShop.Controllers
         public async Task<IActionResult> Decrease(int Id)
         {
             List<CartItemModel> cart = HttpContext.Session.GetJson<List<CartItemModel>>("Cart");
-            CartItemModel cartItem = cart.Where(c=>c.ProductId == Id).FirstOrDefault();
+            CartItemModel cartItem = cart.Where(c => c.ProductId == Id).FirstOrDefault();
             if (cartItem.Quality > 1)
             {
                 --cartItem.Quality;
             }
             else
             {
-                cart.RemoveAll(p=>p.ProductId == Id);
+                cart.RemoveAll(p => p.ProductId == Id);
             }
             if (cart.Count == 0)
             {
@@ -111,8 +111,8 @@ namespace FreshShop.Controllers
         public async Task<IActionResult> Remove(int Id)
         {
             List<CartItemModel> cart = HttpContext.Session.GetJson<List<CartItemModel>>("Cart");
-            cart.RemoveAll(p=>p.ProductId == Id);
-            if (cart.Count == 0) 
+            cart.RemoveAll(p => p.ProductId == Id);
+            if (cart.Count == 0)
             {
                 //cart trong thi xoa session
                 HttpContext.Session.Remove("Cart");
@@ -125,7 +125,7 @@ namespace FreshShop.Controllers
             TempData["success"] = "Xóa sản phẩm thành công!";
             return RedirectToAction("Index");
         }
-        public async Task<IActionResult> Clear(int Id)
+        public async Task<IActionResult> Clear()
         {
             HttpContext.Session.Remove("Cart");
             return RedirectToAction("Index");
