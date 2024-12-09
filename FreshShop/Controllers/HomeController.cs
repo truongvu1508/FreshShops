@@ -22,7 +22,6 @@ namespace FreshShop.Controllers
             _userManager = userManager;
         }
 
-
 		public IActionResult Index(decimal? startprice, decimal? endprice, string sort_by)
 		{
 			var products = _dataContext.Products.Include("Category").AsQueryable();
