@@ -1,68 +1,48 @@
 ﻿@model IEnumerable<FreshShop.Models.OrderDetails>
 @{
     ViewData["title"] = "Chi tiết đơn hàng";
-    
-    // Lấy mã đơn hàng và trạng thái từ route data hoặc ViewData
-    var orderCode = ViewData["OrderCode"]?.ToString();
-    var orderStatus = (int?)ViewData["OrderStatus"] ?? 0;   // Truy xuất từ route data, mặc định là 0 nếu không có
-    
-    var totalAmount = Model.Sum(x => x.Quantity * x.Price);  // Tính tổng tiền
-}
-
-<h4>Chi tiết đơn hàng - Mã: @orderCode</h4>
-
-@if (TempData["success"] != null)
-{
-    <div class="alert alert-success">
-        @TempData["success"]
-    </div>
-}
-
-@if (TempData["error"] != null)
-{
-    <div class="alert alert-danger">
-        @TempData["error"]
-    </div>
+    decimal total = 0;
+    decimal subtotal = 0;
 }
 
 <table class="table table-striped" id="detail_order">
     <thead>
         <tr>
+            <th scope="col">Mã đơn hàng</th>
+            <th scope="col">UserName</th>
             <th scope="col">Tên sản phẩm</th>
-            <th scope="col">Số lượng</th>
             <th scope="col">Đơn giá</th>
+            <th scope="col">Số lượng</th>
             <th scope="col">Thành tiền</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
+            subtotal = item.Quantity * item.Price;
+            total += subtotal;
             <tr>
-                <td>@item.Product?.Name</td>
+                <input type="hidden" asp-for="@item.OrderCode" class="getId"/>
+                <td>@item.OrderCode</td>
+                <td>@item.UserName</td>
+                <td>@item.Product.Name</td>
+                <td>@item.Price</td>
                 <td>@item.Quantity</td>
-                <td>@item.Price.ToString("N0")</td> <!-- Định dạng giá không có phần thập phân -->
-                <td>@(string.Format("{0:N0} VNĐ", item.Quantity * item.Price))</td> <!-- Định dạng thành tiền và thêm VNĐ -->
+                <td>@subtotal.ToString("C")</td>
             </tr>
         }
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="3" class="text-right"><strong>Tổng tiền:</strong></td>
-            <td><strong>@totalAmount.ToString("N0") VNĐ</strong></td>
-        </tr>
-        <tr>
-            <td colspan="3" class="text-right"><strong>Trạng thái đơn hàng:</strong></td>
-            <td>
-                <div class="d-inline-flex align-items-center">
-                    <select id="OrderStatus" class="form-control mr-2">
-                        <option value="1" selected="@((orderStatus == 1) ? "selected" : "")">Đơn hàng mới</option>
-                        <option value="2" selected="@((orderStatus == 2) ? "selected" : "")">Đơn hàng thành công</option>
+            <tr>
+                <td colspan="5" class="text-right"><strong>Tổng tiền:</strong></td>
+                <td><strong>@total.ToString("C") VNĐ</strong></td>
+                <td>
+                    <select class="form-control select-update-order">
+                        <option value="1">Đơn hàng mới</option>
+                        <option value="0">Đã xử lý</option>
                     </select>
-                    <button id="updateStatusButton" class="btn btn-primary">Cập nhật trạng thái</button>
-                </div>
-            </td>
-        </tr>
-    </tfoot>
+                </td>
+            </tr>
+
+    </tbody>
 </table>
 
 <!-- Quay lại danh sách đơn hàng -->
@@ -70,33 +50,25 @@
 
 @section Scripts {
     <script>
-        $(document).ready(function () {
-            // Khởi tạo DataTable cho bảng chi tiết đơn hàng
-            $('#detail_order').DataTable({
-                dom: 'Bfrtip',
-                buttons: ['pdf', 'print']
-            });
+                $(document).ready(function () {
+            $('.select-update-order').change(function () {
+                var status = $(this).val();
+                var ordercode = $('.getId').val();
+                alert("Trạng thái: " + status);
+                alert("Mã đơn hàng: " + ordercode);
 
-            // Xử lý sự kiện khi bấm nút cập nhật trạng thái
-            $('#updateStatusButton').click(function () {
-                var status = $('#OrderStatus').val();  // Lấy trạng thái đã chọn từ combo box
-                var orderCode = '@orderCode';  // Mã đơn hàng từ view
-
-                // Gửi yêu cầu AJAX để cập nhật trạng thái
                 $.ajax({
-                    url: '@Url.Action("UpdateOrderStatus", "Order")',  // URL cho hành động UpdateOrderStatus
+                    url: '@Url.Action("UpdateOrder", "Order")',
                     type: 'POST',
                     data: {
-                        orderCode: orderCode,
+                        ordercode: ordercode,
                         status: status
                     },
-                    success: function (response) {
-                        if (response.success) {
-                            alert('Cập nhật trạng thái đơn hàng thành công!');
-                            // Cập nhật lại combobox với giá trị mới sau khi cập nhật trạng thái
-                            $('#OrderStatus').val(response.updatedStatus);  // Cập nhật giá trị combobox
+                    success: function (result) {
+                        if (result.success) {
+                            alert("Cập nhật trạng thái đơn hàng thành công!");
                         } else {
-                            alert('Lỗi khi cập nhật trạng thái.');
+                            alert("Lỗi khi cập nhật trạng thái.");
                         }
                     },
                     error: function (xhr, status, error) {
@@ -106,5 +78,6 @@
                 });
             });
         });
+
     </script>
 }

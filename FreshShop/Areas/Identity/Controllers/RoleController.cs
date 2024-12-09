@@ -26,7 +26,7 @@ namespace FreshShop.Areas.Identity.Controllers
     [Route("/Role/[action]")]
     public class RoleController : Controller
     {
-        
+
         private readonly ILogger<RoleController> _logger;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly DataContext _context;
@@ -49,25 +49,25 @@ namespace FreshShop.Areas.Identity.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            
-           var r = await _roleManager.Roles.OrderBy(r => r.Name).ToListAsync();
-           var roles = new List<RoleModel>();
-           foreach (var _r in r)
-           {
-               var claims = await _roleManager.GetClaimsAsync(_r);
-               var claimsString = claims.Select(c => c.Type  + "=" + c.Value);
 
-               var rm = new RoleModel()
-               {
-                   Name = _r.Name,
-                   Id = _r.Id,
-                   Claims = claimsString.ToArray()
-               };
-               roles.Add(rm);
-           }
+            var r = await _roleManager.Roles.OrderBy(r => r.Name).ToListAsync();
+            var roles = new List<RoleModel>();
+            foreach (var _r in r)
+            {
+                var claims = await _roleManager.GetClaimsAsync(_r);
+                var claimsString = claims.Select(c => c.Type + "=" + c.Value);
+
+                var rm = new RoleModel()
+                {
+                    Name = _r.Name,
+                    Id = _r.Id,
+                    Claims = claimsString.ToArray()
+                };
+                roles.Add(rm);
+            }
 
             return View(roles);
-        } 
+        }
 
         // GET: /Role/Create
         [HttpGet]
@@ -75,13 +75,13 @@ namespace FreshShop.Areas.Identity.Controllers
         {
             return View();
         }
-        
+
         // POST: /Role/Create
         [HttpPost, ActionName(nameof(Create))]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateAsync(CreateRoleModel model)
         {
-            if  (!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View();
             }
@@ -98,7 +98,7 @@ namespace FreshShop.Areas.Identity.Controllers
                 ModelState.AddModelError(result);
             }
             return View();
-        }     
+        }
 
         // GET: /Role/Delete/roleid
         [HttpGet("{roleid}")]
@@ -109,10 +109,10 @@ namespace FreshShop.Areas.Identity.Controllers
             if (role == null)
             {
                 return NotFound("Không tìm thấy role");
-            } 
+            }
             return View(role);
         }
-        
+
         // POST: /Role/Edit/1
         [HttpPost("{roleid}"), ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -120,8 +120,8 @@ namespace FreshShop.Areas.Identity.Controllers
         {
             if (roleid == null) return NotFound("Không tìm thấy role");
             var role = await _roleManager.FindByIdAsync(roleid);
-            if  (role == null) return NotFound("Không tìm thấy role");
-             
+            if (role == null) return NotFound("Không tìm thấy role");
+
             var result = await _roleManager.DeleteAsync(role);
 
             if (result.Succeeded)
@@ -134,18 +134,18 @@ namespace FreshShop.Areas.Identity.Controllers
                 ModelState.AddModelError(result);
             }
             return View(role);
-        }     
+        }
 
         // GET: /Role/Edit/roleid
         [HttpGet("{roleid}")]
-        public async Task<IActionResult> EditAsync(string roleid, [Bind("Name")]EditRoleModel model)
+        public async Task<IActionResult> EditAsync(string roleid, [Bind("Name")] EditRoleModel model)
         {
             if (roleid == null) return NotFound("Không tìm thấy role");
             var role = await _roleManager.FindByIdAsync(roleid);
             if (role == null)
             {
                 return NotFound("Không tìm thấy role");
-            } 
+            }
             model.Name = role.Name;
             model.Claims = await _context.RoleClaims.Where(rc => rc.RoleId == role.Id).ToListAsync();
             model.role = role;
@@ -153,25 +153,25 @@ namespace FreshShop.Areas.Identity.Controllers
             return View(model);
 
         }
-        
+
         // POST: /Role/Edit/1
         [HttpPost("{roleid}"), ActionName("Edit")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditConfirmAsync(string roleid, [Bind("Name")]EditRoleModel model)
+        public async Task<IActionResult> EditConfirmAsync(string roleid, [Bind("Name")] EditRoleModel model)
         {
             if (roleid == null) return NotFound("Không tìm thấy role");
             var role = await _roleManager.FindByIdAsync(roleid);
             if (role == null)
             {
                 return NotFound("Không tìm thấy role");
-            } 
+            }
             model.Claims = await _context.RoleClaims.Where(rc => rc.RoleId == role.Id).ToListAsync();
             model.role = role;
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
-    
+
             role.Name = model.Name;
             var result = await _roleManager.UpdateAsync(role);
 
@@ -189,7 +189,7 @@ namespace FreshShop.Areas.Identity.Controllers
         }
 
         // GET: /Role/AddRoleClaim/roleid
-        [HttpGet("{roleid}")]        
+        [HttpGet("{roleid}")]
         public async Task<IActionResult> AddRoleClaimAsync(string roleid)
         {
             if (roleid == null) return NotFound("Không tìm thấy role");
@@ -197,26 +197,26 @@ namespace FreshShop.Areas.Identity.Controllers
             if (role == null)
             {
                 return NotFound("Không tìm thấy role");
-            } 
+            }
 
             var model = new EditClaimModel()
             {
                 role = role
             };
             return View(model);
-        }             
+        }
 
         // POST: /Role/AddRoleClaim/roleid
-        [HttpPost("{roleid}")]  
-        [ValidateAntiForgeryToken]      
-        public async Task<IActionResult> AddRoleClaimAsync(string roleid, [Bind("ClaimType", "ClaimValue")]EditClaimModel model)
+        [HttpPost("{roleid}")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddRoleClaimAsync(string roleid, [Bind("ClaimType", "ClaimValue")] EditClaimModel model)
         {
             if (roleid == null) return NotFound("Không tìm thấy role");
             var role = await _roleManager.FindByIdAsync(roleid);
             if (role == null)
             {
                 return NotFound("Không tìm thấy role");
-            } 
+            }
             model.role = role;
             if (!ModelState.IsValid) return View(model);
 
@@ -229,21 +229,21 @@ namespace FreshShop.Areas.Identity.Controllers
 
             var newClaim = new Claim(model.ClaimType, model.ClaimValue);
             var result = await _roleManager.AddClaimAsync(role, newClaim);
-            
+
             if (!result.Succeeded)
             {
                 ModelState.AddModelError(result);
                 return View(model);
             }
-            
-            StatusMessage = "Vừa thêm đặc tính (claim) mới";
-            
-            return RedirectToAction("Edit", new {roleid = role.Id});
 
-        }          
+            StatusMessage = "Vừa thêm đặc tính (claim) mới";
+
+            return RedirectToAction("Edit", new { roleid = role.Id });
+
+        }
 
         // GET: /Role/EditRoleClaim/claimid
-        [HttpGet("{claimid:int}")]        
+        [HttpGet("{claimid:int}")]
         public async Task<IActionResult> EditRoleClaim(int claimid)
         {
             var claim = _context.RoleClaims.Where(c => c.Id == claimid).FirstOrDefault();
@@ -262,12 +262,12 @@ namespace FreshShop.Areas.Identity.Controllers
 
 
             return View(Input);
-        }             
+        }
 
         // GET: /Role/EditRoleClaim/claimid
-        [HttpPost("{claimid:int}")]        
+        [HttpPost("{claimid:int}")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditRoleClaim(int claimid, [Bind("ClaimType", "ClaimValue")]EditClaimModel Input)
+        public async Task<IActionResult> EditRoleClaim(int claimid, [Bind("ClaimType", "ClaimValue")] EditClaimModel Input)
         {
             var claim = _context.RoleClaims.Where(c => c.Id == claimid).FirstOrDefault();
             if (claim == null) return NotFound("Không tìm thấy role");
@@ -277,7 +277,7 @@ namespace FreshShop.Areas.Identity.Controllers
             var role = await _roleManager.FindByIdAsync(claim.RoleId);
             if (role == null) return NotFound("Không tìm thấy role");
             Input.role = role;
-            if  (!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View(Input);
             }
@@ -286,21 +286,21 @@ namespace FreshShop.Areas.Identity.Controllers
                 ModelState.AddModelError(string.Empty, "Claim này đã có trong role");
                 return View(Input);
             }
- 
+
 
             claim.ClaimType = Input.ClaimType;
             claim.ClaimValue = Input.ClaimValue;
-            
+
             await _context.SaveChangesAsync();
-            
+
             StatusMessage = "Vừa cập nhật claim";
-            
-            return RedirectToAction("Edit", new {roleid = role.Id});
-        }        
+
+            return RedirectToAction("Edit", new { roleid = role.Id });
+        }
         // POST: /Role/EditRoleClaim/claimid
-        [HttpPost("{claimid:int}")]        
+        [HttpPost("{claimid:int}")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteClaim(int claimid, [Bind("ClaimType", "ClaimValue")]EditClaimModel Input)
+        public async Task<IActionResult> DeleteClaim(int claimid, [Bind("ClaimType", "ClaimValue")] EditClaimModel Input)
         {
             var claim = _context.RoleClaims.Where(c => c.Id == claimid).FirstOrDefault();
             if (claim == null) return NotFound("Không tìm thấy role");
@@ -308,7 +308,7 @@ namespace FreshShop.Areas.Identity.Controllers
             var role = await _roleManager.FindByIdAsync(claim.RoleId);
             if (role == null) return NotFound("Không tìm thấy role");
             Input.role = role;
-            if  (!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View(Input);
             }
@@ -317,15 +317,15 @@ namespace FreshShop.Areas.Identity.Controllers
                 ModelState.AddModelError(string.Empty, "Claim này đã có trong role");
                 return View(Input);
             }
- 
+
 
             await _roleManager.RemoveClaimAsync(role, new Claim(claim.ClaimType, claim.ClaimValue));
-            
+
             StatusMessage = "Vừa xóa claim";
 
-            
-            return RedirectToAction("Edit", new {roleid = role.Id});
-        }        
+
+            return RedirectToAction("Edit", new { roleid = role.Id });
+        }
 
 
     }

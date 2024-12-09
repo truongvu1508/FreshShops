@@ -21,11 +21,11 @@ namespace FreshShop.Models
         [ForeignKey("ProductId")]
         public ProductModel Product { get; set; }
 
-        public int OrderId { get; set; } // Khóa ngoại trỏ tới Order
-        public OrderModel Order { get; set; } // Mối quan hệ với Order
+        //public int OrderId { get; set; } // Khóa ngoại trỏ tới Order
+        //public OrderModel Order { get; set; } // Mối quan hệ với Order
 
-        // Tính thành tiền cho đơn hàng
-        [NotMapped]
-        public decimal TotalPrice => Quantity * Price;
+        //// Tính thành tiền cho đơn hàng
+        //[NotMapped]
+        //public decimal TotalPrice => Quantity * Price;
     }
 }
