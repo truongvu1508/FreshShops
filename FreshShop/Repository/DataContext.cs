@@ -15,6 +15,8 @@ namespace FreshShop.Repository
         public DbSet<OrderModel> Orders { get; set; }
         public DbSet<OrderDetails> OrderDetails { get; set; }
 		public DbSet<CouponModel> Coupons { get; set; }
+		public DbSet<ShippingModel> Shipping { get; set; }
+		public DbSet<Statistical> Statistical { get; set; }
 
 
 
