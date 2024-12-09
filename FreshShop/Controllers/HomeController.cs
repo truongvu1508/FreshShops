@@ -22,10 +22,12 @@ namespace FreshShop.Controllers
             _userManager = userManager;
         }
 
+
 		public IActionResult Index(decimal? startprice, decimal? endprice, string sort_by)
 		{
 			var products = _dataContext.Products.Include("Category").AsQueryable();
-
+      var sliders = _dataContext.Sliders.ToList();
+			ViewBag.Sliders = sliders;
 			if (startprice.HasValue && endprice.HasValue)
 			{
 				products = products.Where(p => p.Price >= startprice && p.Price <= endprice);
@@ -150,5 +152,7 @@ namespace FreshShop.Controllers
             await _dataContext.SaveChangesAsync();
             return RedirectToAction("Wishlist", "Home");
         }
-    }
+
+
+	}
 }

@@ -2,7 +2,7 @@
 @{
     ViewData["title"] = "Product List";
 }
-@if (TempData["success"] != null)
+@if (TempData["Success"] != null)
 {
     <div class="alert alert-success">
         @TempData["success"]
@@ -10,6 +10,12 @@
 }
 <h4>List Product</h4>
 <a class="btn btn-primary mb-3" asp-action="Create" asp-controller="Product">Add Product</a>
+<form asp-action="Search" asp-controller="Product" method="get" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="search" class="form-control" placeholder="Nhập tên sản phẩm cần tìm kiếm" value="@ViewData["SearchTerm"]" />
+        <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+</form>
 <table class="table table-striped" id="myTable">
     <thead>
         <tr>
