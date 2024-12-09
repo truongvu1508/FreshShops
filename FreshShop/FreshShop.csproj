@@ -36,4 +36,9 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\media\slider\" />
+    <Folder Include="wwwroot\media\products\" />
+  </ItemGroup>
+
 </Project>
