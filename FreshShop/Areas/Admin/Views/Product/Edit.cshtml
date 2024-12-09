@@ -20,11 +20,14 @@
             <span asp-validation-for="Name" class="text-danger" />
         </div>
 
+
         <div class="form-group">
             <label>Price</label>
-            <input asp-for="Price" class="form-control" />
+            <input asp-for="Price" pattern="[0-9.,]+" class="form-control typing-price" />
+            <span id="price-convert"></span>
             <span asp-validation-for="Price" class="text-danger" />
         </div>
+
 
         <div class="form-group">
             <label>Description</label>
@@ -44,7 +47,8 @@
             <label>Image</label>
             <input asp-for="ImageUpload" type="file" class="form-control">
             <span asp-validation-for="ImageUpload" class="text-danger"></span> 
-            <td><img src="~/images/@Model.Image" width="120" /></td>
+            <td><img src="~/media/products/@Model.Image" width="120" /></td>
+            <img id="imgpreview" class="pt-2" />
         </div>
 
 
@@ -60,7 +64,38 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
     <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
+    <script>
+        $("#ImageUpload").change((function () {
+            readURL(this);
+        }))
+    </script>
+
     <script>
         CKEDITOR.replace('Description');
+    </script>
+
+    <script>
+        $(".typing-price").on("keyup", function () {
+            var currency_input = $(this).val(); // Lấy giá trị từ ô nhập
+
+            // Loại bỏ các ký tự không phải số hoặc dấu '.' hay ','
+            currency_input = currency_input.replace(/[^0-9.]/g, "");
+
+            if (currency_input) {
+                // Chuyển chuỗi sang số (loại bỏ dấu ',' nếu có)
+                var number = parseFloat(currency_input.replace(/,/g, ""));
+                if (!isNaN(number)) {
+                    $("#price-convert").html(
+                        new Intl.NumberFormat("vn-VN", {
+                            style: 'currency', currency: 'VND'
+                        }).format(number)
+                    );
+                }
+            } else {
+                // Khi ô nhập liệu trống, xóa nội dung hiển thị
+                $("#price-convert").html("");
+            }
+        });
     </script>
 }
