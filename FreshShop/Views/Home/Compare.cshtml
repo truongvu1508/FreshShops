@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["title"] = "CompareList";
+}
+<h4>List Compare</h4>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Description</th>
+            <th scope="col">Product Price</th>
+            <th scope="col">Product Image</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var compare_product in Model )
+        {
+            <tr>
+                <td>@compare_product.Id</td>
+                <td>@compare_product.Name</td>
+                <td>@Html.Raw(compare_product.Description)</td>
+                <td>@compare_product.Price</td>
+                <td><img src="~/media/products/@compare_product.Image" width="120" /></td>
+                <td>
+                   
+                    <a class="btn btn-danger btn-sm" asp-action="DeleteCompare" asp-controller="Home" asp-route-Id="@compare_product.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
