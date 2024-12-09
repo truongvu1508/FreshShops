@@ -108,8 +108,14 @@
 																	title="Add to Wishlist"><i class="far fa-heart"></i></a>
 															</li>
 														</ul>
+														@if(item.Quantity>0){
 														<a class="cart" asp-action="Add" asp-controller="Cart"
 															asp-route-id="@item.Id">Add to Cart</a>
+														}
+														else
+														{
+															<a class="cart" style="background:#990000">Hết hàng</a>
+														}
 													</div>
 												</div>
 												<a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id">
@@ -135,7 +141,7 @@
 														<div class="type-lb">
 															<p class="sale">Sale</p>
 														</div>
-														<img src="~/images/@item.Image" class="img-fluid" alt="@item.Name">
+														<img src="~/media/products/@item.Image" class="img-fluid" alt="@item.Name">
 														<div class="mask-icon">
 															<ul>
 																<li><a href="#" data-toggle="tooltip" data-placement="right"
@@ -157,7 +163,7 @@
 													<div class="why-text full-width">
 														<h4>@item.Name</h4>
 														<h5>@item.Price <span>VND</span></h5>
-														<p>@item.Description</p>
+														<p>@Html.Raw(item.Description)</p>
 														<a class="btn hvr-hover" asp-action="Add" asp-controller="Cart"
 															asp-route-id="@item.Id">Add to Cart</a>
 													</div>

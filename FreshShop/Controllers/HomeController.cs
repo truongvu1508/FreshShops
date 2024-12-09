@@ -21,10 +21,16 @@ namespace FreshShop.Controllers
             _userManager = userManager;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(decimal? startprice, decimal? endprice)
         {
-            var products = _dataContext.Products.Include("Category").ToList();
-            return View(products);
+            var products = _dataContext.Products.Include("Category").AsQueryable();
+
+            if (startprice.HasValue && endprice.HasValue)
+            {
+                products = products.Where(p => p.Price >= startprice && p.Price <= endprice);
+            }
+
+            return View(products.ToList());
         }
 
         public IActionResult Privacy()
