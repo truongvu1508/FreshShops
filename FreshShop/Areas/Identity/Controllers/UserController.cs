@@ -45,8 +45,6 @@ namespace FreshShop.Areas.Identity.Controllers
             _userManager = userManager;
         }
 
-
-
         [TempData]
         public string StatusMessage { get; set; }
 
