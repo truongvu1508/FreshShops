@@ -24,7 +24,9 @@ namespace FreshShop.Controllers
         public IActionResult Index()
         {
             var products = _dataContext.Products.Include("Category").ToList();
-            return View(products);
+			var sliders = _dataContext.Sliders.ToList();
+			ViewBag.Sliders = sliders;
+			return View(products);
         }
 
         public IActionResult Privacy()
@@ -131,5 +133,7 @@ namespace FreshShop.Controllers
             await _dataContext.SaveChangesAsync();
             return RedirectToAction("Wishlist", "Home");
         }
-    }
+
+
+	}
 }
