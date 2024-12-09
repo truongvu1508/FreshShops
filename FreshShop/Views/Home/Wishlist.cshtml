@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["title"] = "WishList";
+}
+<h4>WishList</h4>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Description</th>
+            <th scope="col">Product Price</th>
+            <th scope="col">Product Image</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var wishlist_product in Model)
+        {
+            <tr>
+                <td>@wishlist_product.Id</td>
+                <td>@wishlist_product.Name</td>
+                <td>@Html.Raw(wishlist_product.Description)</td>
+                <td>@wishlist_product.Price</td>
+                <td><img src="~/media/products/@wishlist_product.Image" width="120" /></td>
+                <td>
+
+                    <a class="btn btn-danger btn-sm" asp-action="DeleteWishlist" asp-controller="Home" asp-route-Id="@wishlist_product.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

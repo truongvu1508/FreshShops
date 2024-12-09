@@ -17,7 +17,8 @@ namespace FreshShop.Repository
 		public DbSet<CouponModel> Coupons { get; set; }
         public DbSet<ProductQuantityModel> ProductQuantities { get; set; }
         public DbSet<SliderModel> Sliders { get; set; }
-
+        public DbSet<CompareModel> Compares { get; set; }
+        public DbSet<WishlistModel> Wishlists { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
