@@ -1,4 +1,4 @@
-﻿@model ShippingModel
+﻿@model Statistical
 @{
     ViewData["title"] = "Thống kê";
 }
@@ -29,6 +29,34 @@
         </div>
     </div>
 
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h4>Lọc dữ liệu theo:</h4>
+                <select class="filter-select">
+                    <option value="30">---- Lọc dữ liệu ----</option>
+                    <option value="7">7 ngày trước</option>
+                    <option value="30">Tháng qua</option>
+                    <option value="90">3 tháng trước</option>
+                    <option value="365">1 năm</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <h4>Lọc theo ngày:</h4>
+                <label for="date_from">Từ ngày</label>
+                <input type="date" class="form-control" id="date_from" asp-for="@Model.DateCreated" />
+
+                <label for="date_to">Đến ngày</label>
+                <input type="date" class="form-control" id="date_to" asp-for="@Model.DateCreated" />
+
+                <button id="filterButton" class="btn btn-primary">Lọc</button>
+            </div>
+    
+        </div>
+    </div>
+
+
     <div class="row">
         <p>Biểu đồ thống kê</p>
         <div id="myfirstchart" style="height: 250px;"></div>
@@ -40,26 +68,109 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
     <script>
-        new Morris.Bar({
-            // ID of the element in which to draw the chart.
-            element: 'myfirstchart',
-            // Chart data records -- each entry in this array corresponds to a point on
-            // the chart.
-            data: [
-                { year: '2008', value: 20 },
-                { year: '2009', value: 10 },
-                { year: '2010', value: 5 },
-                { year: '2011', value: 5 },
-                { year: '2012', value: 20 }
-            ],
-            // The name of the data record attribute that contains x-values.
-            xkey: 'year',
-            // A list of names of data record attributes that contain y-values.
-            ykeys: ['value'],
-            // Labels for the ykeys -- will be displayed when you hover over the
-            // chart.
-            labels: ['Value']
+        $(document).ready(function () {
+
+            var ChartMorris = new Morris.Line({
+                element: 'myfirstchart',
+                date: [],
+                xkey:'date',
+                ykeys: ['sold', 'quantity', 'revenue', 'profit'],
+                labels: ["Số lượng bán ra", "Đơn hàng", "Doanh thu", "Lợi nhuận"],
+            });
+
+            $.ajax({
+                url: "@Url.Action("GetChartData","Dashboard")",
+                type: "POST",
+                dataType :"json",
+                success: function (data) {
+                    if (data) {
+                        ChartMorris.setData(data.map(function (item) {
+                            return {
+                                date: item.date,
+                                sold: item.sold,
+                                quantity: item.quantity,
+                                revenue: item.revenue,
+                                profit: item.profit
+                            };
+                        }));
+                    }else{
+                        console.warn("No data received for Morris chart update.");
+                        ChartMorris.setData([]);
+                    }
+
+                },
+                    error: function (error) {
+                        console.error("Error fetching data:", error);
+                    }
         });
+
+            $('.filter-select').on('change', function () {
+                var days = $(this).val();
+                var endDate = new Date();
+                var startDate = new Date(endDate.getTime() - days * 24 * 60 * 60 * 1000);
+                $.ajax({
+                    url: "@Url.Action("GetChartDataBySelect","Dashboard")",
+                    type: "POST",
+                    dataType:"json",
+                    data: {
+                        startDate: startDate.toISOString().split('T')[0],
+                        endDate: endDate.toISOString().split('T')[0]
+                    },
+                    success: function (data) {
+                        if (data) {
+                            ChartMorris.setData(data.map(function (item) {
+                                return {
+                                    date: item.date,
+                                    sold: item.sold,
+                                    quantity: item.quantity,
+                                    revenue: item.revenue,
+                                    profit: item.profit
+                                };
+                            }));
+                        } else {
+                            console.warn("No data received for Morris chart update.");
+                            ChartMorris.setData([]);
+                        }
+                    },
+                    error: function (error) {
+                        console.error("Error fetching data:", error);
+                    }
+                });   
+            });
+            $("#filterButton").click(function () {
+                // Khi người dùng click vào nút có id là "filterButton"
+                var fromDate = $("#date_from").val(); // Lấy giá trị từ trường có id là "date_from"
+                var toDate = $("#date_to").val(); // Lấy giá trị từ trường có id là "date_to"
+
+                $.ajax({
+                    url: "@Url.Action("FilterData", "Dashboard")", // Gọi đến action "FilterData" của controller "Dashboard"
+                    data: { fromDate: fromDate, toDate: toDate }, // Gửi dữ liệu ngày bắt đầu và ngày kết thúc
+                    type: "POST", // Dùng phương thức POST để gửi dữ liệu
+                    success: function (data) {
+                        // Nếu nhận được dữ liệu từ server
+                        if (data) {
+                            // Cập nhật dữ liệu cho biểu đồ Morris
+                            ChartMorris.setData(data.map(function (item) {
+                                return {
+                                    date: item.date,
+                                    sold: item.sold,
+                                    quantity: item.quantity,
+                                    revenue: item.revenue,
+                                    profit: item.profit
+                                };
+                            }));
+                        } else {
+                            console.warn("No data received for Morris chart update.");
+                            ChartMorris.setData([]); // Nếu không có dữ liệu, đặt dữ liệu của biểu đồ về rỗng
+                        }
+                    },
+                    error: function (error) {
+                        console.error("Error fetching data:", error);
+                    }
+                });
+            });
+        });
+
     </script>
 }
 </html>
