@@ -1,6 +1,9 @@
-﻿@using FreshShop.Models.ViewModels
+﻿﻿@using FreshShop.Models.ViewModels
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUserModel> SignInManager
+@inject UserManager<AppUserModel> UserManager
 @model CartItemViewModel
-    <!-- Start Cart  -->
+<!-- Start Cart  -->
 <div class="cart-box-main">
     <div class="container">
         @Html.Partial("_NotificationPartial")
@@ -21,7 +24,8 @@
                         <tbody>
                             @if (Model.CartItems.Count > 0)
                             {
-                                @foreach(var item in Model.CartItems){
+                                @foreach (var item in Model.CartItems)
+                                {
                                     <tr>
                                         <td class="thumbnail-img">
                                             <a href="#">
@@ -30,7 +34,7 @@
                                         </td>
                                         <td class="name-pr">
                                             <a href="#">
-                                               @item.ProductName
+                                                @item.ProductName
                                             </a>
                                         </td>
                                         <td class="price-pr">
@@ -38,7 +42,7 @@
                                         </td>
                                         <td class="quantity-box"><input type="number" size="4" value="@item.Quality" data-product-id="@item.ProductId" min="0" step="1" class="c-input-text qty text"></td>
                                         <td class="total-pr">
-                                            <p>@Model.CartItems.Where(x=>x.ProductId == item.ProductId).Sum(x=>x.Quality*x.Price).ToString() VND</p>
+                                            <p>@Model.CartItems.Where(x => x.ProductId == item.ProductId).Sum(x => x.Quality * x.Price).ToString() VND</p>
                                         </td>
                                         <td class="remove-pr">
                                             <a asp-controller="Cart" asp-action="Remove" asp-route-id="@item.ProductId">
@@ -110,7 +114,12 @@
                     <hr>
                 </div>
             </div>
-            <div class="col-12 d-flex shopping-box"><a href="checkout.html" class="ml-auto btn hvr-hover">Checkout</a> </div>
+            <div class="col-12 d-flex shopping-box">
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a asp-controller="Checkout" asp-action="Checkout" class="ml-auto btn hvr-hover">Checkout</a>
+                }
+            </div>
         </div>
 
     </div>
