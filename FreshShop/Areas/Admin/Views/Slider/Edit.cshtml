@@ -1,0 +1,75 @@
+﻿@model SliderModel
+@{
+    ViewData["title"] = "Edit Slider";
+}
+
+<!-- Hiển thị thông báo lỗi -->
+@if (TempData["error"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Error"]
+    </div>
+}
+<h4>Edit Slider</h4>
+<div class="col-md-9">
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-action="@Model.Id"/>
+        <div class="form-group">
+            <label>Name</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger" />
+        </div>
+            
+        <div class="form-group">
+            <label>Description</label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger" />
+        </div>
+
+        <div class="form-group">
+            <label>Status</label>
+            <select asp-for="Status" class="form-control">
+              @if(@Model.Status==1)
+                {
+                    <option selected value="1" >Hiển thị</option>
+                    <option value="0">Ẩn</option>
+                }
+                else
+                {
+                    <option value="1">Hiển thị</option>
+                    <option selected value="0">Ẩn</option>
+                }
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Image</label>
+            <input asp-for="ImageUpload" type="file" class="form-control">
+            <span asp-validation-for="ImageUpload" class="text-danger"></span>
+            <td><img src="~/media/slider/@Model.Image" width="120" /></td>
+            <img id="imgpreview" class="pt-2" />
+        </div>
+
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+    </form>
+    <a asp-action="Index" class="btn btn-warning btn-sm">Back to list slider</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+    <script>
+        $("#ImageUpload").change((function () {
+            readURL(this);
+        }))
+    </script>
+    <script>
+        CKEDITOR.replace('Description');
+    </script>
+}

@@ -12,7 +12,6 @@ public class MailSettings
     public string Password { get; set; }
     public string Host { get; set; }
     public int Port { get; set; }
-
 }
 
 public interface IEmailSender
@@ -21,67 +20,72 @@ public interface IEmailSender
     Task SendSmsAsync(string number, string message);
 }
 
-public class SendMailService : IEmailSender {
-
-
+public class SendMailService : IEmailSender
+{
     private readonly MailSettings mailSettings;
-
     private readonly ILogger<SendMailService> logger;
-
 
     // mailSetting được Inject qua dịch vụ hệ thống
     // Có inject Logger để xuất log
-    public SendMailService (IOptions<MailSettings> _mailSettings, ILogger<SendMailService> _logger) {
-        mailSettings = _mailSettings.Value;
-        logger = _logger;
-        logger.LogInformation("Create SendMailService");
+    public SendMailService(IOptions<MailSettings> mailSettings, ILogger<SendMailService> logger)
+    {
+        this.mailSettings = mailSettings.Value ?? throw new ArgumentNullException(nameof(mailSettings));
+        this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
-   
-    public async Task SendEmailAsync(string email, string subject, string htmlMessage) {
-       var message = new MimeMessage ();
+    public async Task SendEmailAsync(string email, string subject, string htmlMessage)
+    {
+        var message = new MimeMessage();
         message.Sender = new MailboxAddress(mailSettings.DisplayName, mailSettings.Mail);
         message.From.Add(new MailboxAddress(mailSettings.DisplayName, mailSettings.Mail));
-        message.To.Add (MailboxAddress.Parse (email));
+        message.To.Add(MailboxAddress.Parse(email));
         message.Subject = subject;
 
+        var builder = new BodyBuilder { HtmlBody = htmlMessage };
+        message.Body = builder.ToMessageBody();
 
-        var builder = new BodyBuilder();
-        builder.HtmlBody = htmlMessage;
-        message.Body = builder.ToMessageBody ();
-
-        // dùng SmtpClient của MailKit
         using var smtp = new MailKit.Net.Smtp.SmtpClient();
 
-        try {
-            smtp.Connect (mailSettings.Host, mailSettings.Port, SecureSocketOptions.StartTls);
-            smtp.Authenticate (mailSettings.Mail, mailSettings.Password);
+        try
+        {
+            logger.LogInformation($"Đang kết nối tới SMTP server {mailSettings.Host}:{mailSettings.Port}...");
+            await smtp.ConnectAsync(mailSettings.Host, mailSettings.Port, SecureSocketOptions.StartTls);
+
+            logger.LogInformation($"Đang xác thực với tài khoản email {mailSettings.Mail}...");
+            await smtp.AuthenticateAsync(mailSettings.Mail, mailSettings.Password);
+
+            logger.LogInformation($"Đang gửi email tới {email}...");
             await smtp.SendAsync(message);
+            logger.LogInformation($"Email đã được gửi thành công tới {email}");
         }
-        
-        catch (Exception ex) {
-            // Gửi mail thất bại, nội dung email sẽ lưu vào thư mục mailssave
-            System.IO.Directory.CreateDirectory("mailssave");
-            var emailsavefile = string.Format(@"mailssave/{0}.eml", Guid.NewGuid());
-            await message.WriteToAsync(emailsavefile);
-
-            logger.LogInformation("Lỗi gửi mail, lưu tại - " + emailsavefile);
-            logger.LogError(ex.Message);
+        catch (Exception ex)
+        {
+            logger.LogError($"Lỗi khi gửi email tới {email}: {ex.Message}");
+            throw; // Rethrow exception để có thể xử lý ở nơi gọi phương thức này
         }
-
-        smtp.Disconnect (true);
-
-        logger.LogInformation("send mail to " + email);
-
-
+        finally
+        {
+            await smtp.DisconnectAsync(true);
+            logger.LogInformation("Đã ngắt kết nối với server SMTP");
+        }
     }
 
-        public Task SendSmsAsync(string number, string message)
+    public Task SendSmsAsync(string number, string message)
+    {
+        // Cài đặt dịch vụ gửi SMS tại đây
+        try
         {
-            // Cài đặt dịch vụ gửi SMS tại đây
             System.IO.Directory.CreateDirectory("smssave");
-            var emailsavefile = string.Format(@"smssave/{0}-{1}.txt",number, Guid.NewGuid());
-            System.IO.File.WriteAllTextAsync(emailsavefile, message);
-            return Task.FromResult(0);
+            var smsFileName = string.Format(@"smssave/{0}-{1}.txt", number, Guid.NewGuid());
+            System.IO.File.WriteAllTextAsync(smsFileName, message);
+            logger.LogInformation($"SMS đã được lưu vào {smsFileName}");
         }
+        catch (Exception ex)
+        {
+            logger.LogError($"Lỗi khi lưu SMS: {ex.Message}");
+            throw; // Rethrow exception nếu có lỗi
+        }
+        
+        return Task.CompletedTask;
+    }
 }
