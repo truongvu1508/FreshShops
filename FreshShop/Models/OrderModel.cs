@@ -9,6 +9,7 @@
         public int CouponValue { get; set; }
         public DateTime CreatedDate { get; set; }
         public int Status { get; set; }
+        public string? PaymentMethod {get; set;}
         //public ICollection<OrderDetails> OrderDetails { get; set; }
     }
 }

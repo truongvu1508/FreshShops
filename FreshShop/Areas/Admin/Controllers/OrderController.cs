@@ -30,6 +30,22 @@ namespace FreshShop.Areas.Admin.Controllers
             ViewBag.CouponValue = CouponValue.CouponValue;
             return View(DetailsOrder);
 		}
+
+        [HttpGet]
+        [Route("PaymentMomoInfo")]
+        public async Task<IActionResult> PaymentMomoInfo(string orderId)
+        {
+            var momoInfo = await _dataContext.MomoInfoModels
+                .FirstOrDefaultAsync(m => m.OrderId == orderId);
+
+            if (momoInfo == null)
+            {
+                return NotFound();
+            }
+
+            return View(momoInfo);
+        }
+
         [HttpPost]
         [Route("UpdateOrder")]
         public async Task<IActionResult> UpdateOrder(string ordercode, int status)

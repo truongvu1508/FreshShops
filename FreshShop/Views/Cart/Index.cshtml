@@ -42,9 +42,12 @@
                                         <td class="price-pr">
                                             <p>@item.Price VND</p>
                                         </td>
-                                        <td class="quantity-box"><input type="number" size="4" value="@item.Quality" data-product-id="@item.ProductId" min="0" step="1" class="c-input-text qty text"></td>
+                                        <td class="quantity-box"><input type="number" size="4" value="@item.Quality"
+                                                data-product-id="@item.ProductId" min="0" step="1"
+                                                class="c-input-text qty text"></td>
                                         <td class="total-pr">
-                                            <p>@Model.CartItems.Where(x => x.ProductId == item.ProductId).Sum(x => x.Quality * x.Price).ToString() VND</p>
+                                            <p>@Model.CartItems.Where(x => x.ProductId == item.ProductId).Sum(x => x.Quality *
+                                                          x.Price).ToString() VND</p>
                                         </td>
                                         <td class="remove-pr">
                                             <a asp-controller="Cart" asp-action="Remove" asp-route-id="@item.ProductId">
@@ -68,62 +71,76 @@
             <div class="col-lg-6 col-sm-6">
                 <div class="coupon-box">
                     <div class="input-group input-group-sm">
-                        <input class="form-control coupon-value" placeholder="Enter your coupon code" aria-label="Coupon code" type="text">
+                        <input class="form-control coupon-value" placeholder="Enter your coupon code"
+                            aria-label="Coupon code" type="text">
                         <div class="input-group-append">
-                            <button class="btn btn-theme btn-apply-coupon" value="Apply" type="button">Apply Coupon</button>
+                            <button class="btn btn-theme btn-apply-coupon" value="Apply" type="button">Apply
+                                Coupon</button>
                         </div>
                     </div>
                 </div>
                 @*<span id="couponCodeDisplay" class="text-success" style="display: none;">@Model.CouponCode</span> <br />*@
                 <h3>Tỉnh/Thành phố</h3>
-                    <select class="form-control" id="tinh" name="tinh" title="Chọn Tỉnh Thành">
-                        <option value="0">Chọn Tỉnh/Thành phố</option>
-                    </select>
+                <select class="form-control" id="tinh" name="tinh" title="Chọn Tỉnh Thành">
+                    <option value="0">Chọn Tỉnh/Thành phố</option>
+                </select>
                 <h3>Quận/Huyện</h3>
-                    <select class="form-control" id="quan" name="quan" title="Chọn Quận Huyện">
-                        <option value="0">Chọn Quận/Huyện</option>
-                    </select>
+                <select class="form-control" id="quan" name="quan" title="Chọn Quận Huyện">
+                    <option value="0">Chọn Quận/Huyện</option>
+                </select>
                 <h3>Phường/Xã</h3>
-                    <select class="form-control" id="phuong" name="phuong" title="Chọn Phường Xã">
-                        <option value="0">Chọn Phường/Xã</option>
-                    </select>
+                <select class="form-control" id="phuong" name="phuong" title="Chọn Phường Xã">
+                    <option value="0">Chọn Phường/Xã</option>
+                </select>
                 <button class="btn btn-theme btn-add-shipping" type="button">Apply Shipping</button>
-                <a asp-action="DeleteShipping" asp-controller="Cart" class="btn btn-theme btn-add-shipping" type="button">Delete Shipping</a>
+                <a asp-action="DeleteShipping" asp-controller="Cart" class="btn btn-theme btn-add-shipping"
+                    type="button">Delete Shipping</a>
             </div>
             <div class="col-lg-6 col-sm-6">
 
-                    <div class="order-box">
-                        <h3>Order summary</h3>
-                        <div class="d-flex">
-                            <h4>Tạm tính</h4>
-                            <div class="ml-auto font-weight-bold"> @Model.GrandTotal.ToString() VND  </div>
-                        </div>
-                        <hr class="my-1">
+                <div class="order-box">
+                    <h3>Order summary</h3>
+                    <div class="d-flex">
+                        <h4>Tạm tính</h4>
+                        <div class="ml-auto font-weight-bold"> @Model.GrandTotal.ToString() VND </div>
+                    </div>
+                    <hr class="my-1">
                     @{
                         var shippingCost = Convert.ToDecimal(@Model.ShippingCost);
                         var couponValue = Convert.ToDecimal(@Model.CouponValue);
                         var couponTotal = (@Model.GrandTotal + shippingCost) * (couponValue / 100);
-                        var grandTotal = (@Model.GrandTotal + shippingCost) - (@Model.GrandTotal + shippingCost) * (couponValue / 100);
+                        var grandTotal = (@Model.GrandTotal + shippingCost) - (@Model.GrandTotal + shippingCost) *
+                        (couponValue / 100);
                     }
-                        <div class="d-flex">
-                            <h4>Mã giảm giá</h4> 
+                    <div class="d-flex">
+                        <h4>Mã giảm giá</h4>
                         <div class="ml-auto font-weight-bold"> @couponTotal VND </div>
-                        </div>
-                        <div class="d-flex">
-                            <h4>Shipping Cost</h4>
-                        <div class="ml-auto font-weight-bold">  @Model.ShippingCost.ToString() VND  </div>
-                        </div>
-                        <hr>
-                        <div class="d-flex gr-total">
-                            <h5>Tổng tiền</h5>
+                    </div>
+                    <div class="d-flex">
+                        <h4>Shipping Cost</h4>
+                        <div class="ml-auto font-weight-bold"> @Model.ShippingCost.ToString() VND </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex gr-total">
+                        <h5>Tổng tiền</h5>
                         <div class="ml-auto h5"> @grandTotal.ToString() VND </div>
-                        </div>
-                        <hr>
+                    </div>
+                    <hr>
                 </div>
                 <div class="col-12 d-flex shopping-box">
                     @if (SignInManager.IsSignedIn(User))
                     {
                         <a asp-controller="Checkout" asp-action="Checkout" class="ml-auto btn hvr-hover">Đặt hàng</a>
+                        <form method="POST" asp-action="CreatePaymentUrl" asp-controller="Payment">
+                            <input type="hidden" name="FullName" value=" @UserManager.GetUserName(User)" />
+                            <input type="hidden" name="Amount" value="@Model.GrandTotal" />
+
+                            <input type="hidden" name="OrderInfo"
+                                value="Thanh toán đặt hàng qua Momo tại FreshShop" />
+
+                            <br />
+                            <button class="btn btn-danger" name="PayUrl" type="submit">Pay with MoMo</button>
+                        </form>
                     }
                     else
                     {
@@ -139,7 +156,7 @@
 </div>
 <!-- End Cart -->
 <script src="~/js/cart.js"></script>
-@section Scripts{
+@section Scripts {
     <script>
         $(".btn-apply-coupon").click(function () {
             var coupon_value = $(".coupon-value").val();

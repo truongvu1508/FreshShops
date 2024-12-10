@@ -25,6 +25,7 @@ using Microsoft.Extensions.Logging;
 namespace FreshShop.Areas.Identity.Controllers
 {
 
+
     [Authorize(Roles = RoleName.Administrator)]
     [Area("Identity")]
     public class UserController : Controller
@@ -43,8 +44,6 @@ namespace FreshShop.Areas.Identity.Controllers
             _context = context;
             _userManager = userManager;
         }
-
-
 
         [TempData]
         public string StatusMessage { get; set; }

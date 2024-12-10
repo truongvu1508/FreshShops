@@ -21,6 +21,8 @@ namespace FreshShop.Repository
         public DbSet<SliderModel> Sliders { get; set; }
         public DbSet<CompareModel> Compares { get; set; }
         public DbSet<WishlistModel> Wishlists { get; set; }
+        public DbSet<MomoInfoModel> MomoInfoModels { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

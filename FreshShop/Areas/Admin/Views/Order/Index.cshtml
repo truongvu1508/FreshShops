@@ -18,6 +18,7 @@
 			<th scope="col">Mã giảm giá</th>
 			<th scope="col">Phí ship</th>
 			<th scope="col">Trạng thái</th>
+			<th scope="col">Thanh toán bằng</th>
 			<th scope="col">Hành động</th>
 			<th></th>
 			
@@ -51,6 +52,18 @@
 							Đã hủy
 						</span>
 
+					}
+				</td>
+				<td>
+					@if(item.PaymentMethod == "Momo" || item.PaymentMethod == null){
+						<span class="text text-primary">
+							@item.PaymentMethod
+						</span>
+					}
+					else{
+						<span class="text text-success">
+							Qua MOMO <a asp-route-orderId="@item.PaymentMethod" asp-action="PaymentMomoInfo" asp-controller="Order">@item.PaymentMethod</a>
+						</span>
 					}
 				</td>
 				<td>

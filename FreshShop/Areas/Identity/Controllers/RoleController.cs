@@ -21,6 +21,7 @@ using Microsoft.Extensions.Logging;
 namespace FreshShop.Areas.Identity.Controllers
 {
 
+
     [Authorize(Roles = RoleName.Administrator)]
     [Area("Identity")]
     public class RoleController : Controller
