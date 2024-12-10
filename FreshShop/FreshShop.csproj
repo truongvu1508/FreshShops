@@ -39,6 +39,7 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+    <Folder Include="Migrations\" />
     <Folder Include="wwwroot\media\slider\" />
     <Folder Include="wwwroot\media\products\" />
   </ItemGroup>

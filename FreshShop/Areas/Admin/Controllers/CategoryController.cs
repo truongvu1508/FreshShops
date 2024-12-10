@@ -123,14 +123,30 @@ namespace FreshShop.Areas.Admin.Controllers
             }
             return View(category);
         }
-        public async Task<IActionResult> Delete(int Id)
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
         {
-            CategoryModel category = await _dataContext.Categories.FindAsync(Id);
-            _dataContext.Categories.Remove(category);
-            await _dataContext.SaveChangesAsync();
-            TempData["success"] = "Danh mục đã xóa";
-            return RedirectToAction("Index");
+            try
+            {
+                // Tìm danh mục cần xóa
+                var category = await _dataContext.Categories.FindAsync(id);
+                if (category == null)
+                {
+                    return Json(new { success = false, message = "Danh mục không tồn tại!" });
+                }
 
+                // Xóa danh mục
+                _dataContext.Categories.Remove(category);
+                await _dataContext.SaveChangesAsync();
+
+                // Trả về kết quả thành công
+                return Json(new { success = true, message = "Danh mục đã được xóa thành công." });
+            }
+            catch (Exception ex)
+            {
+                // Trả về lỗi nếu có vấn đề
+                return Json(new { success = false, message = "Có lỗi xảy ra: " + ex.Message });
+            }
         }
 
         [Route("Index")]

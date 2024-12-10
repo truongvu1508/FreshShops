@@ -1,67 +1,122 @@
-﻿@model  IEnumerable<CategoryModel>
+﻿@model IEnumerable<CategoryModel>
 @{
-	ViewData["title"] = "Danh mục";
-	Paginate pager = new Paginate();
-	int pageNo = 0;
-	if(ViewBag.Pager!=null)
-	{
-		pager = ViewBag.Pager;
-		pageNo = pager.CurrentPage;
-	}
+    ViewData["title"] = "Danh mục";
+    Paginate pager = new Paginate();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
 }
 @if (TempData["Success"] != null)
 {
-	<div class="alert alert-success">
-		@TempData["success"]
-	</div>
+    <div class="alert alert-success">
+        @TempData["Success"]
+    </div>
 }
 <h4>Danh sách các danh mục</h4>
 <a class="btn btn-primary mb-3" asp-action="Create" asp-controller="Category">Thêm danh mục</a>
 <form asp-action="Search" asp-controller="Category" method="get" class="mb-3">
-	<div class="input-group">
-		<input type="text" name="search" class="form-control" placeholder="Nhập tên danh mục cần tìm kiếm" value="@ViewData["SearchTerm"]" />
-		<button class="btn btn-primary" type="submit">Search</button>
-	</div>
+    <div class="input-group">
+        <input type="text" name="search" class="form-control" placeholder="Nhập tên danh mục cần tìm kiếm" value="@ViewData["SearchTerm"]" />
+        <button class="btn btn-primary" type="submit">Search</button>
+    </div>
 </form>
 <table class="table table-striped">
-	<thead>
-		<tr>
-			<th scope="col">ID</th>
-			<th scope="col">Tên danh mục</th>
-			<th scope="col">Mô tả</th>
-			<th scope="col">Slug danh mục</th>
-			<th scope="col">Trạng thái</th>
-			<th scope="col">Thao tác</th>
-		</tr>
-	</thead>
-	<tbody>
-		@foreach (var item in Model)
-		{
-			<tr>
-				<th scope="row">@item.Id</th>
-				<td>@item.Name</td>
-				<td>@item.Description</td>
-				<td>@item.Slug</td>
-				<td>
-					@if (item.Status == 1)
-					{
-						<span class="text text-success">
-							Hiển Thị
-						</span>
-					}
-					else
-					{
-						<span class="text text-danger">
-							Ẩn
-						</span>
-					}
-				</td>
-				<td>
-					<a class="btn btn-warning btn-sm" asp-action="Edit" asp-controller="Category" asp-route-Id="@item.Id">Cập nhật</a>
-					<a class="btn btn-danger btn-sm" asp-action="Delete" asp-controller="Category" asp-route-Id="@item.Id" onclick="return confirm('Are you sure you want to delete this product?');">Xóa</a>
-				</td>
-			</tr>
-		}
-	</tbody>
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Tên danh mục</th>
+            <th scope="col">Mô tả</th>
+            <th scope="col">Slug danh mục</th>
+            <th scope="col">Trạng thái</th>
+            <th scope="col">Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr data-id="@item.Id">
+                <th scope="row">@item.Id</th>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@item.Slug</td>
+                <td>
+                    @if (item.Status == 1)
+                    {
+                        <span class="text text-success">
+                            Hiển Thị
+                        </span>
+                    }
+                    else
+                    {
+                        <span class="text text-danger">
+                            Ẩn
+                        </span>
+                    }
+                </td>
+                <td>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-controller="Category" asp-route-Id="@item.Id">Cập nhật</a>
+                    <button type="button" class="btn btn-danger btn-sm btn-delete" data-id="@item.Id">Xóa</button>
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
- <partial name="_paging" model="@pager" /> 
+<partial name="_paging" model="@pager" />
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Xử lý xác nhận xóa với AJAX
+        $(".btn-delete").click(function () {
+            var row = $(this).closest('tr');
+            var categoryId = $(this).data("id");
+
+            Swal.fire({
+                title: 'Bạn có chắc chắn muốn xóa?',
+                text: "Hành động này không thể hoàn tác!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Có, xóa nó!',
+                cancelButtonText: 'Hủy'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        type: "POST",
+                        url: '@Url.Action("Delete", "Category")',
+                        data: { id: categoryId },
+                        success: function (response) {
+                            if (response.success) {
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Đã xóa thành công!',
+                                    text: response.message
+                                }).then(() => {
+                                    // Xóa dòng khỏi bảng
+                                    row.remove();
+                                });
+                            } else {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Lỗi',
+                                    text: response.message || 'Có lỗi xảy ra khi xóa.'
+                                });
+                            }
+                        },
+                        error: function (xhr) {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Lỗi',
+                                text: 'Không thể xóa danh mục. Mã lỗi: ' + xhr.status
+                            });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}

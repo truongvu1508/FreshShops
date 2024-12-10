@@ -97,8 +97,7 @@
 														</ul>
                             
 														@if(item.Quantity>0){
-														<a class="cart" asp-action="Add" asp-controller="Cart"
-															asp-route-id="@item.Id">Add to Cart</a>
+															<a class="cart" asp-action="Add" asp-controller="Cart" asp-route-id="@item.Id">Add to Cart</a>
 														}
 														else
 														{
@@ -149,8 +148,7 @@
 														<h5>@item.Price <span>VND</span></h5>
 														<h6 style="color: #000 !important">@Html.Raw(item.Description)</h6>
 													</a>
-														<a class="btn hvr-hover" asp-action="Add" asp-controller="Cart"
-														   asp-route-id="@item.Id">Add to Cart</a>
+													<a class="btn hvr-hover" asp-action="Add" asp-controller="Cart" asp-route-id="@item.Id">Add to Cart</a>
 												</div>
 											</div>
 										</div>
@@ -382,17 +380,25 @@
 	</script>
 	<script>
 		$(document).ready(function () {
-			$('.cart').click(function (e) {
-				e.preventDefault();
-				var productId = $(this).data("id");
+			$('.cart, .btn.hvr-hover').click(function (e) {
+				e.preventDefault(); // Ngăn chặn hành động mặc định của thẻ <a>
+
+				// Lấy ID sản phẩm từ thuộc tính `asp-route-id`
+				var productId = $(this).attr("asp-route-id");
+
+				// Kiểm tra ID sản phẩm hợp lệ
+				if (!productId) {
+					Swal.fire("Lỗi", "Không tìm thấy ID sản phẩm", "error");
+					return;
+				}
 
 				$.ajax({
 					type: "POST",
-					url: "@Url.Action("AddToCart", "Cart")",
+					url: "@Url.Action("AddToCart", "Cart")", // URL xử lý thêm vào giỏ hàng
 					data: { productId: productId },
 					success: function (response) {
 						if (response.success) {
-							// Trigger custom event for React component
+							// Kích hoạt sự kiện custom để React component nhận biết
 							const cartEvent = new CustomEvent('cartUpdated', {
 								detail: {
 									cartItems: response.cartItems
@@ -400,18 +406,20 @@
 							});
 							window.dispatchEvent(cartEvent);
 
+							// Hiển thị thông báo thành công
 							Swal.fire("Thành công", "Sản phẩm đã được thêm vào giỏ hàng", "success");
 						} else {
+							// Hiển thị thông báo lỗi từ response
 							Swal.fire("Lỗi", response.message || "Không thể thêm sản phẩm", "error");
 						}
 					},
 					error: function () {
+						// Xử lý lỗi kết nối
 						Swal.fire("Lỗi", "Đã có lỗi xảy ra", "error");
 					}
 				});
 			});
 		});
-
 					 function updateCartModal(cartItems) {
 				var cartContent = '';
 				if (cartItems && cartItems.length > 0) {
