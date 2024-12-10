@@ -4,6 +4,7 @@
 @inject SignInManager<AppUserModel> SignInManager
 @inject UserManager<AppUserModel> UserManager
 
+
 <!DOCTYPE html>
 <html lang="en">
 <!-- Basic -->
@@ -327,6 +328,7 @@
     <script src="~/js/form-validator.min.js"></script>
     <script src="~/js/contact-form-script.js"></script>
     <script src="~/js/custom.js"></script>
+    <script src="~/js/cart.js"></script>
     <script>
         function navigateToPage(select) {
             const url = select.value;
@@ -337,6 +339,16 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        document.querySelector('.side-menu a').addEventListener('click', function (e) {
+            e.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+            document.querySelector('.side').classList.add('on'); // Thêm class 'on' vào div.side
+        });
+
+        document.querySelector('.close-side').addEventListener('click', function () {
+            document.querySelector('.side').classList.remove('on'); // Xóa class 'on' khi đóng
+        });
+    </script>
 </body>
 
 </html>

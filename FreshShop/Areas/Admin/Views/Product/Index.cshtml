@@ -1,26 +1,41 @@
 ﻿@model IEnumerable<ProductModel>
 @{
     ViewData["title"] = "Product List";
+
     Paginate pager = new Paginate();
+
     int pageNo = 0;
+
     if (ViewBag.Pager != null)
+
     {
+
         pager = ViewBag.Pager;
+
         pageNo = pager.CurrentPage;
+
     }
 }
 
-@if (TempData["success"] != null)
+@if (TempData["success"] != null || TempData["Success"] != null)
+
 {
     <div class="alert alert-success">
-        @TempData["success"]
+        @TempData["success"] ?? @TempData["Success"]
     </div>
 }
 
 <h4>Product List</h4>
 <a class="btn btn-primary mb-3" asp-action="Create" asp-controller="Product">Add Product</a>
 
-<table class="table table-striped">
+<form asp-action="Search" asp-controller="Product" method="get" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="search" class="form-control" placeholder="Nhập tên sản phẩm cần tìm kiếm" value="@ViewData["SearchTerm"]" />
+        <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+</form>
+
+<table class="table table-striped" id="myTable">
     <thead>
         <tr>
             <th scope="col">ID</th>
@@ -38,6 +53,7 @@
     </thead>
     <tbody>
         @foreach (var item in Model)
+
         {
             <tr>
                 <th scope="row">@item.Id</th>

@@ -15,6 +15,8 @@
 			<th scope="col">Mã đặt hàng</th>
 			<th scope="col">Người đặt hàng</th>
 			<th scope="col">Ngày đặt hàng</th>
+			<th scope="col">Mã giảm giá</th>
+			<th scope="col">Phí ship</th>
 			<th scope="col">Trạng thái</th>
 			<th scope="col">Hành động</th>
 			<th></th>
@@ -28,7 +30,8 @@
 				<th scope="row">@item.OrderCode</th>
 				<td>@item.UserName</td>
 				<td>@item.CreatedDate</td>
-				
+				<td>@item.CouponValue %</td>
+				<td>@item.ShippingCost.ToString("#, ##0 VNĐ")</td>
 				<td>
 					@if (item.Status == 1)
 					{

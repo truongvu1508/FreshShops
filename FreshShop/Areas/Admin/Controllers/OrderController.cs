@@ -16,14 +16,18 @@ namespace FreshShop.Areas.Admin.Controllers
         {
             _dataContext = context;
         }
-        public async Task<IActionResult> Index()
+		public async Task<IActionResult> Index()
         {
             return View(await _dataContext.Orders.OrderByDescending(c => c.Id).ToListAsync());
         }
 		public async Task<IActionResult> ViewOrder(string ordercode)
 		{
             var DetailsOrder = await _dataContext.OrderDetails.Include(o=>o.Product).Where(od=>od.OrderCode == ordercode).ToListAsync();
-			return View(DetailsOrder);
+            var ShippingCost = _dataContext.Orders.Where(o => o.OrderCode == ordercode).First();
+            ViewBag.ShippingCost = ShippingCost.ShippingCost;
+            var CouponValue = _dataContext.Orders.Where(o => o.OrderCode == ordercode).First();
+            ViewBag.CouponValue = CouponValue.CouponValue;
+            return View(DetailsOrder);
 		}
         [HttpPost]
         [Route("UpdateOrder")]

@@ -31,9 +31,23 @@
                 <td>@subtotal.ToString("C")</td>
             </tr>
         }
+            <tr><td colspan="5" class="text-right"><strong>Tạm tính:</strong></td>
+            <td>@total.ToString("#, ##0 VNĐ")</td> </tr>
+            <tr><td colspan="5" class="text-right"><strong>Phí ship:</strong></td>
+            <td>@ViewBag.ShippingCost.ToString("#, ##0 VNĐ")</td> </tr>
+            <tr><td colspan="5" class="text-right"><strong>Giảm giá:</strong></td>
+            <td>@ViewBag.CouponValue %</td> </tr>
             <tr>
-                <td colspan="5" class="text-right"><strong>Tổng tiền:</strong></td>
-                <td><strong>@total.ToString("C") VNĐ</strong></td>
+                <td colspan="5" class="text-right"><div class="d-flex gr-total"> <h5 style="color: #03A10A" class="ml-auto h5">Tổng tiền:</h5></div></td>
+                <td>
+                    @{
+                        // Tính tổng tiền
+                        var shippingCost = Convert.ToDecimal(ViewBag.ShippingCost ?? 0);
+                        var couponValue = Convert.ToDecimal(ViewBag.CouponValue ?? 0);
+                        var grandTotal = (total + shippingCost) - (total + shippingCost) * (couponValue / 100);
+                    }
+                    <strong>@grandTotal.ToString("#, ##0 VNĐ")</strong>
+                </td>
                 <td>
                     <select class="form-control select-update-order">
                         <option value="1">Đơn hàng mới</option>
@@ -41,6 +55,7 @@
                     </select>
                 </td>
             </tr>
+
 
     </tbody>
 </table>

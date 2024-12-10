@@ -2,6 +2,8 @@
 using FreshShop.Models.ViewModels;
 using FreshShop.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace FreshShop.Controllers
 {
@@ -15,10 +17,29 @@ namespace FreshShop.Controllers
         public IActionResult Index()
         {
             List<CartItemModel> cartItems = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+
+            //Nhan shipping tu cookie
+            var shippingPriceCookie = Request.Cookies["ShippingPrice"];
+            decimal shippingPrice = 0;
+            if (shippingPriceCookie != null)
+            {
+                var shippingPriceJson = shippingPriceCookie;
+                shippingPrice = JsonConvert.DeserializeObject<decimal>(shippingPriceJson);
+            }
+
+            //Nhan coupon tu cookie
+            var couponValueCookie = Request.Cookies["CouponValue"];
+            int couponValue = 0;
+            if (couponValueCookie != null)
+            {
+                couponValue = JsonConvert.DeserializeObject<int>(couponValueCookie);
+            }
             CartItemViewModel cartVM = new CartItemViewModel()
             {
                 CartItems = cartItems,
-                GrandTotal = cartItems.Sum(x => x.Quality * x.Price)
+                GrandTotal = cartItems.Sum(x => x.Quality * x.Price), 
+                ShippingCost = shippingPrice,
+                CouponValue = couponValue,
             };
             return View(cartVM);
         }
@@ -130,5 +151,99 @@ namespace FreshShop.Controllers
             HttpContext.Session.Remove("Cart");
             return RedirectToAction("Index");
         }
+        [HttpPost]
+        [Route("Cart/GetShipping")]
+        public async Task<IActionResult> GetShipping(ShippingModel shippingModel, string quan, string tinh, string phuong)
+        {
+            //Tim phi ship tuong ung
+            var existingShipping = await _dataContext.Shipping.FirstOrDefaultAsync(x=>x.City == tinh && x.District == quan && x.Ward == phuong);
+            decimal shippingPrice = 0;
+            if (existingShipping != null)
+            {
+                shippingPrice = existingShipping.Price;
+            }
+            else
+            {
+                shippingPrice = 50000;
+            }
+            //Chuyen sang kieu Json
+            var shippingPriceJson = JsonConvert.SerializeObject(shippingPrice);
+            try
+            {
+                var cookieOptions = new CookieOptions
+                {
+                    HttpOnly = true,
+                    Expires = DateTimeOffset.UtcNow.AddMinutes(30),
+                    Secure = true //Dung Https cung duoc
+                };
+                //Day gia vao cookieOption
+                Response.Cookies.Append("ShippingPrice", shippingPriceJson, cookieOptions);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi thêm cookie shipping: {ex.Message}");
+            }
+            return Json(new { shippingPrice });
+        }
+        [HttpGet]
+        [Route("Cart/RemoveShippingCookie")]
+        public IActionResult RemoveShippingCookie()
+        {
+            Response.Cookies.Delete("ShippingPrice");
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        [Route("Cart/GetCoupon")]
+        public async Task<IActionResult> GetCoupon(string coupon_value)
+        {
+            // Tìm mã giảm giá tương ứng
+            var validCoupon = await _dataContext.Coupons.FirstOrDefaultAsync(x => x.Name == coupon_value);
+
+            if (validCoupon != null)
+            {
+                TimeSpan remainingTime = validCoupon.DateExpired - DateTime.Now;
+                if (remainingTime.Days >= 0)
+                {
+                    try
+                    {
+                        // Lưu trực tiếp giá trị giảm giá vào cookie
+                        var cookieOptions = new CookieOptions
+                        {
+                            HttpOnly = true,
+                            Expires = DateTimeOffset.UtcNow.AddMinutes(30),
+                            Secure = true,
+                            SameSite = SameSiteMode.Strict
+                        };
+
+                        // Chuyển `CouponValue` thành JSON
+                        var couponValueJson = JsonConvert.SerializeObject(validCoupon.CouponValue);
+
+                        // Lưu giá trị vào cookie
+                        Response.Cookies.Append("CouponValue", couponValueJson, cookieOptions);
+
+                        return Ok(new { success = true, message = "Dùng mã giảm giá thành công" });
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Lỗi khi lưu mã giảm giá vào cookie: {ex.Message}");
+                        return Ok(new { success = false, message = "Dùng mã giảm giá thất bại" });
+                    }
+                }
+                else
+                {
+                    return Ok(new { success = false, message = "Mã giảm giá đã hết hạn" });
+                }
+            }
+
+            return Ok(new { success = false, message = "Mã giảm giá không tồn tại" });
+        }
+        [HttpGet]
+        [Route("Cart/RemoveCouponCookie")]
+        public IActionResult RemoveCouponCookie()
+        {
+            Response.Cookies.Delete("CouponValue");
+            return RedirectToAction("Index");
+        }
+
     }
 }

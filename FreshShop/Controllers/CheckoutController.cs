@@ -1,6 +1,8 @@
 ﻿using FreshShop.Models;
 using FreshShop.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System.Security.Claims;
 
 namespace FreshShop.Controllers
@@ -24,6 +26,26 @@ namespace FreshShop.Controllers
                 var orderCode = Guid.NewGuid().ToString();
                 var orderItem = new OrderModel();
                 orderItem.OrderCode = orderCode;
+                //lay shipping tu cookie
+                var shippingPriceCookie = Request.Cookies["ShippingPrice"];
+                decimal shippingPrice = 0;
+                
+                if (shippingPriceCookie != null)
+                {
+                    var shippingPriceJson = shippingPriceCookie;
+                    shippingPrice = JsonConvert.DeserializeObject<decimal>(shippingPriceJson);
+                }
+
+                //lay coupon tu cookie
+                var couponValueCookie = Request.Cookies["CouponValue"];
+                int couponValue = 0;
+                if (couponValueCookie != null)
+                {
+                    var couponValueJson = couponValueCookie;
+                    couponValue = JsonConvert.DeserializeObject<int>(couponValueJson);
+                }
+                orderItem.ShippingCost = shippingPrice;
+                orderItem.CouponValue = couponValue;
                 orderItem.UserName = userEmail;
                 orderItem.Status = 1;
                 orderItem.CreatedDate = DateTime.Now;
@@ -38,7 +60,11 @@ namespace FreshShop.Controllers
                     orderDetails.ProductId = cart.ProductId;
                     orderDetails.Price = cart.Price;
                     orderDetails.Quantity = cart.Quality;
-                    _dataContext.Add(orderDetails);
+                    var product = await _dataContext.Products.Where(p => p.Id == cart.ProductId).FirstAsync();
+                    product.Quantity -= cart.Quality;
+                    product.Sold += cart.Quality;
+					_dataContext.Update(product);
+					_dataContext.Add(orderDetails);
                     _dataContext.SaveChanges();
                 }
                 HttpContext.Session.Remove("Cart");
