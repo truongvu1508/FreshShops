@@ -343,43 +343,7 @@
 			});
 		});
 	</script>
-	<script>
-		$(document).ready(function () {
-			$('.add-btn-wishlist').click(function () {
-				var Id = $(this).data("product_id");
 
-				$.ajax({
-					type: "POST",
-					url: "@Url.Action("AddWishlist", "Home")",
-					data: { Id: Id },
-					success: function (result) {
-						if (result) {
-							Swal.fire("Thêm vào danh sách yêu thích", "", "success");
-						}
-					},
-				});
-			});
-		});
-	</script>
-
-	<script>
-		$(document).ready(function () {
-			$('.add-btn-compare').click(function () {
-				var Id = $(this).data("product_id");
-
-				$.ajax({
-					type: "POST",
-					url: "@Url.Action("AddCompare", "Home")",
-					data: { Id: Id },
-					success: function (result) {
-						if (result) {
-							Swal.fire("Thêm so sánh thành công", "", "success");
-						}
-					},
-				});
-			});
-		});
-	</script>
 	<script>
 		$(document).ready(function () {
 			$('.cart').click(function (e) {

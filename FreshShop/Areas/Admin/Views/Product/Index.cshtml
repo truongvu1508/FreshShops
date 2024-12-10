@@ -40,6 +40,7 @@
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Product Name</th>
+            <th scope="col">Product Quantity</th>
             <th scope="col">Quantity</th>
             <th scope="col">Sold</th>
             <th scope="col">Description</th>
@@ -58,6 +59,7 @@
             <tr>
                 <th scope="row">@item.Id</th>
                 <td>@item.Name</td>
+                <td><a asp-controller="Product" asp-action="AddQuantity" asp-route-Id="@item.Id">Add Quantity</a></td>
                 <td>@item.Quantity</td>
                 <td>@item.Sold</td>
                 <td>@Html.Raw(item.Description)</td>

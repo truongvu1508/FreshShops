@@ -26,7 +26,7 @@ namespace FreshShop.Areas.Identity.Controllers
 {
 
 
-    [Authorize(Roles = RoleName.Administrator)]
+    //[Authorize(Roles = RoleName.Administrator)]
     [Area("Identity")]
     public class UserController : Controller
     {

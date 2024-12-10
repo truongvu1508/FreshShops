@@ -120,22 +120,6 @@
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item active"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                        <li class="dropdown">
-                            <a asp-controller="Product" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
-                            <ul class="dropdown-menu">
-
-                                @if (SignInManager.IsSignedIn(User))
-                                {
-                                    <li><a asp-controller="UserInfor" asp-action="Index">My Account</a></li>
-                                }
-                                else
-                                {
-                                    <li><a href="#">My Account</a></li>
-                                    <li><a href="#">Category</a></li>
-                                }
-                                <li><a asp-action="Index" asp-controller="Cart">Cart</a></li>
-                            </ul>
-                        </li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                          @if (SignInManager.IsSignedIn(User))
                          {

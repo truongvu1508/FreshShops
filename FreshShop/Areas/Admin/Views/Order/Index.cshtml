@@ -9,6 +9,7 @@
 	</div>
 }
 <h4>Danh sách các Order</h4>
+<div style="overflow-x: auto;">
 <table class="table table-striped" id="myTable">
 	<thead>
 		<tr>
@@ -18,7 +19,7 @@
 			<th scope="col">Mã giảm giá</th>
 			<th scope="col">Phí ship</th>
 			<th scope="col">Trạng thái</th>
-			<th scope="col">Tổng tiền</th>
+			<th scope="col">Thanh toán bằng</th>
 			<th scope="col">Hành động</th>
 			<th></th>
 			
@@ -54,6 +55,20 @@
 
 					}
 				</td>
+					<td>
+						@if (item.PaymentMethod == null)
+						{
+							<span class="text text-primary">
+								Tiền mặt
+							</span>
+						}
+						else
+						{
+							<span class="text text-success">
+								Qua MOMO <a asp-route-orderId="@item.PaymentMethod" asp-action="PaymentMomoInfo" asp-controller="Order">@item.PaymentMethod</a>
+							</span>
+						}
+					</td>
 				<td>
 					<a class="btn btn-warning btn-sm"
 					   asp-action="ViewOrder"
@@ -68,3 +83,4 @@
 		}
 	</tbody>
 </table>
+</div>
