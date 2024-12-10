@@ -1,4 +1,4 @@
-﻿﻿@using FreshShop.Models.ViewModels
+﻿﻿﻿@using FreshShop.Models.ViewModels
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<AppUserModel> SignInManager
 @inject UserManager<AppUserModel> UserManager
@@ -29,7 +29,7 @@
                                     <tr>
                                         <td class="thumbnail-img">
                                             <a href="#">
-                                                <img class="img-fluid" src="~/images/@item.Image" alt="" />
+                                                <img class="img-fluid" src="~/media/products/@item.Image" alt="" />
                                             </a>
                                         </td>
                                         <td class="name-pr">

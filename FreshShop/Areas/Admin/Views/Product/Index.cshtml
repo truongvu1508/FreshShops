@@ -1,28 +1,38 @@
 ﻿@model IEnumerable<ProductModel>
 @{
     ViewData["title"] = "Product List";
+    Paginate pager = new Paginate();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
 }
+
 @if (TempData["success"] != null)
 {
     <div class="alert alert-success">
         @TempData["success"]
     </div>
 }
-<h4>List Product</h4>
+
+<h4>Product List</h4>
 <a class="btn btn-primary mb-3" asp-action="Create" asp-controller="Product">Add Product</a>
+
 <table class="table table-striped">
     <thead>
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Product Name</th>
-            <th scope="col">Product Quantity</th>
             <th scope="col">Quantity</th>
             <th scope="col">Sold</th>
-            <th scope="col">Product Description</th>
-            <th scope="col">Product Price</th>
-            <th scope="col">Product Image</th>
-            <th scope="col">Product Slug</th>
-            <th scope="col">Product Category</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Capital Price</th>
+            <th scope="col">Image</th>
+            <th scope="col">Slug</th>
+            <th scope="col">Category</th>
             <th scope="col">Actions</th>
         </tr>
     </thead>
@@ -32,11 +42,11 @@
             <tr>
                 <th scope="row">@item.Id</th>
                 <td>@item.Name</td>
-                <td><a asp-controller="Product" asp-action="AddQuantity" asp-route-Id="@item.Id">Add Quantity</a></td>
                 <td>@item.Quantity</td>
                 <td>@item.Sold</td>
                 <td>@Html.Raw(item.Description)</td>
-                <td>@item.Price</td>
+                <td>@item.Price.ToString("#,##0 VNĐ")</td>
+                <td>@item.CapitalPrice.ToString("#,##0 VNĐ")</td>
                 <td><img src="~/media/products/@item.Image" width="120" /></td>
                 <td>@item.Slug</td>
                 <td>@item.Category.Name</td>
@@ -48,3 +58,5 @@
         }
     </tbody>
 </table>
+
+<partial name="_paging" model="@pager" />

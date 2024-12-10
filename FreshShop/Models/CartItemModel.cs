@@ -24,5 +24,6 @@ namespace FreshShop.Models
             Quality = 1;
             Image = product.Image;
         }
+
     }
 }
