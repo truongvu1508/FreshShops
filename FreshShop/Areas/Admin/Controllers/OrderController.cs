@@ -23,8 +23,9 @@ namespace FreshShop.Areas.Admin.Controllers
 		public async Task<IActionResult> ViewOrder(string ordercode)
 		{
             var DetailsOrder = await _dataContext.OrderDetails.Include(o=>o.Product).Where(od=>od.OrderCode == ordercode).ToListAsync();
-            var ShippingCost = _dataContext.Orders.Where(o => o.OrderCode == ordercode).First();
-            ViewBag.ShippingCost = ShippingCost.ShippingCost;
+            var Order = _dataContext.Orders.Where(o => o.OrderCode == ordercode).First();
+            ViewBag.ShippingCost = Order.ShippingCost;
+            ViewBag.Status = Order.Status;
             var CouponValue = _dataContext.Orders.Where(o => o.OrderCode == ordercode).First();
             ViewBag.CouponValue = CouponValue.CouponValue;
             return View(DetailsOrder);
@@ -40,7 +41,7 @@ namespace FreshShop.Areas.Admin.Controllers
             }
             order.Status = status;
             _dataContext.Update(order);
-            if (status == 0) { 
+            if (status == 2) { 
                 var DetailsOrder = await _dataContext.OrderDetails.Include(od=>od.Product)
                     .Where(od=>od.OrderCode ==order.OrderCode).Select (od=>new
                     { 

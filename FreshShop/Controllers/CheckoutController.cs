@@ -69,7 +69,7 @@ namespace FreshShop.Controllers
                 }
                 HttpContext.Session.Remove("Cart");
                 TempData["success"] = "Checkout thành công, vui lòng chờ duyệt đơn hàng";
-                return RedirectToAction("Index", "Cart");
+                return RedirectToAction("History", "History");
             }
             return View();
         }

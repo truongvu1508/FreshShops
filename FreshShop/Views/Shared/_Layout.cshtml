@@ -152,7 +152,10 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" asp-controller="History" asp-action="History">History</a></li>
+                         @if (SignInManager.IsSignedIn(User))
+                         {
+                            <li class="nav-item"><a class="nav-link" asp-controller="History" asp-action="History">History</a></li>
+                         }
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>

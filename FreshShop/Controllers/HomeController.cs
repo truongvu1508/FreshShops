@@ -14,14 +14,12 @@ namespace FreshShop.Controllers
         private readonly DataContext _dataContext;
         private readonly ILogger<HomeController> _logger;
         private readonly UserManager<AppUserModel> _userManager;
-        private readonly ICartService _cartService;
 
-        public HomeController(ILogger<HomeController> logger, DataContext context, UserManager<AppUserModel> userManager, ICartService cartService)
+        public HomeController(ILogger<HomeController> logger, DataContext context, UserManager<AppUserModel> userManager)
         {
             _logger = logger;
             _dataContext = context;
             _userManager = userManager;
-            _cartService = cartService;
         }
 
         public IActionResult Index(decimal? startprice, decimal? endprice, string sort_by)
@@ -147,20 +145,6 @@ namespace FreshShop.Controllers
             _dataContext.Wishlists.Remove(wishlist);
             await _dataContext.SaveChangesAsync();
             return RedirectToAction("Wishlist", "Home");
-        }
-
-        [HttpPost]
-        public JsonResult AddToCart(int productId)
-        {
-            try
-            {
-                var cartItems = _cartService.AddToCart(productId);
-                return Json(new { success = true, cartItems = cartItems });
-            }
-            catch (Exception ex)
-            {
-                return Json(new { success = false, message = "Không thể thêm sản phẩm vào giỏ hàng" });
-            }
         }
     }
 }
