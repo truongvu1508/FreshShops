@@ -90,17 +90,10 @@
 													<div class="mask-icon">
 														<ul>
 															<li>
-																<a href="#" data-toggle="tooltip" data-placement="right"
+																<a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id" data-toggle="tooltip" data-placement="right"
 																   title="View"><i class="fas fa-eye"></i></a>
 															</li>
-															<li>
-																<a href="#" data-toggle="tooltip" data-placement="right"
-																   title="Compare"><i class="fas fa-sync-alt"></i></a>
-															</li>
-															<li>
-																<a href="#" data-toggle="tooltip" data-placement="right"
-																   title="Add to Wishlist"><i class="far fa-heart"></i></a>
-															</li>
+															
 														</ul>
                             
 														@if(item.Quantity>0){
@@ -141,37 +134,25 @@
 														<div class="mask-icon">
 															<ul>
 																<li>
-																	<a href="#" data-toggle="tooltip" data-placement="right"
+																	<a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id" data-toggle="tooltip" data-placement="right"
 																	   title="View"><i class="fas fa-eye"></i></a>
-																</li>
-																<li>
-																	<a href="#" data-toggle="tooltip" data-placement="right"
-																	   title="Compare"><i class="fas fa-sync-alt"></i></a>
-																</li>
-																<li>
-																	<a href="#" data-toggle="tooltip" data-placement="right"
-																	   title="Add to Wishlist">
-																		<i class="far fa-heart"></i>
-																	</a>
 																</li>
 															</ul>
 														</div>
 													</div>
 												</div>
 											</div>
-											<a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id">
-
-												<div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
-													<div class="why-text full-width">
+											<div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
+												<div class="why-text full-width">
+													<a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id">
 														<h4>@item.Name</h4>
 														<h5>@item.Price <span>VND</span></h5>
-														<p>@Html.Raw(item.Description)</p>
+														<h6 style="color: #000 !important">@Html.Raw(item.Description)</h6>
+													</a>
 														<a class="btn hvr-hover" asp-action="Add" asp-controller="Cart"
 														   asp-route-id="@item.Id">Add to Cart</a>
-													</div>
-
 												</div>
-											</a>
+											</div>
 										</div>
 									</div>
 								}

@@ -1,3 +1,18 @@
+	<!-- Start All Title Box -->
+<div class="all-title-box">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>Shop Detail</h2>
+				<ul class="breadcrumb">
+					<li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Shop</a></li>
+					<li class="breadcrumb-item active">Chi tiết </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End All Title Box -->
 <!-- Start Shop Detail  -->
 <div class="shop-detail-box-main">
 	<div class="container">
@@ -12,43 +27,21 @@
 					<h2>@Model.Name</h2>
 					<h5> @Model.Price VND</h5>
 					<p class="available-stock"><span style="color: #b0b435"> @Model.Quantity sản phẩm / </span><span>@Model.Sold đã bán</span><p>
-						<h4>Description:</h4>
+						<h4>Mô tả:</h4>
 					<p>
 								@Html.Raw(@Model.Description)
 					</p>
-					<ul>
-						<li>
-							<div class="form-group quantity-box">
-								<label class="control-label">Quantity</label>
-								<input class="form-control" value="0" min="0" max="20" type="number">
-							</div>
-						</li>
-					</ul>
 
 					<div class="price-box-bar">
 						<div class="cart-and-bay-btn">
 									@if (@Model.Quantity > 0)
 									{
-										<a class="cart" asp-action="Add" asp-controller="Cart" asp-route-id="@Model.Id">Add to Cart</a>
+								<a class="btn hvr-hover cart" asp-action="Add" asp-controller="Cart" asp-route-id="@Model.Id">Add to Cart</a>
 									}
 									else
 									{
-										<a class="cart" style="background:#990000">Hết hàng</a>
+								<a class="cart" style="background:#990000; color: #fff">Hết hàng</a>
 									}
-						</div>
-					</div>
-
-					<div class="add-to-btn">
-						<div class="add-comp">
-							<a class="btn hvr-hover" href="#"><i class="fas fa-heart"></i> Add to wishlist</a>
-							<a class="btn hvr-hover" href="#"><i class="fas fa-sync-alt"></i> Add to Compare</a>
-						</div>
-						<div class="share-bar">
-							<a class="btn hvr-hover" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-							<a class="btn hvr-hover" href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
-							<a class="btn hvr-hover" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-							<a class="btn hvr-hover" href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
-							<a class="btn hvr-hover" href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
 						</div>
 					</div>
 				</div>
@@ -76,7 +69,7 @@
 								<div class="type-lb">
 									<p class="new">New</p>
 								</div>
-								<img src="~/images/@item.Image" class="img-fluid" alt="@item.Name">
+								<img src="~/media/products/@item.Image" class="img-fluid" alt="@item.Name">
 								<div class="mask-icon">
 									<ul>
 										<li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
