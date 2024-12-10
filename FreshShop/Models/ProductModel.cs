@@ -14,6 +14,9 @@ namespace FreshShop.Models
         //Slug chuyen doi tu Name
         [Required, MinLength(4, ErrorMessage = "Yêu cầu nhập mô tả sản phẩm")]
         public string Description { get; set; }
+
+        [Required( ErrorMessage = "Yêu cầu nhập giá vốn sản phẩm")]
+        public decimal CapitalPrice{ get; set; }
         public decimal Price { get; set; }
         public int CategoryId { get; set; }
         public CategoryModel Category { get; set; }

@@ -22,32 +22,35 @@ namespace FreshShop.Controllers
             _userManager = userManager;
         }
 
-		public IActionResult Index(decimal? startprice, decimal? endprice, string sort_by)
-		{
-			var products = _dataContext.Products.Include("Category").AsQueryable();
-      var sliders = _dataContext.Sliders.ToList();
-			ViewBag.Sliders = sliders;
-			if (startprice.HasValue && endprice.HasValue)
-			{
-				products = products.Where(p => p.Price >= startprice && p.Price <= endprice);
-			}
-			// Add sorting logic
-			switch (sort_by)
-			{
-				case "price_desc":
-					products = products.OrderByDescending(p => p.Price);
-					break;
-				case "price_inc":
-					products = products.OrderBy(p => p.Price);
-					break;
-				default:
-					// Default sorting if needed
-					break;
-			}
-			return View(products.ToList());
-		}
+        public IActionResult Index(decimal? startprice, decimal? endprice, string sort_by)
+        {
+            var products = _dataContext.Products.Include("Category").AsQueryable();
+            var sliders = _dataContext.Sliders.ToList();
+            ViewBag.Sliders = sliders;
 
-		public IActionResult Privacy()
+            if (startprice.HasValue && endprice.HasValue)
+            {
+                products = products.Where(p => p.Price >= startprice && p.Price <= endprice);
+            }
+
+            // Add sorting logic
+            switch (sort_by)
+            {
+                case "price_desc":
+                    products = products.OrderByDescending(p => p.Price);
+                    break;
+                case "price_inc":
+                    products = products.OrderBy(p => p.Price);
+                    break;
+                default:
+                    // Default sorting if needed
+                    break;
+            }
+
+            return View(products.ToList());
+        }
+
+        public IActionResult Privacy()
         {
             return View();
         }
@@ -64,17 +67,14 @@ namespace FreshShop.Controllers
             wishlist.ProductId = Id;
             wishlist.UserId = user.Id;
 
-            // Kiểm tra xem sản phẩm đã có trong danh sách yêu thích của người dùng chưa
             var existingWishlist = await _dataContext.Wishlists
                 .FirstOrDefaultAsync(w => w.ProductId == Id && w.UserId == user.Id);
 
             if (existingWishlist != null)
             {
-                // Nếu đã có sản phẩm trong danh sách yêu thích, trả về thông báo
                 return Ok(new { success = false, message = "Sản phẩm đã có trong danh sách yêu thích." });
             }
 
-            // Nếu chưa có, thêm vào danh sách yêu thích
             _dataContext.Add(wishlist);
             try
             {
@@ -87,24 +87,20 @@ namespace FreshShop.Controllers
             }
         }
 
-
         public async Task<IActionResult> AddCompare(int Id, CompareModel compare)
         {
             var user = await _userManager.GetUserAsync(User);
             compare.ProductId = Id;
             compare.UserId = user.Id;
 
-            // Kiểm tra xem sản phẩm đã có trong danh sách so sánh của người dùng chưa
             var existingCompare = await _dataContext.Compares
                 .FirstOrDefaultAsync(c => c.ProductId == Id && c.UserId == user.Id);
 
             if (existingCompare != null)
             {
-                // Nếu đã có sản phẩm trong danh sách so sánh, trả về thông báo
                 return Ok(new { success = false, message = "Sản phẩm đã có trong danh sách so sánh." });
             }
 
-            // Nếu chưa có, thêm vào danh sách so sánh
             _dataContext.Add(compare);
             try
             {
@@ -116,7 +112,6 @@ namespace FreshShop.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
-
 
         public async Task<IActionResult> Compare()
         {
@@ -151,7 +146,5 @@ namespace FreshShop.Controllers
             await _dataContext.SaveChangesAsync();
             return RedirectToAction("Wishlist", "Home");
         }
-
-
-	}
+    }
 }
