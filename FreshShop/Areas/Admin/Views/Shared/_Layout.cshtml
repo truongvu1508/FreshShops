@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="~/assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="~/assets/vendors/css/vendor.bundle.base.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- css cho exports-->
+    <link href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/3.2.0/css/buttons.dataTables.css" rel="stylesheet">
     <link rel="stylesheet" href="~/assets/css/style.css">
 
 </head>
@@ -247,6 +250,12 @@
                             <span class="menu-title">Orders</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Slider" asp-action="Index">
+                            <span class="icon-bg"><i class="fa-solid fa-ticket menu-icon" style="color: #65c649;"></i></span>
+                            <span class="menu-title">Slide</span>
+                        </a>
+                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link" asp-area="Admin" asp-controller="Coupon" asp-action="Index">
@@ -352,6 +361,26 @@
     <script src="~/assets/js/off-canvas.js"></script>
     <script src="~/assets/js/hoverable-collapse.js"></script>
     <script src="~/assets/js/misc.js"></script>
+    <script src="~/backend/js/site.js"></script>
+    <!-- Js cho exports -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/dataTables.buttons.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.print.min.js"></script>
+    <script>
+        let table = new DataTable('#myTable', {
+            layout: {
+                topStart: {
+                    buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+                }
+            }
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 

@@ -9,6 +9,10 @@ using FreshShop.Services.Momo;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Connect MomoAPI
+builder.Services.Configure<MomoOptionModdel>(builder.Configuration.GetSection("MomoAPI"));
+builder.Services.AddScoped<IMomoService, MomoService>();
+
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectedDb"));
@@ -25,9 +29,7 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromMinutes(30);
     options.Cookie.IsEssential = true;
 });
-//Connect MomoAPI
-builder.Services.Configure<MomoOptionModdel>(builder.Configuration.GetSection("MomoAPI"));
-builder.Services.AddScoped<IMomoService, MomoService>();
+
 
 builder.Services.AddSingleton<IdentityErrorDescriber, AppIdentityErrorDescriber>();
 builder.Services.AddIdentity<AppUserModel, IdentityRole>()

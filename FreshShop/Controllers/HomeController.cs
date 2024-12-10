@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace FreshShop.Controllers
 {
@@ -21,13 +22,32 @@ namespace FreshShop.Controllers
             _userManager = userManager;
         }
 
-        public IActionResult Index()
-        {
-            var products = _dataContext.Products.Include("Category").ToList();
-            return View(products);
-        }
+		public IActionResult Index(decimal? startprice, decimal? endprice, string sort_by)
+		{
+			var products = _dataContext.Products.Include("Category").AsQueryable();
+      var sliders = _dataContext.Sliders.ToList();
+			ViewBag.Sliders = sliders;
+			if (startprice.HasValue && endprice.HasValue)
+			{
+				products = products.Where(p => p.Price >= startprice && p.Price <= endprice);
+			}
+			// Add sorting logic
+			switch (sort_by)
+			{
+				case "price_desc":
+					products = products.OrderByDescending(p => p.Price);
+					break;
+				case "price_inc":
+					products = products.OrderBy(p => p.Price);
+					break;
+				default:
+					// Default sorting if needed
+					break;
+			}
+			return View(products.ToList());
+		}
 
-        public IActionResult Privacy()
+		public IActionResult Privacy()
         {
             return View();
         }
@@ -131,5 +151,7 @@ namespace FreshShop.Controllers
             await _dataContext.SaveChangesAsync();
             return RedirectToAction("Wishlist", "Home");
         }
-    }
+
+
+	}
 }

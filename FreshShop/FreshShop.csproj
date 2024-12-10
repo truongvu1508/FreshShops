@@ -37,4 +37,9 @@
     <PackageReference Include="RestSharp" Version="112.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\media\slider\" />
+    <Folder Include="wwwroot\media\products\" />
+  </ItemGroup>
+
 </Project>

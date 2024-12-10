@@ -1,24 +1,20 @@
-<<<<<<< Updated upstream
-﻿<!-- Start Shop Detail  -->
-=======
 <!-- Start Shop Detail  -->
->>>>>>> Stashed changes
 <div class="shop-detail-box-main">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-5 col-lg-5 col-md-6">
 				<div id="carousel-example-1" class="single-product-slider carousel slide" data-ride="carousel">
-					<img class="d-block w-100" src="~/images/@Model.Image" alt="Third slide">
+					<img class="d-block w-100" src="~/media/products/@Model.Image" alt="Third slide">
 				</div>
 			</div>
 			<div class="col-xl-7 col-lg-7 col-md-6">
 				<div class="single-product-details">
 					<h2>@Model.Name</h2>
 					<h5> @Model.Price VND</h5>
-					<p class="available-stock"><span> More than 20 available / <a href="#">8 sold </a></span><p>
+					<p class="available-stock"><span style="color: #b0b435"> @Model.Quantity sản phẩm / </span><span>@Model.Sold đã bán</span><p>
 						<h4>Description:</h4>
 					<p>
-								@Model.Description
+								@Html.Raw(@Model.Description)
 					</p>
 					<ul>
 						<li>
@@ -31,8 +27,14 @@
 
 					<div class="price-box-bar">
 						<div class="cart-and-bay-btn">
-							<a class="btn hvr-hover" data-fancybox-close="" href="#">Buy New</a>
-							<a class="btn hvr-hover" data-fancybox-close="" href="#">Add to cart</a>
+									@if (@Model.Quantity > 0)
+									{
+										<a class="cart" asp-action="Add" asp-controller="Cart" asp-route-id="@Model.Id">Add to Cart</a>
+									}
+									else
+									{
+										<a class="cart" style="background:#990000">Hết hàng</a>
+									}
 						</div>
 					</div>
 

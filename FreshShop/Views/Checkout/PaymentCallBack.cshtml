@@ -1,0 +1,12 @@
+
+@model FreshShop.Models.Momo.MomoExcuteResponseModel
+
+@{
+    ViewData["title"] = "Kết quả thông tin giao dịch thanh toán thành công";
+}
+
+<h5>Thanh toán MOMO thành công với:</h5>
+<h6>OrderId: @Model.OrderId</h6>
+<h6>OrderInfo: @Model.OrderInfor</h6>
+<h6>Tổng tiền: @Model.Amount</h6>
+<h5>Xem <a asp-controller="History" asp-action="History">Lịch sử đơn hàng đã đặt</a></h5>

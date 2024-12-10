@@ -15,15 +15,35 @@ namespace FreshShop.Areas.Admin.Controllers
         {
             _dataContext = context;
         }
-        public async Task<IActionResult> Index()
+		public async Task<IActionResult> Index()
         {
             return View(await _dataContext.Orders.OrderByDescending(c => c.Id).ToListAsync());
         }
 		public async Task<IActionResult> ViewOrder(string ordercode)
 		{
             var DetailsOrder = await _dataContext.OrderDetails.Include(o=>o.Product).Where(od=>od.OrderCode == ordercode).ToListAsync();
-			return View(DetailsOrder);
+            var ShippingCost = _dataContext.Orders.Where(o => o.OrderCode == ordercode).First();
+            ViewBag.ShippingCost = ShippingCost.ShippingCost;
+            var CouponValue = _dataContext.Orders.Where(o => o.OrderCode == ordercode).First();
+            ViewBag.CouponValue = CouponValue.CouponValue;
+            return View(DetailsOrder);
 		}
+
+        [HttpGet]
+        [Route("PaymentMomoInfo")]
+        public async Task<IActionResult> PaymentMomoInfo(string orderId)
+        {
+            var momoInfo = await _dataContext.MomoInfoModels
+                .FirstOrDefaultAsync(m => m.OrderId == orderId);
+
+            if (momoInfo == null)
+            {
+                return NotFound();
+            }
+
+            return View(momoInfo);
+        }
+
         [HttpPost]
         [Route("UpdateOrder")]
         public async Task<IActionResult> UpdateOrder(string ordercode, int status)

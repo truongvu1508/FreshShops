@@ -1,4 +1,7 @@
-﻿@model IEnumerable<ProductModel>
+﻿@{
+	var currentUrl = Url.ActionContext.HttpContext.Request.Path;
+}
+@model IEnumerable<ProductModel>
 
 <!-- Start Slider -->
 <div id="slides-shop" class="cover-slides">
@@ -57,12 +60,15 @@
 						<div class="col-12 col-sm-8 text-center text-sm-left">
 							<div class="toolbar-sorter-right">
 								<span>Sort by </span>
-								<select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-									<option data-display="Select">Nothing</option>
-									<option value="1">Popularity</option>
-									<option value="2">High Price → High Price</option>
-									<option value="3">Low Price → High Price</option>
-									<option value="4">Best Selling</option>
+								@{
+									var currentSort = Context.Request.Query["sort_by"].ToString();
+								}
+								<select id="sort_by" class="selectpicker show-tick form-control" data-placeholder="$ USD">
+									<option value="" selected=@(currentSort == "")>Nothing</option>
+									<!-- <option value="1">Popularity</option> -->
+									<option value="price_desc" selected=@(currentSort == "price_desc")>High Price → Low Price</option>
+									<option value="price_inc" selected=@(currentSort == "price_inc")>Low Price → High Price</option>
+									<!-- <option value="4">Best Selling</option> -->
 								</select>
 							</div>
 							<p>Showing all @Model.Count() results</p>
@@ -92,7 +98,7 @@
 													<div class="type-lb">
 														<p class="sale">Sale</p>
 													</div>
-													<img src="~/images/@item.Image" class="img-fluid" alt="@item.Name">
+													<img src="~/media/products/@item.Image" class="img-fluid" alt="@item.Name">
 													<div class="mask-icon">
 														<ul>
 															<li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
@@ -125,7 +131,7 @@
 														<div class="type-lb">
 															<p class="sale">Sale</p>
 														</div>
-														<img src="~/images/@item.Image" class="img-fluid" alt="@item.Name">
+														<img src="~/media/products/@item.Image" class="img-fluid" alt="@item.Name">
 														<div class="mask-icon">
 															<ul>
 																<li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
@@ -271,6 +277,8 @@
             // Lấy giá trị startprice và endprice từ URL
             const startPrice = parseInt(getUrlParameter('startprice')) || 5000;
             const endPrice = parseInt(getUrlParameter('endprice')) || 30000;
+			// Lấy giá trị sort_by từ URL
+			const sortBy = getUrlParameter('sort_by');
             $(function () {
                 $("#slider-range").slider({
                     range: true,
@@ -308,4 +316,35 @@
             });
         });
     </script>
+	<script>
+		$(document).ready(function () {
+			$('#sort_by').on('change', function () {
+				var sortValue = $(this).val();
+				if (sortValue && sortValue !== '') {
+					// Get current URL parameters
+					var params = new URLSearchParams(window.location.search);
+
+					// Update or add sort_by parameter
+					params.set('sort_by', sortValue);
+
+					// Maintain existing parameters
+					var currentSlug = '@ViewBag.CurrentSlug';
+					var startPrice = params.get('startprice');
+					var endPrice = params.get('endprice');
+
+					// Construct new URL
+					var newUrl = '/Category/Index/' +
+						'?Slug=' + currentSlug +
+						'&sort_by=' + sortValue;
+
+					if (startPrice && endPrice) {
+						newUrl += '&startprice=' + startPrice + '&endprice=' + endPrice;
+					}
+
+					// Navigate to new URL
+					window.location.href = newUrl;
+				}
+			});
+		});
+	</script>
 }
