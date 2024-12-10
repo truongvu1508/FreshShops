@@ -45,7 +45,7 @@ namespace FreshShop.Controllers
         }
         public IActionResult Checkout()
         {
-            return View("~/View/Checkout/Index.cshtml");
+            return View("~/Views/Checkout/Index.cshtml");
         }
         public async Task<IActionResult> Add(int Id)
         {

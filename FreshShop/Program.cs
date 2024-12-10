@@ -3,11 +3,15 @@ using FreshShop.Models;
 using FreshShop.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System;
-using FreshShop.Data;  
+using FreshShop.Models.Momo;
+using FreshShop.Services.Momo;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Connect MomoAPI
+builder.Services.Configure<MomoOptionModdel>(builder.Configuration.GetSection("MomoAPI"));
+builder.Services.AddScoped<IMomoService, MomoService>();
 
 builder.Services.AddDbContext<DataContext>(options =>
 {
@@ -25,6 +29,8 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromMinutes(30);
     options.Cookie.IsEssential = true;
 });
+
+
 builder.Services.AddSingleton<IdentityErrorDescriber, AppIdentityErrorDescriber>();
 builder.Services.AddIdentity<AppUserModel, IdentityRole>()
                 .AddEntityFrameworkStores<DataContext>()

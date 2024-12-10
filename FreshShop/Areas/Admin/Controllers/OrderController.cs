@@ -1,4 +1,4 @@
-﻿using FreshShop.Data;
+using FreshShop.Data;
 using FreshShop.Models;
 using FreshShop.Repository;
 using Microsoft.AspNetCore.Authorization;
