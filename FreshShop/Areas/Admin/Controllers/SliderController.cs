@@ -1,10 +1,12 @@
-﻿using FreshShop.Models;
+﻿using FreshShop.Data;
+using FreshShop.Models;
 using FreshShop.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+[Authorize(Roles = RoleName.Administrator)]
 [Area("Admin")]
-[Route("Admin/Slider")]
 public class SliderController : Controller
 {
     private readonly DataContext _dataContext;
@@ -15,8 +17,6 @@ public class SliderController : Controller
         _dataContext = dataContext;
         _webHostEnvironment = webHostEnvironment;
     }
-
-    [Route("Index")]
     public async Task<IActionResult> Index()
     {
         return View(await _dataContext.Sliders.OrderByDescending(s => s.Id).ToListAsync());

@@ -25,9 +25,8 @@ using Microsoft.Extensions.Logging;
 namespace FreshShop.Areas.Identity.Controllers
 {
 
-    //[Authorize(Roles = RoleName.Administrator)]
+    [Authorize(Roles = RoleName.Administrator)]
     [Area("Identity")]
-    [Route("/ManageUser/[action]")]
     public class UserController : Controller
     {
 
@@ -88,7 +87,7 @@ namespace FreshShop.Areas.Identity.Controllers
         }
 
         // GET: /ManageUser/AddRole/id
-        [HttpGet("{id}")]
+        [HttpGet]
         public async Task<IActionResult> AddRoleAsync(string id)
         {
             // public SelectList allRoles { get; set; }
@@ -116,7 +115,7 @@ namespace FreshShop.Areas.Identity.Controllers
         }
 
         // GET: /ManageUser/AddRole/id
-        [HttpPost("{id}")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddRoleAsync(string id, [Bind("RoleNames")] AddUserRoleModel model)
         {
@@ -162,7 +161,7 @@ namespace FreshShop.Areas.Identity.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpGet("{id}")]
+        [HttpGet]
         public async Task<IActionResult> SetPasswordAsync(string id)
         {
             if (string.IsNullOrEmpty(id))
@@ -181,7 +180,7 @@ namespace FreshShop.Areas.Identity.Controllers
             return View();
         }
 
-        [HttpPost("{id}")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SetPasswordAsync(string id, SetUserPasswordModel model)
         {
@@ -221,7 +220,7 @@ namespace FreshShop.Areas.Identity.Controllers
         }
 
 
-        [HttpGet("{userid}")]
+        [HttpGet]
         public async Task<ActionResult> AddClaimAsync(string userid)
         {
 
@@ -231,7 +230,7 @@ namespace FreshShop.Areas.Identity.Controllers
             return View();
         }
 
-        [HttpPost("{userid}")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> AddClaimAsync(string userid, AddUserClaimModel model)
         {
@@ -254,7 +253,7 @@ namespace FreshShop.Areas.Identity.Controllers
             return RedirectToAction("AddRole", new { id = user.Id });
         }
 
-        [HttpGet("{claimid}")]
+        [HttpGet]
         public async Task<IActionResult> EditClaim(int claimid)
         {
             var userclaim = _context.UserClaims.Where(c => c.Id == claimid).FirstOrDefault();
@@ -272,7 +271,7 @@ namespace FreshShop.Areas.Identity.Controllers
             ViewBag.userclaim = userclaim;
             return View("AddClaim", model);
         }
-        [HttpPost("{claimid}")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditClaim(int claimid, AddUserClaimModel model)
         {
@@ -303,7 +302,7 @@ namespace FreshShop.Areas.Identity.Controllers
             ViewBag.userclaim = userclaim;
             return RedirectToAction("AddRole", new { id = user.Id });
         }
-        [HttpPost("{claimid}")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteClaimAsync(int claimid)
         {
