@@ -1,0 +1,104 @@
+﻿@model IEnumerable<OrderDetails>
+@{
+    ViewData["title"] = "Chi tiết đơn hàng";
+    decimal total = 0;
+    decimal subtotal = 0;
+}
+
+<h4 class="text-center mb-4">Chi tiết đơn hàng @Model.FirstOrDefault()?.OrderCode</h4>
+
+<table class="table table-striped" id="detail_order">
+    <thead>
+        <tr>
+            <th scope="col">Mã đơn hàng</th>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">Đơn giá</th>
+            <th scope="col">Số lượng</th>
+            <th scope="col">Thành tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            subtotal = item.Quantity * item.Price;
+            total += subtotal;
+            <tr>
+                <td>@item.OrderCode</td> <!-- Mã đơn hàng -->
+                <td>@item.Product.Name</td> <!-- Tên sản phẩm -->
+                <td>@item.Price.ToString("#,##0 VNĐ")</td> <!-- Đơn giá -->
+                <td>@item.Quantity</td> <!-- Số lượng -->
+                <td>@subtotal.ToString("#,##0 VNĐ")</td> <!-- Thành tiền -->
+            </tr>
+        }
+        <!-- Tổng tạm tính -->
+        <tr>
+            <td colspan="4" class="text-right"><strong>Tạm tính:</strong></td>
+            <td>@total.ToString("#,##0 VNĐ")</td>
+        </tr>
+
+        <!-- Phí ship -->
+        <tr>
+            <td colspan="4" class="text-right"><strong>Phí ship:</strong></td>
+            <td>@ViewBag.ShippingCost.ToString("#,##0 VNĐ")</td>
+        </tr>
+
+        <!-- Giảm giá -->
+        <tr>
+            <td colspan="4" class="text-right"><strong>Giảm giá:</strong></td>
+            <td>@ViewBag.CouponValue %</td>
+        </tr>
+
+        <!-- Tổng tiền -->
+        <tr>
+            <td colspan="4" class="text-right">
+                <h5 style="color: #03A10A" class="ml-auto h5">Tổng tiền:</h5>
+            </td>
+            <td>
+                @{
+                    var shippingCost = Convert.ToDecimal(ViewBag.ShippingCost ?? 0);
+                    var couponValue = Convert.ToDecimal(ViewBag.CouponValue ?? 0);
+                    var grandTotal = (total + shippingCost) - (total + shippingCost) * (couponValue / 100);
+                }
+                <strong>@grandTotal.ToString("#,##0 VNĐ")</strong>
+            </td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+<!-- Quay lại danh sách đơn hàng -->
+<a asp-action="History" asp-controller="History" class="btn btn-warning btn-sm">Về danh sách đơn hàng</a>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('.select-update-order').change(function () {
+                var status = $(this).val();
+                var ordercode = $('.getId').val();
+                alert("Trạng thái: " + status);
+                alert("Mã đơn hàng: " + ordercode);
+
+                $.ajax({
+                    url: '@Url.Action("UpdateOrder", "Order")',
+                    type: 'POST',
+                    data: {
+                        ordercode: ordercode,
+                        status: status
+                    },
+                    success: function (result) {
+                        if (result.success) {
+                            alert("Cập nhật trạng thái đơn hàng thành công!");
+                        } else {
+                            alert("Lỗi khi cập nhật trạng thái.");
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Error:', error);
+                        alert('Có lỗi xảy ra khi cập nhật trạng thái.');
+                    }
+                });
+            });
+        });
+    </script>
+}

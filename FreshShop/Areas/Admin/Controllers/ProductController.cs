@@ -20,10 +20,6 @@ namespace FreshShop.Areas.Admin.Controllers
             _dataContext = context;
             _webHostEnvironment = webHostEnvironment;
         }
-        public async Task<IActionResult> Index()
-        {
-            return View(await _dataContext.Products.OrderByDescending(p => p.Id).Include(p => p.Category).ToListAsync());
-        }
 
         [HttpGet]
         public IActionResult Create()
@@ -160,6 +156,7 @@ namespace FreshShop.Areas.Admin.Controllers
                 // Cập nhật các thuộc tính
                 exisxted_product.Name = product.Name;
                 exisxted_product.Price = product.Price;
+                exisxted_product.CapitalPrice = product.CapitalPrice;
                 exisxted_product.Description = product.Description;
                 exisxted_product.CategoryId = product.CategoryId;
                 exisxted_product.Slug = product.Slug;
@@ -223,6 +220,37 @@ namespace FreshShop.Areas.Admin.Controllers
             TempData["success"] = "Thêm sl thành công";
             return RedirectToAction("AddQuantity", "Product", new { Id = model.ProductId });
 
+        }
+        public async Task<IActionResult> Index(int pg = 1)
+        {
+            const int pageSize = 10; // Number of items per page
+
+            // Ensure pg is at least 1
+            if (pg < 1) pg = 1;
+
+            // Get all products with their categories
+            List<ProductModel> products = await _dataContext.Products
+                                                             .Include(p => p.Category)
+                                                             .OrderByDescending(p => p.Id)
+                                                             .ToListAsync();
+
+            // Total number of products
+            int recsCount = products.Count;
+
+            // Create pagination info
+            var pager = new Paginate(recsCount, pg, pageSize);
+
+            // Skip products based on the page number and page size
+            int recSkip = (pg - 1) * pageSize;
+
+            // Get the products for the current page
+            var data = products.Skip(recSkip).Take(pager.PageSize).ToList();
+
+            // Pass pagination info to the view
+            ViewBag.Pager = pager;
+
+            // Return the paginated view with the product data
+            return View(data);
         }
 
         public async Task<IActionResult> Search(string search)

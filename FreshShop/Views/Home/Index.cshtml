@@ -3,6 +3,29 @@
 }
 @model IEnumerable<ProductModel>
 
+<!-- Start Modal for Cart -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div id="cart-items">
+					<!-- Giỏ hàng sẽ được hiển thị tại đây -->
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<a href="@Url.Action("Index", "Cart")" class="btn btn-primary">View Cart</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Modal for Cart -->
 <!-- Start Slider -->
 
 @{
@@ -355,6 +378,68 @@
 					},
 				});
 			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$('.cart').click(function (e) {
+				e.preventDefault();
+				var productId = $(this).data("id");
+
+				$.ajax({
+					type: "POST",
+					url: "@Url.Action("AddToCart", "Cart")",
+					data: { productId: productId },
+					success: function (response) {
+						if (response.success) {
+							// Trigger custom event for React component
+							const cartEvent = new CustomEvent('cartUpdated', {
+								detail: {
+									cartItems: response.cartItems
+								}
+							});
+							window.dispatchEvent(cartEvent);
+
+							Swal.fire("Thành công", "Sản phẩm đã được thêm vào giỏ hàng", "success");
+						} else {
+							Swal.fire("Lỗi", response.message || "Không thể thêm sản phẩm", "error");
+						}
+					},
+					error: function () {
+						Swal.fire("Lỗi", "Đã có lỗi xảy ra", "error");
+					}
+				});
+			});
+		});
+
+					 function updateCartModal(cartItems) {
+				var cartContent = '';
+				if (cartItems && cartItems.length > 0) {
+					cartItems.forEach(function (item) {
+						cartContent += '<div class="cart-item">' +
+										'<h6>' + item.Name + '</h6>' +
+										'<p>' + item.Quantity + ' x ' + item.Price + ' VND</p>' +
+										'</div>';
+					});
+				} else {
+					cartContent = '<p>Giỏ hàng trống</p>';
+				}
+
+				$('#cart-items').html(cartContent);
+			}
+		});
+
+			function updateCartModal(cartItems) {
+				var cartContent = '';
+				cartItems.forEach(function (item) {
+					cartContent += '<div class="cart-item">' +
+									'<h6>' + item.Name + '</h6>' +
+									'<p>' + item.Quantity + ' x ' + item.Price + ' VND</p>' +
+									'</div>';
+				});
+
+				$('#cart-items').html(cartContent);
+			}
 		});
 	</script>
 }

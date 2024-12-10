@@ -1,4 +1,5 @@
 ﻿using FreshShop.Data;
+using FreshShop.Models;
 using FreshShop.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -22,8 +23,9 @@ namespace FreshShop.Areas.Admin.Controllers
 		public async Task<IActionResult> ViewOrder(string ordercode)
 		{
             var DetailsOrder = await _dataContext.OrderDetails.Include(o=>o.Product).Where(od=>od.OrderCode == ordercode).ToListAsync();
-            var ShippingCost = _dataContext.Orders.Where(o => o.OrderCode == ordercode).First();
-            ViewBag.ShippingCost = ShippingCost.ShippingCost;
+            var Order = _dataContext.Orders.Where(o => o.OrderCode == ordercode).First();
+            ViewBag.ShippingCost = Order.ShippingCost;
+            ViewBag.Status = Order.Status;
             var CouponValue = _dataContext.Orders.Where(o => o.OrderCode == ordercode).First();
             ViewBag.CouponValue = CouponValue.CouponValue;
             return View(DetailsOrder);
@@ -38,14 +40,59 @@ namespace FreshShop.Areas.Admin.Controllers
                 return NotFound();
             }
             order.Status = status;
+            _dataContext.Update(order);
+            if (status == 2) { 
+                var DetailsOrder = await _dataContext.OrderDetails.Include(od=>od.Product)
+                    .Where(od=>od.OrderCode ==order.OrderCode).Select (od=>new
+                    { 
+                        od.Quantity,
+                        od.Product.Price,
+                        od.Product.CapitalPrice
+                    }).ToListAsync();
+                var statisticalModel = await _dataContext.Statistical.FirstOrDefaultAsync(
+                    s => s.DateCreated.Date == order.CreatedDate.Date);
+                if (statisticalModel != null)
+                {
+                    foreach (var oderDetail in DetailsOrder)
+                    {
+                        statisticalModel.Quantity += 1;
+                        statisticalModel.Sold += oderDetail.Quantity;
+                        statisticalModel.Revenue += (int)(oderDetail.Quantity * oderDetail.Price);
+                        statisticalModel.Profit += (int)(oderDetail.Price - oderDetail.CapitalPrice);
+                    }
+                    _dataContext.Update(statisticalModel);
+                }
+                else {
+                    int new_quantity = 0;
+                    int new_sold = 0;
+                    decimal new_profit = 0;
+                    foreach (var oderDetail in DetailsOrder)
+                    {
+                        new_quantity += 1;
+                        new_sold += oderDetail.Quantity;
+                        new_profit += oderDetail.Price - oderDetail.CapitalPrice;
+
+                        statisticalModel = new Statistical
+                        {
+                            DateCreated = order.CreatedDate,
+                            Quantity = new_quantity,
+                            Sold = new_sold,
+                            Revenue = (int)(oderDetail.Quantity * oderDetail.Price),
+                            Profit = (int)(new_profit)
+                        };
+                    }
+                    _dataContext.Add(statisticalModel);
+                }
+            }
             try
             {
                 await _dataContext.SaveChangesAsync();
-                return Ok(new { success = true, message = "Order status updated succcessfully" });
+                return Ok(new { success = true, message = "Order status updated successsfully" });
             }
-            catch (Exception ex) 
+            catch (Exception)
             {
-                return StatusCode(500, "Lỗi khi cập nhật trạng thái");
+                return StatusCode(500, "An error occurred while updating the order status.");
+
             }
         }
         // GET: Delete Order
