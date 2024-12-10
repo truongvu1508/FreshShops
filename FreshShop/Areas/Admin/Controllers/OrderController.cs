@@ -1,4 +1,4 @@
-﻿using FreshShop.Data;
+using FreshShop.Data;
 using FreshShop.Models;
 using FreshShop.Repository;
 using Microsoft.AspNetCore.Authorization;
@@ -12,105 +12,104 @@ namespace FreshShop.Areas.Admin.Controllers
     public class OrderController : Controller
     {
         private readonly DataContext _dataContext;
+
         public OrderController(DataContext context)
         {
             _dataContext = context;
         }
-		public async Task<IActionResult> Index()
+
+        public async Task<IActionResult> Index()
         {
             return View(await _dataContext.Orders.OrderByDescending(c => c.Id).ToListAsync());
         }
-		public async Task<IActionResult> ViewOrder(string ordercode)
-		{
-            var DetailsOrder = await _dataContext.OrderDetails.Include(o=>o.Product).Where(od=>od.OrderCode == ordercode).ToListAsync();
-            var Order = _dataContext.Orders.Where(o => o.OrderCode == ordercode).First();
-            ViewBag.ShippingCost = Order.ShippingCost;
-            ViewBag.Status = Order.Status;
-            var CouponValue = _dataContext.Orders.Where(o => o.OrderCode == ordercode).First();
-            ViewBag.CouponValue = CouponValue.CouponValue;
-            return View(DetailsOrder);
-		}
 
-        [HttpGet]
-        [Route("PaymentMomoInfo")]
-        public async Task<IActionResult> PaymentMomoInfo(string orderId)
+        public async Task<IActionResult> ViewOrder(string ordercode)
         {
-            var momoInfo = await _dataContext.MomoInfoModels
-                .FirstOrDefaultAsync(m => m.OrderId == orderId);
+            var detailsOrder = await _dataContext.OrderDetails
+                .Include(o => o.Product)
+                .Where(od => od.OrderCode == ordercode)
+                .ToListAsync();
 
-            if (momoInfo == null)
+            var order = await _dataContext.Orders.FirstOrDefaultAsync(o => o.OrderCode == ordercode);
+
+            if (order == null)
             {
                 return NotFound();
             }
 
-            return View(momoInfo);
+            ViewBag.ShippingCost = order.ShippingCost;
+            ViewBag.Status = order.Status;
+            ViewBag.CouponValue = order.CouponValue;
+
+            return View(detailsOrder);
         }
 
         [HttpPost]
-        [Route("UpdateOrder")]
+        [Route("Admin/Order/UpdateOrder")]
         public async Task<IActionResult> UpdateOrder(string ordercode, int status)
         {
             var order = await _dataContext.Orders.FirstOrDefaultAsync(o => o.OrderCode == ordercode);
             if (order == null)
             {
-                return NotFound();
+                return Json(new { success = false, message = "Order not found." });
             }
+
             order.Status = status;
-            _dataContext.Update(order);
-            if (status == 2) { 
-                var DetailsOrder = await _dataContext.OrderDetails.Include(od=>od.Product)
-                    .Where(od=>od.OrderCode ==order.OrderCode).Select (od=>new
-                    { 
+
+            if (status == 2) // Status: Đã xử lý
+            {
+                var detailsOrder = await _dataContext.OrderDetails
+                    .Include(od => od.Product)
+                    .Where(od => od.OrderCode == order.OrderCode)
+                    .Select(od => new
+                    {
                         od.Quantity,
                         od.Product.Price,
                         od.Product.CapitalPrice
-                    }).ToListAsync();
-                var statisticalModel = await _dataContext.Statistical.FirstOrDefaultAsync(
-                    s => s.DateCreated.Date == order.CreatedDate.Date);
+                    })
+                    .ToListAsync();
+
+                var statisticalModel = await _dataContext.Statistical
+                    .FirstOrDefaultAsync(s => s.DateCreated.Date == order.CreatedDate.Date);
+
                 if (statisticalModel != null)
                 {
-                    foreach (var oderDetail in DetailsOrder)
+                    foreach (var orderDetail in detailsOrder)
                     {
                         statisticalModel.Quantity += 1;
-                        statisticalModel.Sold += oderDetail.Quantity;
-                        statisticalModel.Revenue += (int)(oderDetail.Quantity * oderDetail.Price);
-                        statisticalModel.Profit += (int)(oderDetail.Price - oderDetail.CapitalPrice);
+                        statisticalModel.Sold += orderDetail.Quantity;
+                        statisticalModel.Revenue += (int)(orderDetail.Quantity * orderDetail.Price);
+                        statisticalModel.Profit += (int)(orderDetail.Quantity * (orderDetail.Price - orderDetail.CapitalPrice));
                     }
                     _dataContext.Update(statisticalModel);
                 }
-                else {
-                    int new_quantity = 0;
-                    int new_sold = 0;
-                    decimal new_profit = 0;
-                    foreach (var oderDetail in DetailsOrder)
+                else
+                {
+                    var newStatistical = new Statistical
                     {
-                        new_quantity += 1;
-                        new_sold += oderDetail.Quantity;
-                        new_profit += oderDetail.Price - oderDetail.CapitalPrice;
-
-                        statisticalModel = new Statistical
-                        {
-                            DateCreated = order.CreatedDate,
-                            Quantity = new_quantity,
-                            Sold = new_sold,
-                            Revenue = (int)(oderDetail.Quantity * oderDetail.Price),
-                            Profit = (int)(new_profit)
-                        };
-                    }
-                    _dataContext.Add(statisticalModel);
+                        DateCreated = order.CreatedDate,
+                        Quantity = detailsOrder.Count,
+                        Sold = detailsOrder.Sum(od => od.Quantity),
+                        Revenue = detailsOrder.Sum(od => (int)(od.Quantity * od.Price)),
+                        Profit = detailsOrder.Sum(od => (int)(od.Quantity * (od.Price - od.CapitalPrice)))
+                    };
+                    _dataContext.Add(newStatistical);
                 }
             }
+
+            _dataContext.Update(order);
+
             try
             {
                 await _dataContext.SaveChangesAsync();
-                return Ok(new { success = true, message = "Order status updated successsfully" });
+                return Json(new { success = true, message = "Order status updated successfully." });
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(500, "An error occurred while updating the order status.");
-
+                return Json(new { success = false, message = "An error occurred while updating the order status.", error = ex.Message });
             }
         }
+
         // GET: Delete Order
         public async Task<IActionResult> Delete(int Id)
         {
