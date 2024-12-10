@@ -36,15 +36,22 @@
 				<td>
 					@if (item.Status == 1)
 					{
-						<span class="text text-danger">
-							Đơn hàng mới 
+						<span class="text text-primary">
+							Đơn hàng mới
 						</span>
 					}
-					else
+					else if (item.Status == 2)
 					{
 						<span class="text text-success">
-							Đơn hàng thành công
+							Đã xử lý
 						</span>
+					}
+					else if (item.Status == 3)
+					{
+						<span class="text text-danger">
+							Đã hủy
+						</span>
+
 					}
 				</td>
 				<td>

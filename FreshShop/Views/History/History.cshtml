@@ -1,0 +1,63 @@
+﻿@model IEnumerable<OrderModel>
+@{
+	ViewData["title"] = "List History Order placed by" + " " +  ViewBag.UserEmail;
+}
+<h4 class="text-center mb-4">Lịch sử đặt hàng của @ViewBag.UserEmail</h4>
+<table class="table table-bordered table-striped table-hover" id="myTable">
+	<thead>
+		<tr>
+			<th scope="col">Mã đặt hàng</th>
+			<th scope="col">Người đặt hàng</th>
+			<th scope="col">Ngày đặt hàng</th>
+			<th scope="col">Phí ship</th>
+			<th scope="col">Trạng thái</th>
+			<th scope="col">Hành động</th>
+			<th></th>
+
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<th scope="row">@item.OrderCode</th>
+				<td>@item.UserName</td>
+				<td>@item.CreatedDate</td>
+				<td>@item.ShippingCost.ToString("#,##0 VNĐ")</td>
+
+				<td>
+					@if (item.Status == 1)
+					{
+						<span class="text text-primary">
+							Đơn hàng mới
+						</span>
+					}
+					else if (item.Status == 2)
+					{
+						<span class="text text-success">
+							Đã xử lý 
+						</span>
+					}
+					else
+					{
+						<span class="text text-danger">
+							Đã hủy
+						</span>
+
+					}
+				</td>
+				<td>
+					<a class="btn btn-info btn-sm" asp-action="ViewHistory" asp-controller="History" asp-route-orderCode="@item.OrderCode">Xem chi tiết</a>
+					@if (item.Status != 3 && item.Status != 2)
+					{
+						<a class="btn btn-danger btn-sm"
+						asp-action="CancelOrder"
+						asp-controller="History"
+						asp-route-ordercode="@item.OrderCode"
+						asp-route-orderStatus="@item.Status">Hủy đơn hàng</a>
+					}
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
