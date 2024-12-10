@@ -56,7 +56,7 @@ namespace FreshShop.Controllers
                     orderItem.PaymentMethod = OrderId;
                 }
                 else{
-                    orderItem.PaymentMethod = "Momo";
+                    orderItem.PaymentMethod = null;
                 }
                 _dataContext.Add(orderItem);
                 _dataContext.SaveChanges();

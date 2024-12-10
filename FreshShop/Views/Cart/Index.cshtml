@@ -1,4 +1,4 @@
-﻿﻿﻿@using FreshShop.Models.ViewModels
+﻿﻿@using FreshShop.Models.ViewModels
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<AppUserModel> SignInManager
 @inject UserManager<AppUserModel> UserManager
@@ -133,11 +133,9 @@
                         <a asp-controller="Checkout" asp-action="Checkout" class="ml-auto btn hvr-hover">Đặt hàng</a>
                         <form method="POST" asp-action="CreatePaymentUrl" asp-controller="Payment">
                             <input type="hidden" name="FullName" value=" @UserManager.GetUserName(User)" />
-                            <input type="hidden" name="Amount" value="@Model.GrandTotal" />
-
+                            <input type="hidden" name="Amount" value="@grandTotal.ToString()" />
                             <input type="hidden" name="OrderInfo"
                                 value="Thanh toán đặt hàng qua Momo tại FreshShop" />
-
                             <br />
                             <button class="btn btn-danger" name="PayUrl" type="submit">Pay with MoMo</button>
                         </form>
