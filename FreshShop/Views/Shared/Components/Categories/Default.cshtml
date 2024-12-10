@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<CategoryModel>
 @foreach(var item in Model)
 {
-    <a asp-action="Index" asp-controller="Category" asp-route-Slug="@item.Slug" class="list-group-item list-group-item-action"> @item.Name<small class="text-muted"> (150) </small></a>
+    <a asp-action="Index" asp-controller="Category" asp-route-Slug="@item.Slug" class="list-group-item list-group-item-action"> @item.Name<small class="text-muted"></small></a>
 }

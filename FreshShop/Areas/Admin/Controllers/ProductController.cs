@@ -178,15 +178,12 @@ namespace FreshShop.Areas.Admin.Controllers
         public async Task<IActionResult> Delete(int Id)
         {
             ProductModel product = await _dataContext.Products.FirstAsync(p => p.Id == Id);
-            if (string.Equals(product.Image, "noname.jpg"))
-            {
                 string uploaddir = Path.Combine(_webHostEnvironment.WebRootPath, "media/products");
                 string oldfile = Path.Combine(uploaddir, product.Image);
                 if (System.IO.File.Exists(oldfile))
                 {
                     System.IO.File.Delete(oldfile);
                 }
-            }
             _dataContext.Products.Remove(product);
             await _dataContext.SaveChangesAsync();
             return RedirectToAction("Index");

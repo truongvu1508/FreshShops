@@ -1,12 +1,14 @@
-﻿using FreshShop.Models;
+﻿using FreshShop.Data;
+using FreshShop.Models;
 using FreshShop.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace FreshShop.Areas.Admin.Controllers
 {
+    [Authorize(Roles = RoleName.Administrator)]
     [Area("Admin")]
-    [Route("Admin/Shipping")]
     public class ShippingController : Controller
     {
         private readonly DataContext _dataContext;
@@ -14,7 +16,6 @@ namespace FreshShop.Areas.Admin.Controllers
         {
             _dataContext = context;
         }
-        [Route("Index")]
         public async Task<IActionResult> Index()
         {
             var shippingList = await _dataContext.Shipping.ToListAsync();
@@ -23,7 +24,6 @@ namespace FreshShop.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        [Route("StoreShipping")]
         public async Task<IActionResult> StoreShipping(ShippingModel shippingModel, string phuong, string quan, string tinh, decimal price)
         {
             shippingModel.City = tinh;

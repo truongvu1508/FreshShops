@@ -21,9 +21,9 @@ using Microsoft.Extensions.Logging;
 namespace FreshShop.Areas.Identity.Controllers
 {
 
-    // [Authorize(Roles = RoleName.Administrator)]
+
+    [Authorize(Roles = RoleName.Administrator)]
     [Area("Identity")]
-    [Route("/Role/[action]")]
     public class RoleController : Controller
     {
 
@@ -101,7 +101,7 @@ namespace FreshShop.Areas.Identity.Controllers
         }
 
         // GET: /Role/Delete/roleid
-        [HttpGet("{roleid}")]
+        [HttpGet]
         public async Task<IActionResult> DeleteAsync(string roleid)
         {
             if (roleid == null) return NotFound("Không tìm thấy role");
@@ -114,7 +114,7 @@ namespace FreshShop.Areas.Identity.Controllers
         }
 
         // POST: /Role/Edit/1
-        [HttpPost("{roleid}"), ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmAsync(string roleid)
         {
@@ -137,7 +137,7 @@ namespace FreshShop.Areas.Identity.Controllers
         }
 
         // GET: /Role/Edit/roleid
-        [HttpGet("{roleid}")]
+        [HttpGet]
         public async Task<IActionResult> EditAsync(string roleid, [Bind("Name")] EditRoleModel model)
         {
             if (roleid == null) return NotFound("Không tìm thấy role");
@@ -155,7 +155,7 @@ namespace FreshShop.Areas.Identity.Controllers
         }
 
         // POST: /Role/Edit/1
-        [HttpPost("{roleid}"), ActionName("Edit")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditConfirmAsync(string roleid, [Bind("Name")] EditRoleModel model)
         {
@@ -189,7 +189,7 @@ namespace FreshShop.Areas.Identity.Controllers
         }
 
         // GET: /Role/AddRoleClaim/roleid
-        [HttpGet("{roleid}")]
+        [HttpGet]
         public async Task<IActionResult> AddRoleClaimAsync(string roleid)
         {
             if (roleid == null) return NotFound("Không tìm thấy role");
@@ -207,7 +207,7 @@ namespace FreshShop.Areas.Identity.Controllers
         }
 
         // POST: /Role/AddRoleClaim/roleid
-        [HttpPost("{roleid}")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddRoleClaimAsync(string roleid, [Bind("ClaimType", "ClaimValue")] EditClaimModel model)
         {
@@ -243,7 +243,7 @@ namespace FreshShop.Areas.Identity.Controllers
         }
 
         // GET: /Role/EditRoleClaim/claimid
-        [HttpGet("{claimid:int}")]
+        [HttpGet]
         public async Task<IActionResult> EditRoleClaim(int claimid)
         {
             var claim = _context.RoleClaims.Where(c => c.Id == claimid).FirstOrDefault();
@@ -265,7 +265,7 @@ namespace FreshShop.Areas.Identity.Controllers
         }
 
         // GET: /Role/EditRoleClaim/claimid
-        [HttpPost("{claimid:int}")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditRoleClaim(int claimid, [Bind("ClaimType", "ClaimValue")] EditClaimModel Input)
         {
@@ -298,7 +298,7 @@ namespace FreshShop.Areas.Identity.Controllers
             return RedirectToAction("Edit", new { roleid = role.Id });
         }
         // POST: /Role/EditRoleClaim/claimid
-        [HttpPost("{claimid:int}")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteClaim(int claimid, [Bind("ClaimType", "ClaimValue")] EditClaimModel Input)
         {
