@@ -2,7 +2,13 @@
 	var currentUrl = Url.ActionContext.HttpContext.Request.Path;
 }
 @model IEnumerable<ProductModel>
-
+<style>
+	.custom-img {
+		width: 350px;
+		height: 250px;
+		object-fit: cover; 
+	}
+</style>
 <!-- Start Modal for Cart -->
 <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
@@ -43,19 +49,19 @@
 					<div class="product-item-filter row">
 						<div class="col-12 col-sm-8 text-center text-sm-left">
 							<div class="toolbar-sorter-right">
-								<span>Sort by </span>
+								<span>Lọc</span>
 								@{
 									var currentSort = Context.Request.Query["sort_by"].ToString();
 								}
 								<select id="sort_by" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-								<option value="" selected=@(currentSort == "")>Nothing</option>
+								<option value="" selected=@(currentSort == "")>Không có</option>
 									<!-- <option value="1">Popularity</option> -->
-								<option value="price_desc" selected=@(currentSort == "price_desc")>High Price → Low Price</option>
-								<option value="price_inc" selected=@(currentSort == "price_inc")>Low Price → High Price</option>
+								<option value="price_desc" selected=@(currentSort == "price_desc")>Giá cao → Giá thấp</option>
+								<option value="price_inc" selected=@(currentSort == "price_inc")>Giá thấp → Giá cao</option>
 									<!-- <option value="4">Best Selling</option> -->
 								</select>
 							</div>
-							<p>Showing all @Model.Count() results</p>
+							<p>Hiển thị @Model.Count() sản phẩm</p>
 						</div>
 						<div class="col-12 col-sm-4 text-center text-sm-right">
 							<ul class="nav nav-tabs ml-auto">
@@ -86,7 +92,7 @@
 													<div class="type-lb">
 														<p class="sale">Sale</p>
 													</div>
-													<img src="~/media/products/@item.Image" class="img-fluid" alt="@item.Name">
+													<img src="~/media/products/@item.Image" class="img-fluid custom-img" alt="@item.Name">
 													<div class="mask-icon">
 														<ul>
 															<li>
@@ -130,7 +136,7 @@
 														<div class="type-lb">
 															<p class="sale">Sale</p>
 														</div>
-														<img src="~/media/products/@item.Image" class="img-fluid" alt="@item.Name">
+														<img src="~/media/products/@item.Image" class="img-fluid custom-img" alt="@item.Name">
 														<div class="mask-icon">
 															<ul>
 																<li>

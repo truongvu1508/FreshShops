@@ -34,6 +34,7 @@ namespace FreshShop.Controllers
             {
                 couponValue = JsonConvert.DeserializeObject<int>(couponValueCookie);
             }
+            //thong tin chi tiet
             CartItemViewModel cartVM = new CartItemViewModel()
             {
                 CartItems = cartItems,
@@ -52,10 +53,12 @@ namespace FreshShop.Controllers
             ProductModel product = await _dataContext.Products.FindAsync(Id);
             List<CartItemModel> cart = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
             CartItemModel cartItems = cart.Where(c => c.ProductId == Id).FirstOrDefault();
+            //chua co, them vao gio
             if (cartItems == null)
             {
                 cart.Add(new CartItemModel(product));
             }
+            //co roi thi +1
             else
             {
                 cartItems.Quality += 1;
@@ -110,6 +113,7 @@ namespace FreshShop.Controllers
             }
             return RedirectToAction("Index");
         }
+        //cap nhat so luong san pham
         public IActionResult UpdateQuantity([FromBody] UpdateQuantityRequest request)
         {
             var cart = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();

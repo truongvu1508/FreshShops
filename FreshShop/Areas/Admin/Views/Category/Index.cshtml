@@ -15,15 +15,11 @@
         @TempData["Success"]
     </div>
 }
-<h4>Danh sách các danh mục</h4>
+
 <a class="btn btn-primary mb-3" asp-action="Create" asp-controller="Category">Thêm danh mục</a>
-<form asp-action="Search" asp-controller="Category" method="get" class="mb-3">
-    <div class="input-group">
-        <input type="text" name="search" class="form-control" placeholder="Nhập tên danh mục cần tìm kiếm" value="@ViewData["SearchTerm"]" />
-        <button class="btn btn-primary" type="submit">Search</button>
-    </div>
-</form>
-<table class="table table-striped">
+<h4>Danh sách các danh mục</h4>
+<div style="overflow-x: auto;">
+<table class="table table-striped" id="myTable">
     <thead>
         <tr>
             <th scope="col">ID</th>
@@ -57,14 +53,14 @@
                     }
                 </td>
                 <td>
-                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-controller="Category" asp-route-Id="@item.Id">Cập nhật</a>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-controller="Category" asp-route-Id="@item.Id">Sửa</a>
                     <button type="button" class="btn btn-danger btn-sm btn-delete" data-id="@item.Id">Xóa</button>
                 </td>
             </tr>
         }
     </tbody>
 </table>
-<partial name="_paging" model="@pager" />
+</div>
 
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

@@ -75,7 +75,7 @@
 </div>
 
 <h4 class="mt-5">Danh sách chi phí vận chuyển</h4>
-
+<div style="overflow-x: auto;">
 <table class="table table-bordered table-hover" id="myTable">
     <thead class="thead-dark">
         <tr>
@@ -101,7 +101,7 @@
         }
     </tbody>
 </table>
-
+</div>
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

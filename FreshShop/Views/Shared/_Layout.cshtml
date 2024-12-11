@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site Metas -->
-    <title>Freshshop - Ecommerce Bootstrap 4 HTML Template</title>
+    <title>Freshshop</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -52,16 +52,16 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="right-phone-box">
-                        <p>Call US :- <a href="#"> 0987654321</a></p>
+                        <p>Call : <a href="#"> 0987654321</a></p>
                     </div>
                     <div class="our-link">
                         <ul>
                             @if (SignInManager.IsSignedIn(User))
                             {
-                                <li><a asp-controller="UserInfor" asp-action="Index"><i class="fa fa-user s_color"></i> My Account</a></li>
+                                <li><a asp-controller="UserInfor" asp-action="Index"><i class="fa fa-user s_color"></i>Tài khoản</a></li>
                             }
-                            <li><a href="https://maps.app.goo.gl/ofkgVW3i5Br5SbvXA"><i class="fas fa-location-arrow"></i> Our location</a></li>
-                            <li><a href="https://www.facebook.com/"><i class="fas fa-headset"></i> Contact Us</a></li>
+                            <li><a href="https://maps.app.goo.gl/ofkgVW3i5Br5SbvXA"><i class="fas fa-location-arrow"></i> Địa chỉ</a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fas fa-headset"></i> Liên hệ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -118,14 +118,13 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                         @if (SignInManager.IsSignedIn(User))
-                         {
-                            <li class="nav-item"><a class="nav-link" asp-controller="History" asp-action="History">History</a></li>
-                         }
-                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                        <li class="nav-item active"><a class="nav-link" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="About" asp-action="Index">Giới thiệu</a></li>
+                        <li class="nav-item"><a class="nav-link" class="nav-link" asp-controller="Contact" asp-action="Index">Liên hệ</a></li>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                                <li class="nav-item"><a class="nav-link" asp-controller="History" asp-action="History">Lịch sử đơn hàng</a></li>
+                        }
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -135,7 +134,7 @@
                         <li class="side-menu">
                             <a asp-action="Index" asp-controller="Cart">
                                 <i class="fa fa-shopping-bag"></i>
-                                <p>My Cart</p>
+                                <p>Giỏ hàng</p>
                             </a>
                         </li>
                     </ul>

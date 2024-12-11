@@ -4,9 +4,9 @@
 
 <div class="product-categori">
     <div class="search-product">
-        <form action="#">
-            <input class="form-control" placeholder="Search here..." type="text">
-            <button type="submit"> <i class="fa fa-search"></i> </button>
+        <form form asp-action="Search" asp-controller="Home" method="get">
+            <input class="form-control" placeholder="Search here..." type="text" name="search" value="@ViewData["SearchTerm"]">
+            <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
     <div class="filter-sidebar-left">
@@ -30,7 +30,7 @@
             </p>
             <div id="slider-range"></div>
             <p class="mt-3">
-                <button name="locgia" data-current_url ="@currentUrl" class="btn btn-danger btn-locgia" type="submit">Lọc</button>
+                <button name="locgia" data-current_url="@currentUrl" class="btn btn-danger btn-locgia" type="submit">Lọc</button>
             </p>
         </div>
     </div>

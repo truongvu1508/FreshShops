@@ -84,6 +84,7 @@ namespace FreshShop.Controllers
 			}
 			return View();
 		}
+		//xuan hoang
 		[HttpGet]
 		public async Task<IActionResult> PaymentCallBack(MomoInfoModel model)
 		{

@@ -3,46 +3,43 @@
     ViewData["title"] = "Create Product";
 }
 
-<!-- Hiển thị thông báo lỗi -->
 @if (TempData["error"] != null)
 {
     <div class="alert alert-danger">
         @TempData["Error"]
     </div>
 }
-<h4>Create Product</h4>
+<h4>Thêm sản phẩm</h4>
 <div class="col-md-9">
     <form asp-action="Create" enctype="multipart/form-data">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
         <div class="form-group">
-            <label>Name</label>
+            <label>Tên</label>
             <input asp-for="Name" class="form-control" />
             <span asp-validation-for="Name" class="text-danger" />
         </div>
 
         <div class="form-group">
-            <label>Price</label>
+            <label>Giá bán</label>
             <input asp-for="Price" pattern="[0-9.,]+" class="form-control typing-price" />
-            <span id="price-convert"></span>
             <span asp-validation-for="Price" class="text-danger" />
         </div>
 
           <div class="form-group">
-              <label>Capital Price</label>
+              <label>Giá kho</label>
               <input asp-for="CapitalPrice" pattern="[0-9.,]+" class="form-control typing-price" />
-              <span id="price-convert"></span>
             <span asp-validation-for="CapitalPrice" class="text-danger" />
         </div>
 
         <div class="form-group">
-            <label>Description</label>
+            <label>Mô tả</label>
             <textarea asp-for="Description" class="form-control"></textarea>
             <span asp-validation-for="Description" class="text-danger" />
         </div>
 
         <div class="form-group">
-            <label>Category</label>
+            <label>Danh mục</label>
             <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories">
                 <option>Choose a category</option>
             </select>
@@ -50,7 +47,7 @@
         </div>
 
         <div class="form-group">
-            <label>Image</label>
+            <label>Ảnh</label>
             <input asp-for="ImageUpload" type="file" class="form-control">
             <span asp-validation-for="ImageUpload" class="text-danger"></span>
             <img id="imgpreview" class="pt-2" />
@@ -58,10 +55,10 @@
 
 
         <div class="form-group">
-            <button type="submit" class="btn btn-primary">Create</button>
+            <button type="submit" class="btn btn-primary">Thêm</button>
         </div>
     </form>
-    <a asp-action="Index" class="btn btn-warning btn-sm">Back to list product</a>
+    <a asp-action="Index" class="btn btn-warning btn-sm">Quay lại danh sách</a>
 </div>
 
 @section Scripts {
@@ -82,13 +79,12 @@
 
     <script>
         $(".typing-price").on("keyup", function () {
-            var currency_input = $(this).val(); // Lấy giá trị từ ô nhập
+            var currency_input = $(this).val();
 
-            // Loại bỏ các ký tự không phải số hoặc dấu '.' hay ','
             currency_input = currency_input.replace(/[^0-9.]/g, "");
 
             if (currency_input) {
-                // Chuyển chuỗi sang số (loại bỏ dấu ',' nếu có)
+
                 var number = parseFloat(currency_input.replace(/,/g, ""));
                 if (!isNaN(number)) {
                     $("#price-convert").html(
@@ -98,7 +94,7 @@
                     );
                 }
             } else {
-                // Khi ô nhập liệu trống, xóa nội dung hiển thị
+
                 $("#price-convert").html("");
             }
         });

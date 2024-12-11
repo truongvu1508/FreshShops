@@ -19,7 +19,7 @@ namespace FreshShop.Controllers
         {
             if (Id == null) return RedirectToAction("Index");
             var productsById = _dataContext.Products.Where(p => p.Id == Id).FirstOrDefault();
-            // sản phẩm liên quan - liên hệ thằng đình hoàng nếu có vấn đề
+            // dinh hoang
             var relatedProducts = await _dataContext.Products
                 .Where(p => p.CategoryId == productsById.CategoryId && p.Id != productsById.Id)
                 .Take(4)

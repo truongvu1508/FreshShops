@@ -2,7 +2,13 @@
 	var currentUrl = Url.ActionContext.HttpContext.Request.Path;
 }
 @model IEnumerable<ProductModel>
-
+<style>
+	.custom-img {
+		width: 350px;
+		height: 250px;
+		object-fit: cover;
+	}
+</style>
 <!-- Start Slider -->
 <div id="slides-shop" class="cover-slides">
 	<ul class="slides-container">
@@ -98,7 +104,7 @@
 													<div class="type-lb">
 														<p class="sale">Sale</p>
 													</div>
-													<img src="~/media/products/@item.Image" class="img-fluid" alt="@item.Name">
+													<img src="~/media/products/@item.Image" class="img-fluid custom-img" alt="@item.Name">
 													<div class="mask-icon">
 														<ul>
 															<li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
@@ -131,7 +137,7 @@
 														<div class="type-lb">
 															<p class="sale">Sale</p>
 														</div>
-														<img src="~/media/products/@item.Image" class="img-fluid" alt="@item.Name">
+														<img src="~/media/products/@item.Image" class="img-fluid custom-img" alt="@item.Name">
 														<div class="mask-icon">
 															<ul>
 																<li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
@@ -148,7 +154,7 @@
 													<div class="why-text full-width">
 														<h4>@item.Name</h4>
 														<h5>@item.Price <span>VND</span></h5>
-														<p>@item.Description</p>
+														<h6 style="color: #000 !important">@Html.Raw(item.Description)</h6>
 														<a class="btn hvr-hover" asp-action="Add" asp-controller="Cart" asp-route-id="@item.Id">Add to Cart</a>
 													</div>
 

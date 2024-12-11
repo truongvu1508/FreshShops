@@ -20,8 +20,12 @@ namespace FreshShop.Areas.Admin.Controllers
             _dataContext = context;
             _webHostEnvironment = webHostEnvironment;
         }
+        public async Task<IActionResult> Index()
+        {
+            return View(await _dataContext.Products.OrderByDescending(p => p.Id).Include(p => p.Category).ToListAsync());
+        }
 
-        [HttpGet]
+    [HttpGet]
         public IActionResult Create()
         {
             ViewBag.Categories = new SelectList(_dataContext.Categories, "Id", "Name");
@@ -31,52 +35,43 @@ namespace FreshShop.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProductModel product)
         {
-            // Gán lại danh sách Categories vào ViewBag để hiển thị dropdown
             ViewBag.Categories = new SelectList(_dataContext.Categories, "Id", "Name", product.CategoryId);
 
             if (ModelState.IsValid)
             {
-                // Thay thế khoảng trắng trong tên sản phẩm bằng dấu gạch nối
                 product.Slug = product.Name.Replace(" ", "-").ToLower();
 
-                // Kiểm tra xem Slug có bị trùng trong cơ sở dữ liệu không
                 var slug = await _dataContext.Products.FirstOrDefaultAsync(p => p.Slug == product.Slug);
                 if (slug != null)
                 {
-                    // Thêm lỗi vào ModelState nếu Slug đã tồn tại trong DB
                     ModelState.AddModelError("", "Sản phẩm đã có trong DB");
                     return View(product);
                 }
 
-                // Kiểm tra và lưu ảnh nếu có
                 if (product.ImageUpload != null)
                 {
-                    // Đường dẫn đến thư mục lưu trữ ảnh
+
                     string uploaddir = Path.Combine(_webHostEnvironment.WebRootPath, "media/products");
                     string imgname = Guid.NewGuid().ToString() + "_" + product.ImageUpload.FileName;
                     string filepath = Path.Combine(uploaddir, imgname);
 
-                    // Lưu ảnh vào thư mục
                     using (FileStream fs = new FileStream(filepath, FileMode.Create))
                     {
                         await product.ImageUpload.CopyToAsync(fs);
                     }
 
-                    // Lưu tên ảnh vào thuộc tính Image của sản phẩm
                     product.Image = imgname;
                 }
 
-                // Thêm sản phẩm vào cơ sở dữ liệu
                 _dataContext.Add(product);
                 await _dataContext.SaveChangesAsync();
 
-                // Thông báo thành công
                 TempData["success"] = "Tạo sản phẩm thành công.";
                 return RedirectToAction("Index");
             }
             else
             {
-                // Thông báo lỗi nếu model không hợp lệ
+
                 TempData["error"] = "Có lỗi trong quá trình nhập liệu.";
                 List<string> errors = new List<string>();
                 foreach (var value in ModelState.Values)
@@ -221,55 +216,6 @@ namespace FreshShop.Areas.Admin.Controllers
             return RedirectToAction("AddQuantity", "Product", new { Id = model.ProductId });
 
         }
-        public async Task<IActionResult> Index(int pg = 1)
-        {
-            const int pageSize = 10; // Number of items per page
-
-            // Ensure pg is at least 1
-            if (pg < 1) pg = 1;
-
-            // Get all products with their categories
-            List<ProductModel> products = await _dataContext.Products
-                                                             .Include(p => p.Category)
-                                                             .OrderByDescending(p => p.Id)
-                                                             .ToListAsync();
-
-            // Total number of products
-            int recsCount = products.Count;
-
-            // Create pagination info
-            var pager = new Paginate(recsCount, pg, pageSize);
-
-            // Skip products based on the page number and page size
-            int recSkip = (pg - 1) * pageSize;
-
-            // Get the products for the current page
-            var data = products.Skip(recSkip).Take(pager.PageSize).ToList();
-
-            // Pass pagination info to the view
-            ViewBag.Pager = pager;
-
-            // Return the paginated view with the product data
-            return View(data);
-        }
-
-        public async Task<IActionResult> Search(string search)
-        {
-            // Lấy danh sách sản phẩm từ database
-            var products = from p in _dataContext.Products.Include(p => p.Category)
-                           select p;
-
-            // Nếu có từ khóa tìm kiếm, áp dụng bộ lọc tìm theo tên sản phẩm
-            if (!string.IsNullOrEmpty(search))
-            {
-                products = products.Where(p => p.Name.ToLower().Contains(search.ToLower()));
-                ViewData["SearchTerm"] = search; // Lưu từ khóa tìm kiếm để hiển thị lại
-            }
-
-            // Trả về View Index và danh sách sản phẩm
-            return View("Index", await products.ToListAsync());
-        }
-
-
+        
     }
 }

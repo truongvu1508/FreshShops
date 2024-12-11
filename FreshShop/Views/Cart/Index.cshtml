@@ -130,7 +130,8 @@
                 <div class="col-12 d-flex shopping-box">
                     @if (SignInManager.IsSignedIn(User))
                     {
-                        <a asp-controller="Checkout" asp-action="Checkout" class="ml-auto btn hvr-hover">Đặt hàng</a>
+                        <div class="ml-auto">
+                        <a asp-controller="Checkout" asp-action="Checkout" class="btn hvr-hover">Thanh toán COD</a>
                         <form method="POST" asp-action="CreatePaymentUrl" asp-controller="Payment">
                             <input type="hidden" name="FullName" value=" @UserManager.GetUserName(User)" />
                             <input type="hidden" name="Amount" value="@Model.GrandTotal" />
@@ -139,13 +140,14 @@
                                 value="Thanh toán đặt hàng qua Momo tại FreshShop" />
 
                             <br />
-                            <button class="btn btn-danger" name="PayUrl" type="submit">Pay with MoMo</button>
+                                <button style="background: #EB2F96; color: #fff; padding:10px 20px" class="btn hvr-hover" name="PayUrl" type="submit">Thanh toán MoMo</button>
                         </form>
+                        </div>
                     }
                     else
                     {
                         <div class="d-flex gr-total">
-                            <h5 style="color: #990000" class="ml-auto h5">Đăng nhập để đặt hàng</h5>
+                            <h5 style="color: #990000; display: block; margin-top: 10px;" class="ml-auto h5">Đăng nhập để đặt hàng</h5>
                         </div>
                     }
                 </div>
@@ -160,7 +162,6 @@
     <script>
         $(".btn-apply-coupon").click(function () {
             var coupon_value = $(".coupon-value").val();
-            alert(coupon_value);
             $.ajax({
                 type: "POST",
                 url: "@Url.Action("GetCoupon", "Cart")",

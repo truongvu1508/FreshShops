@@ -10,25 +10,25 @@
         @TempData["Error"]
     </div>
 }
-<h4>Create Slider</h4>
+<h4>Thêm Slider</h4>
 <div class="col-md-9">
     <form asp-action="Create" enctype="multipart/form-data">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
         <div class="form-group">
-            <label>Name</label>
+            <label>Tên</label>
             <input asp-for="Name" class="form-control" />
             <span asp-validation-for="Name" class="text-danger" />
         </div>
 
         <div class="form-group">
-            <label>Description</label>
+            <label>Mô tả</label>
             <textarea asp-for="Description" class="form-control"></textarea>
             <span asp-validation-for="Description" class="text-danger" />
         </div>
 
         <div class="form-group">
-            <label>Status</label>
+            <label>Trạng thái</label>
             <select asp-for="Status" class="form-control" >
                 <option value="1">Hiển thị</option>
                 <option value="0">Ẩn</option>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="form-group">
-            <label>Image</label>
+            <label>Ảnh</label>
             <input asp-for="ImageUpload" type="file" class="form-control">
             <span asp-validation-for="ImageUpload" class="text-danger"></span>
             <img id="imgpreview" class="pt-2" />
@@ -44,10 +44,10 @@
 
 
         <div class="form-group">
-            <button type="submit" class="btn btn-primary">Create</button>
+            <button type="submit" class="btn btn-primary">Thêm</button>
         </div>
     </form>
-    <a asp-action="Index" class="btn btn-warning btn-sm">Back to list slider</a>
+    <a asp-action="Index" class="btn btn-warning btn-sm">Quay lại</a>
 </div>
 
 @section Scripts {

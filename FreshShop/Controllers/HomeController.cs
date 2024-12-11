@@ -33,7 +33,7 @@ namespace FreshShop.Controllers
                 products = products.Where(p => p.Price >= startprice && p.Price <= endprice);
             }
 
-            // Add sorting logic
+            // Add sorting logic dinh hoang
             switch (sort_by)
             {
                 case "price_desc":
@@ -145,6 +145,22 @@ namespace FreshShop.Controllers
             _dataContext.Wishlists.Remove(wishlist);
             await _dataContext.SaveChangesAsync();
             return RedirectToAction("Wishlist", "Home");
+        }
+        //minh tai
+        public async Task<IActionResult> Search(string search)
+        {
+            var products = from p in _dataContext.Products.Include(p => p.Category)
+                           select p;
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                products = products.Where(p => p.Name.ToLower().Contains(search.ToLower()));
+                ViewData["SearchTerm"] = search;
+            }
+            var sliders = _dataContext.Sliders.ToList();
+            ViewBag.Sliders = sliders;
+
+            return View("Index", await products.ToListAsync());
         }
     }
 }
